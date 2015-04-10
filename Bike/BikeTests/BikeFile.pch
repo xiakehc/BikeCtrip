@@ -1,0 +1,14 @@
+//
+//  BikeFile.pch
+//  Bike
+//
+//  Created by kyu on 15/4/10.
+//  Copyright (c) 2015年 kyu. All rights reserved.
+//
+
+#ifndef Bike_BikeFile_pch
+#define Bike_BikeFile_pch
+
+
+
+#endif

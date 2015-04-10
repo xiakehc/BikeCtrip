@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591ECA921AD7B90E0007B117 /* BIAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 591ECA911AD7B90E0007B117 /* BIAPIService.m */; };
 		5936B7901AD654FC00227F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936B78F1AD654FC00227F7E /* main.m */; };
 		5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936B7921AD654FC00227F7E /* AppDelegate.m */; };
 		5936B7961AD654FC00227F7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936B7951AD654FC00227F7E /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		591ECA901AD7B90E0007B117 /* BIAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIAPIService.h; sourceTree = "<group>"; };
+		591ECA911AD7B90E0007B117 /* BIAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIAPIService.m; sourceTree = "<group>"; };
 		5936B78A1AD654FC00227F7E /* Bike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5936B78E1AD654FC00227F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5936B78F1AD654FC00227F7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		5936B7A31AD654FC00227F7E /* BikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5936B7A81AD654FC00227F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5936B7A91AD654FC00227F7E /* BikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikeTests.m; sourceTree = "<group>"; };
+		597B18E61AD7BD82001008A9 /* BikeFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeFile.pch; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DF7202F3F892E5B9AD7FB20E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +76,15 @@
 				A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		591ECA8F1AD7B8D80007B117 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				591ECA901AD7B90E0007B117 /* BIAPIService.h */,
+				591ECA911AD7B90E0007B117 /* BIAPIService.m */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		5936B7811AD654FC00227F7E = {
@@ -115,6 +128,7 @@
 		5936B78D1AD654FC00227F7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				597B18E61AD7BD82001008A9 /* BikeFile.pch */,
 				5936B78E1AD654FC00227F7E /* Info.plist */,
 				5936B78F1AD654FC00227F7E /* main.m */,
 			);
@@ -149,6 +163,7 @@
 		A7C758541AD6C70E00640F90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				591ECA8F1AD7B8D80007B117 /* NetWork */,
 				A7C758581AD6C76B00640F90 /* Util */,
 			);
 			path = Model;
@@ -312,6 +327,7 @@
 			files = (
 				5936B7961AD654FC00227F7E /* ViewController.m in Sources */,
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
+				591ECA921AD7B90E0007B117 /* BIAPIService.m in Sources */,
 				5936B7901AD654FC00227F7E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +453,7 @@
 			baseConfigurationReference = 5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Bike/BikeFile.pch";
 				INFOPLIST_FILE = Bike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -449,6 +466,7 @@
 			baseConfigurationReference = A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Bike/BikeFile.pch";
 				INFOPLIST_FILE = Bike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
