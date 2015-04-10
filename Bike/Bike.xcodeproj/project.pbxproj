@@ -97,15 +97,15 @@
 		5936B78C1AD654FC00227F7E /* Bike */ = {
 			isa = PBXGroup;
 			children = (
+				A7C758571AD6C71C00640F90 /* Controller */,
+				A7C758541AD6C70E00640F90 /* Model */,
+				A7C758561AD6C70E00640F90 /* View */,
 				5936B7911AD654FC00227F7E /* AppDelegate.h */,
 				5936B7921AD654FC00227F7E /* AppDelegate.m */,
 				5936B7941AD654FC00227F7E /* ViewController.h */,
 				5936B7951AD654FC00227F7E /* ViewController.m */,
 				5936B7971AD654FC00227F7E /* Main.storyboard */,
 				5936B79C1AD654FC00227F7E /* LaunchScreen.xib */,
-				5936B7B31AD66D9F00227F7E /* Controller */,
-				5936B7B41AD66D9F00227F7E /* Model */,
-				5936B7B51AD66D9F00227F7E /* View */,
 				5936B79A1AD654FC00227F7E /* Images.xcassets */,
 				5936B78D1AD654FC00227F7E /* Supporting Files */,
 			);
@@ -138,33 +138,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5936B7B31AD66D9F00227F7E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		5936B7B41AD66D9F00227F7E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5936B7B51AD66D9F00227F7E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		9199391287573D0875A26A97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DF7202F3F892E5B9AD7FB20E /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7C758541AD6C70E00640F90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7C758581AD6C76B00640F90 /* Util */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7C758561AD6C70E00640F90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7C758571AD6C71C00640F90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A7C758581AD6C76B00640F90 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -441,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
