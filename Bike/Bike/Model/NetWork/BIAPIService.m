@@ -7,6 +7,9 @@
 //
 
 #import "BIAPIService.h"
+@interface BIAPIService(){
+}
+@end
 
 @implementation BIAPIService
 
@@ -15,7 +18,6 @@
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         sharedBIAPIService = [[self alloc]init];
-        
     });
     
     return sharedBIAPIService;
@@ -31,11 +33,12 @@
  */
 - (void)getRequest:(NSString*)url witParam:(id)params withSuccessBlock:(serviceSuccessBlock)successBlock withFailBlock:(serviceFailBlock)failBlock
 {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    BIRequestOperationManager *manager = [BIRequestOperationManager sharedClient];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [manager.requestSerializer setValue:@"" forHTTPHeaderField:@""];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
     
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         successBlock(responseObject);
@@ -45,7 +48,20 @@
     }];
 }
 
-
+- (void)postRequest:(NSString*)url witParam:(id)params withSuccessBlock:(serviceSuccessBlock)successBlock withFailBlock:(serviceFailBlock)failBlock
+{
+    BIRequestOperationManager *manager = [BIRequestOperationManager sharedClient];
+    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [manager.requestSerializer setValue:@"" forHTTPHeaderField:@""];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    
+    [manager POST:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        successBlock(responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        failBlock(@"服务请求失败！");
+    }];
+}
 
 
 

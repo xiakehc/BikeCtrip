@@ -4,24 +4,42 @@
 //
 //  Created by kyu on 15/4/10.
 //  Copyright (c) 2015年 kyu. All rights reserved.
-//
+//  API
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+#import "BIRequestOperationManager.h"
 
-/*服务请求成功回调*/
+/*service success callback*/
 typedef void (^serviceSuccessBlock)(id response);
 
 
-/*服务请求失败回调*/
+/*service fail callback*/
 typedef void (^serviceFailBlock)(NSString* erroeMsg);
 
 @interface BIAPIService : NSObject
 
-/*singal*/
+/*singal model*/
 + (BIAPIService *)shareInstance;
 
+/**
+ *  GET - JSON
+ *
+ *  @param url
+ *  @param params
+ *  @param successBlock
+ *  @param failBlock
+ */
 - (void)getRequest:(NSString*)url witParam:(id)params withSuccessBlock:(serviceSuccessBlock)successBlock withFailBlock:(serviceFailBlock)failBlock;
+
+/**
+ *  POST - JSON
+ *
+ *  @param url
+ *  @param params
+ *  @param successBlock
+ *  @param failBlock
+ */
+- (void)postRequest:(NSString*)url witParam:(id)params withSuccessBlock:(serviceSuccessBlock)successBlock withFailBlock:(serviceFailBlock)failBlock;
 
 
 

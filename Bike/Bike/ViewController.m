@@ -22,7 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *str = @"http://www.ruo-bl.com/index.php?s=/wap/ajax/coupons/";
+    NSString *str = @"index.php?s=/wap/ajax/coupons/";
+    
+    
+
     
     [[BIAPIService shareInstance] getRequest:str witParam:nil withSuccessBlock:^(id response) {
         NSLog(@"%@",response);

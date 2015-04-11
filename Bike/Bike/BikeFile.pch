@@ -7,7 +7,7 @@
 //
 
 #ifndef __IPHONE_6_0
-    #warning "This project uses features only available in iOS SDK 6.0 and later."
+    #pragma mark "This project uses features only available in iOS SDK 6.0 and later."
 #endif
 
 #ifdef __OBJC__

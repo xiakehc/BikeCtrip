@@ -16,6 +16,12 @@
 		5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5936B79C1AD654FC00227F7E /* LaunchScreen.xib */; };
 		5936B7AA1AD654FC00227F7E /* BikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936B7A91AD654FC00227F7E /* BikeTests.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
+		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
+		A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */; };
+		A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94611AD8CD2100B31F66 /* BIRequestOperationManager.m */; };
+		A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94641AD8CF6900B31F66 /* BIUtilColor.m */; };
+		A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA946A1AD8F16A00B31F66 /* BIUtilString.m */; };
+		A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,19 @@
 		597B18E61AD7BD82001008A9 /* BikeFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeFile.pch; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A79A9E9A1AD90F55006B522C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A7CA945D1AD8C1D500B31F66 /* BIUtilNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilNetWork.h; sourceTree = "<group>"; };
+		A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilNetWork.m; sourceTree = "<group>"; };
+		A7CA94601AD8CD2100B31F66 /* BIRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRequestOperationManager.h; sourceTree = "<group>"; };
+		A7CA94611AD8CD2100B31F66 /* BIRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRequestOperationManager.m; sourceTree = "<group>"; };
+		A7CA94631AD8CF6900B31F66 /* BIUtilColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilColor.h; sourceTree = "<group>"; };
+		A7CA94641AD8CF6900B31F66 /* BIUtilColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilColor.m; sourceTree = "<group>"; };
+		A7CA94691AD8F16A00B31F66 /* BIUtilString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilString.h; sourceTree = "<group>"; };
+		A7CA946A1AD8F16A00B31F66 /* BIUtilString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilString.m; sourceTree = "<group>"; };
+		A7CA946E1AD8F3A800B31F66 /* BIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDefine.h; sourceTree = "<group>"; };
+		A7CA946F1AD8F3A800B31F66 /* BILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILog.h; sourceTree = "<group>"; };
+		A7CA94701AD8F7E200B31F66 /* BIUtilDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilDate.h; sourceTree = "<group>"; };
+		A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilDate.m; sourceTree = "<group>"; };
 		DF7202F3F892E5B9AD7FB20E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */,
 				9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +103,8 @@
 			children = (
 				591ECA901AD7B90E0007B117 /* BIAPIService.h */,
 				591ECA911AD7B90E0007B117 /* BIAPIService.m */,
+				A7CA94601AD8CD2100B31F66 /* BIRequestOperationManager.h */,
+				A7CA94611AD8CD2100B31F66 /* BIRequestOperationManager.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -155,6 +177,7 @@
 		9199391287573D0875A26A97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A79A9E9A1AD90F55006B522C /* CoreLocation.framework */,
 				DF7202F3F892E5B9AD7FB20E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -163,6 +186,7 @@
 		A7C758541AD6C70E00640F90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A7CA946D1AD8F39200B31F66 /* HeaderPch */,
 				591ECA8F1AD7B8D80007B117 /* NetWork */,
 				A7C758581AD6C76B00640F90 /* Util */,
 			);
@@ -186,8 +210,25 @@
 		A7C758581AD6C76B00640F90 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A7CA94701AD8F7E200B31F66 /* BIUtilDate.h */,
+				A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */,
+				A7CA94691AD8F16A00B31F66 /* BIUtilString.h */,
+				A7CA946A1AD8F16A00B31F66 /* BIUtilString.m */,
+				A7CA945D1AD8C1D500B31F66 /* BIUtilNetWork.h */,
+				A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */,
+				A7CA94631AD8CF6900B31F66 /* BIUtilColor.h */,
+				A7CA94641AD8CF6900B31F66 /* BIUtilColor.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		A7CA946D1AD8F39200B31F66 /* HeaderPch */ = {
+			isa = PBXGroup;
+			children = (
+				A7CA946E1AD8F3A800B31F66 /* BIDefine.h */,
+				A7CA946F1AD8F3A800B31F66 /* BILog.h */,
+			);
+			path = HeaderPch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +243,7 @@
 				5936B7871AD654FC00227F7E /* Frameworks */,
 				5936B7881AD654FC00227F7E /* Resources */,
 				5E5044EE87C946302A4B7B65 /* Copy Pods Resources */,
+				A7CA94731AD90C1B00B31F66 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -241,6 +283,11 @@
 				TargetAttributes = {
 					5936B7891AD654FC00227F7E = {
 						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					5936B7A21AD654FC00227F7E = {
 						CreatedOnToolsVersion = 6.2;
@@ -318,6 +365,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A7CA94731AD90C1B00B31F66 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,9 +386,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */,
 				5936B7961AD654FC00227F7E /* ViewController.m in Sources */,
+				A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */,
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
+				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
+				A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */,
 				591ECA921AD7B90E0007B117 /* BIAPIService.m in Sources */,
+				A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */,
 				5936B7901AD654FC00227F7E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +453,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -429,7 +495,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -453,6 +519,7 @@
 			baseConfigurationReference = 5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Bike/BikeFile.pch";
 				INFOPLIST_FILE = Bike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -466,6 +533,7 @@
 			baseConfigurationReference = A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Bike/BikeFile.pch";
 				INFOPLIST_FILE = Bike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -487,6 +555,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = BikeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bike.app/Bike";
@@ -502,6 +571,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = BikeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bike.app/Bike";

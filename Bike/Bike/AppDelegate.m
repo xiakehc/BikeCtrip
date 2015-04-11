@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "BIUtilNetWork.h"
+#import "BIUtilString.h"
+ #import <CoreLocation/CoreLocation.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<CLLocationManagerDelegate>
+{
+    CLLocationManager *locationManager;
+}
 
 @end
 
@@ -16,13 +22,57 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //添加网络变化监听
+    [self registNotification];
+    
+    //开始监听网络
+    [self startDetectInternet];
+    
+    // 初始化定位
+    
+    if (locationManager==nil)
+    {
+        locationManager =[[CLLocationManager alloc] init];
+    }
+    
+    if ([CLLocationManager locationServicesEnabled])
+    {
+        locationManager.delegate=self;
+        locationManager.desiredAccuracy=kCLLocationAccuracyBest;
+        locationManager.distanceFilter=10.0f;
+        if([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+            [locationManager requestAlwaysAuthorization]; // 永久授权
+        }
+        [locationManager startUpdatingLocation];
+    }
+
+
+    
     return YES;
 }
 
+- (void)startDetectInternet{
+    [[BIUtilNetWork shareInstance]  getCurrentNetWorkStatus];
+}
+
+- (void)registNotification
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkChanged:)
+                                                 name:kNetworkDidChangedNotification object:nil];
+}
+
+- (void)networkChanged:(NSNotification*)notification
+{
+    NSString* str = (NSString*)[notification object];
+    if(![BIUtilString emptyOrNull:str])
+    {
+        UIAlertView *view = [[UIAlertView alloc]initWithTitle:nil message:str delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:nil, nil];
+        [view show];
+    }
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
