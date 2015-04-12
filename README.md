@@ -1,5 +1,5 @@
 # Bike
-If the bike you are interested, welcome to contact me.
-QQ:1062120982
-Email:melody1988@live.cn
+If the bike you are interested, welcome to contact me.\n
+QQ:1062120982\n
+Email:melody1988@live.cn\n
 # End
