@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import "JSONKit.h"
+
+typedef enum{
+    ENUM_CLASSMODEL_COUPONS,//coupons类
+    
+}ENUM_CLASSMODEL;
+
+
 
 @interface NSJSONParsing : NSObject
 
-- (id)jsonParsing:(id)model;
++ (id)jsonParsing:(NSArray*)list WithType:(ENUM_CLASSMODEL)type;
 
 @end

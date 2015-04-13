@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "NSJSONParsing.h"
+#import "BIHomeCell.h"
+#import "TAOverlay.h"
 
-@interface ViewController ()
+#define kTestURL    @"index.php?s=/wap/ajax/coupons/"
+
+@interface ViewController (){
+    NSMutableArray *_dataList;
+}
 
 @property (nonatomic,strong) UITableView *mTableView;
 
@@ -26,21 +33,69 @@
     [super viewDidLoad];
     
     self.mTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT)];
+    self.mTableView.dataSource = self;
+    self.mTableView.delegate = self;
+    self.mTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.mTableView registerClass:[BIHomeCell class] forCellReuseIdentifier:@"BIHomeCellIdentifier"];
+    [self.view addSubview:self.mTableView];
+
+    [TAOverlay showOverlayWithLabel:@"骑呀骑呀..." Options:TAOverlayOptionOverlayTypeActivityLeaf|TAOverlayOptionOverlaySizeFullScreen];
     
-    
-    
-//    NSString *str = @"index.php?s=/wap/ajax/coupons/";
-//    
-//    [[BIAPIService shareInstance] getRequest:str witParam:nil withSuccessBlock:^(id response) {
-//        NSLog(@"%@",response);
-//    } withFailBlock:^(NSString *erroeMsg) {
-//        NSLog(@"%@", erroeMsg);
-//    }];
+    [[BIAPIService shareInstance] getRequest:kTestURL witParam:nil withSuccessBlock:^(id response) {
+        BILog(@"%@",response);
+        NSArray *arrlist = (NSArray*)response;
+        _dataList = [NSJSONParsing jsonParsing:arrlist WithType:ENUM_CLASSMODEL_COUPONS];
+        
+        [self.mTableView reloadData];
+        [TAOverlay hideOverlay];
+        
+    } withFailBlock:^(NSString *erroeMsg) {
+        BILog(@"%@", erroeMsg);
+    }];
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+#pragma mark -- UITableViewDelegate、DataSource --
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if(_dataList){
+       return _dataList.count;
+    }
+    return 0;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 44;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    BIHomeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BIHomeCellIdentifier"];
+    if(!cell){
+        cell = (BIHomeCell*)[[BIHomeCell alloc]init];
+    }
+    
+    [cell updateCell:[_dataList objectAtIndex:indexPath.row]];
+    
+    return cell;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

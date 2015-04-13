@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-TAOverlay.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25DD3F4293702BACE97D7591</key>
+		<key>14571B4053545FD969CDAB2C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>33A659332076E7E4DCE1585A</key>
+		<key>2752B0F7ABEF6BDC3064E6B5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B79A88433CF598D1BD9683EC</key>
+		<key>55D24BC798B3BD712E9F3C47</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9058D38B88EDF9F232CA3AC</key>
+		<key>7D41596582E71F34F5B21E5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE6553CE5D0C46D84E31A570</key>
 		<dict>
 			<key>primary</key>
 			<true/>

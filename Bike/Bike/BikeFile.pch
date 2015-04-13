@@ -14,5 +14,5 @@
 
     #import "BIAPIService.h"
     #import "BIDefine.h"
-
+    #import "BILog.h"
 #endif

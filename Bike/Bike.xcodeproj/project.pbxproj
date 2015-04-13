@@ -17,6 +17,10 @@
 		5936B7AA1AD654FC00227F7E /* BikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936B7A91AD654FC00227F7E /* BikeTests.m */; };
 		599A365F1ADBA4960052E642 /* NSJSONParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A365E1ADBA4960052E642 /* NSJSONParsing.m */; };
 		599A36631ADBA5890052E642 /* coupons.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36621ADBA5890052E642 /* coupons.m */; };
+		599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36661ADBB35A0052E642 /* BIHomeCell.m */; };
+		599A366A1ADBB48A0052E642 /* BIBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */; };
+		599A36701ADBD09D0052E642 /* overlay_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366E1ADBD09D0052E642 /* overlay_left.png */; };
+		599A36711ADBD09D0052E642 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366F1ADBD09D0052E642 /* overlay.png */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
 		A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */; };
@@ -57,6 +61,12 @@
 		599A365E1ADBA4960052E642 /* NSJSONParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSJSONParsing.m; sourceTree = "<group>"; };
 		599A36611ADBA5890052E642 /* coupons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coupons.h; sourceTree = "<group>"; };
 		599A36621ADBA5890052E642 /* coupons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coupons.m; sourceTree = "<group>"; };
+		599A36651ADBB35A0052E642 /* BIHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeCell.h; sourceTree = "<group>"; };
+		599A36661ADBB35A0052E642 /* BIHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeCell.m; sourceTree = "<group>"; };
+		599A36681ADBB48A0052E642 /* BIBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIBaseTableViewCell.h; sourceTree = "<group>"; };
+		599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIBaseTableViewCell.m; sourceTree = "<group>"; };
+		599A366E1ADBD09D0052E642 /* overlay_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_left.png; sourceTree = "<group>"; };
+		599A366F1ADBD09D0052E642 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A79A9E9A1AD90F55006B522C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -138,8 +148,9 @@
 		5936B78C1AD654FC00227F7E /* Bike */ = {
 			isa = PBXGroup;
 			children = (
-				A7C758571AD6C71C00640F90 /* Controller */,
+				599A366D1ADBCEA10052E642 /* Image */,
 				A7C758541AD6C70E00640F90 /* Model */,
+				A7C758571AD6C71C00640F90 /* Controller */,
 				A7C758561AD6C70E00640F90 /* View */,
 				5936B7911AD654FC00227F7E /* AppDelegate.h */,
 				5936B7921AD654FC00227F7E /* AppDelegate.m */,
@@ -198,6 +209,26 @@
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
+		599A36641ADBB32B0052E642 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				599A36651ADBB35A0052E642 /* BIHomeCell.h */,
+				599A36661ADBB35A0052E642 /* BIHomeCell.m */,
+				599A36681ADBB48A0052E642 /* BIBaseTableViewCell.h */,
+				599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		599A366D1ADBCEA10052E642 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				599A366E1ADBD09D0052E642 /* overlay_left.png */,
+				599A366F1ADBD09D0052E642 /* overlay.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		9199391287573D0875A26A97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +253,7 @@
 		A7C758561AD6C70E00640F90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				599A36641ADBB32B0052E642 /* HomeView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -345,9 +377,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599A36711ADBD09D0052E642 /* overlay.png in Resources */,
 				5936B7991AD654FC00227F7E /* Main.storyboard in Resources */,
 				5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */,
 				5936B79B1AD654FC00227F7E /* Images.xcassets in Resources */,
+				599A36701ADBD09D0052E642 /* overlay_left.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,9 +446,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599A366A1ADBB48A0052E642 /* BIBaseTableViewCell.m in Sources */,
 				A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */,
 				5936B7961AD654FC00227F7E /* ViewController.m in Sources */,
 				A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */,
+				599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */,
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
 				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
 				A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */,
