@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FlatUIKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>242D322E0ECA812113AB10BB</key>
+		<key>9BE4C71EF155EA4664212417</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C68B215DF824615755D5262</key>
+		<key>A858D9832ABE7F731353046E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D937DD8FD83F46BA917A5E6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
