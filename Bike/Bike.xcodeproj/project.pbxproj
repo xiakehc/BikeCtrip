@@ -15,6 +15,8 @@
 		5936B79B1AD654FC00227F7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5936B79A1AD654FC00227F7E /* Images.xcassets */; };
 		5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5936B79C1AD654FC00227F7E /* LaunchScreen.xib */; };
 		5936B7AA1AD654FC00227F7E /* BikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936B7A91AD654FC00227F7E /* BikeTests.m */; };
+		599A365F1ADBA4960052E642 /* NSJSONParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A365E1ADBA4960052E642 /* NSJSONParsing.m */; };
+		599A36631ADBA5890052E642 /* coupons.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36621ADBA5890052E642 /* coupons.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
 		A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */; };
@@ -51,6 +53,10 @@
 		5936B7A81AD654FC00227F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5936B7A91AD654FC00227F7E /* BikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikeTests.m; sourceTree = "<group>"; };
 		597B18E61AD7BD82001008A9 /* BikeFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeFile.pch; sourceTree = "<group>"; };
+		599A365D1ADBA4960052E642 /* NSJSONParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSJSONParsing.h; sourceTree = "<group>"; };
+		599A365E1ADBA4960052E642 /* NSJSONParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSJSONParsing.m; sourceTree = "<group>"; };
+		599A36611ADBA5890052E642 /* coupons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coupons.h; sourceTree = "<group>"; };
+		599A36621ADBA5890052E642 /* coupons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coupons.m; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A79A9E9A1AD90F55006B522C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -174,6 +180,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		599A365C1ADBA4640052E642 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				599A365D1ADBA4960052E642 /* NSJSONParsing.h */,
+				599A365E1ADBA4960052E642 /* NSJSONParsing.m */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		599A36601ADBA5750052E642 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				599A36611ADBA5890052E642 /* coupons.h */,
+				599A36621ADBA5890052E642 /* coupons.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
 		9199391287573D0875A26A97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +210,8 @@
 		A7C758541AD6C70E00640F90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				599A36601ADBA5750052E642 /* BaseClass */,
+				599A365C1ADBA4640052E642 /* Parsing */,
 				A7CA946D1AD8F39200B31F66 /* HeaderPch */,
 				591ECA8F1AD7B8D80007B117 /* NetWork */,
 				A7C758581AD6C76B00640F90 /* Util */,
@@ -393,8 +419,10 @@
 				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
 				A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */,
 				591ECA921AD7B90E0007B117 /* BIAPIService.m in Sources */,
+				599A365F1ADBA4960052E642 /* NSJSONParsing.m in Sources */,
 				A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */,
 				5936B7901AD654FC00227F7E /* main.m in Sources */,
+				599A36631ADBA5890052E642 /* coupons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

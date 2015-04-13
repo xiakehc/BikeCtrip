@@ -51,8 +51,8 @@
         }
         
 //        CTDigitExceptionLog(str);
-//      FLog(str);
-        FLog(@"%@", str);
+//      BILog(str);
+        BILog(@"%@", str);
     }else
     {
         i = [s intValue];
@@ -84,8 +84,8 @@
             str = [NSString stringWithFormat:@"%@",s];
         }
 
-//      FLog(str);
-        FLog(@"%@", str);
+//      BILog(str);
+        BILog(@"%@", str);
     }
     else
     {
@@ -117,8 +117,8 @@
             str = [NSString stringWithFormat:@"%@",s];
         }
 
-//      FLog(str);
-        FLog(@"%@", str);
+//      BILog(str);
+        BILog(@"%@", str);
     }
     else
     {
@@ -150,8 +150,8 @@
             str = [NSString stringWithFormat:@"%@",s];
         }
 
-//      FLog(str);
-        FLog(@"%@", str);
+//      BILog(str);
+        BILog(@"%@", str);
     }
     else
     {
@@ -1844,8 +1844,8 @@
     if(doubleValue < 0)
     {
         NSString *s = [NSString stringWithFormat:@"%f",doubleValue];
-//        FLog(s);
-        FLog(@"%@", s);
+//        BILog(s);
+        BILog(@"%@", s);
     }else
     {
         // 检测小数点后面有几位不是0

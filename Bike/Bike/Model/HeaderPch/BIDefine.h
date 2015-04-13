@@ -35,3 +35,12 @@ while(0)
 #else
 #define CTShowViewBounds(aView)
 #endif
+
+
+#define CURRENTSCREEN_WIDTH [[UIApplication sharedApplication].delegate window].frame.size.width
+#define CURRENTSCREEN_HEIGHT [[UIApplication sharedApplication].delegate window].frame.size.height
+
+
+#define kCTHotelIPad   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define kCTHotelIPadRetina   ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)&&([UIScreen mainScreen].scale == 2))
+#define isRetina   ([UIScreen mainScreen].scale > 1)s

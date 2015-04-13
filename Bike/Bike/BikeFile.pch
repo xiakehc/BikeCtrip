@@ -13,6 +13,6 @@
 #ifdef __OBJC__
 
     #import "BIAPIService.h"
-
+    #import "BIDefine.h"
 
 #endif

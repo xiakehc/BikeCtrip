@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic,strong) UITableView *mTableView;
+
 @end
 
 @implementation ViewController
@@ -17,21 +19,23 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *str = @"index.php?s=/wap/ajax/coupons/";
+    
+    self.mTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT)];
     
     
-
     
-    [[BIAPIService shareInstance] getRequest:str witParam:nil withSuccessBlock:^(id response) {
-        NSLog(@"%@",response);
-    } withFailBlock:^(NSString *erroeMsg) {
-        NSLog(@"%@", erroeMsg);
-    }];
+//    NSString *str = @"index.php?s=/wap/ajax/coupons/";
+//    
+//    [[BIAPIService shareInstance] getRequest:str witParam:nil withSuccessBlock:^(id response) {
+//        NSLog(@"%@",response);
+//    } withFailBlock:^(NSString *erroeMsg) {
+//        NSLog(@"%@", erroeMsg);
+//    }];
     
 }
 

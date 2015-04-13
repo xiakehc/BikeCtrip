@@ -21,13 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - FlatUIKit (1.6)
+  - GCJSONKit (1.5.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.2)
   - FlatUIKit (~> 1.6)
+  - GCJSONKit (~> 1.5.0)
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
   FlatUIKit: a59c93fe2fde5329dfb71dd9317b1b0386d6a178
+  GCJSONKit: 8ad0067945efd217af8e610fa09ca0d02283b36b
 
 COCOAPODS: 0.36.3

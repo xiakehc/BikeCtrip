@@ -7,7 +7,7 @@
 //
 
 #ifdef DEBUG
-#define FLog(format, ...) NSLog((@"%s@%d: " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define BILog(format, ...) NSLog((@"%s@%d: " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
-#define FLog(format, ...)
+#define BILog(format, ...)
 #endif
