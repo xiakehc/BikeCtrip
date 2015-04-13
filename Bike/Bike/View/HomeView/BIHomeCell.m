@@ -30,12 +30,12 @@
 - (void)updateCell:(id)model{
     if(!lbl){
         lbl = [[UILabel alloc]initWithFrame:self.frame];
+        [self addSubview:lbl];
     }
     
     coupons *md = (coupons *)model;
     lbl.text = md.cid;
     lbl.font = [UIFont systemFontOfSize:15.0];
-    lbl.textColor = [UIColor blackColor];
 }
 
 @end
