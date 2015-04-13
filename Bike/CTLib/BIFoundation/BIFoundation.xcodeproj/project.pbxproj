@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A73235BD1ADC217100CA1A17 /* BIFoundation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A73235BC1ADC217100CA1A17 /* BIFoundation.h */; };
+		A73235F41ADC227000CA1A17 /* NSArray+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A73235EC1ADC227000CA1A17 /* NSArray+CTExtensions.m */; };
+		A73235F61ADC227000CA1A17 /* UIButton+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A73235F11ADC227000CA1A17 /* UIButton+CTExtensions.m */; };
+		A73235F71ADC227000CA1A17 /* UIView+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A73235F31ADC227000CA1A17 /* UIView+CTExtensions.m */; };
+		A73236031ADC282700CA1A17 /* UIView+CTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A73235F21ADC227000CA1A17 /* UIView+CTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A73236041ADC282B00CA1A17 /* UIButton+CTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A73235F01ADC227000CA1A17 /* UIButton+CTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A73236051ADC282E00CA1A17 /* NSArray+CTExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A73235EB1ADC227000CA1A17 /* NSArray+CTExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A73235B71ADC217100CA1A17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A73235BD1ADC217100CA1A17 /* BIFoundation.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A73235B91ADC217100CA1A17 /* libBIFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBIFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73235BC1ADC217100CA1A17 /* BIFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIFoundation.h; sourceTree = "<group>"; };
+		A73235EB1ADC227000CA1A17 /* NSArray+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CTExtensions.h"; sourceTree = "<group>"; };
+		A73235EC1ADC227000CA1A17 /* NSArray+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CTExtensions.m"; sourceTree = "<group>"; };
+		A73235F01ADC227000CA1A17 /* UIButton+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CTExtensions.h"; sourceTree = "<group>"; };
+		A73235F11ADC227000CA1A17 /* UIButton+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CTExtensions.m"; sourceTree = "<group>"; };
+		A73235F21ADC227000CA1A17 /* UIView+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CTExtensions.h"; sourceTree = "<group>"; };
+		A73235F31ADC227000CA1A17 /* UIView+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CTExtensions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A73235B61ADC217100CA1A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A73235B01ADC217100CA1A17 = {
+			isa = PBXGroup;
+			children = (
+				A73235BB1ADC217100CA1A17 /* BIFoundation */,
+				A73235BA1ADC217100CA1A17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A73235BA1ADC217100CA1A17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A73235B91ADC217100CA1A17 /* libBIFoundation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A73235BB1ADC217100CA1A17 /* BIFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A73235BC1ADC217100CA1A17 /* BIFoundation.h */,
+				A73235EA1ADC227000CA1A17 /* Extentions */,
+				A73235EF1ADC227000CA1A17 /* UIExtentions */,
+			);
+			path = BIFoundation;
+			sourceTree = "<group>";
+		};
+		A73235EA1ADC227000CA1A17 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A73235EB1ADC227000CA1A17 /* NSArray+CTExtensions.h */,
+				A73235EC1ADC227000CA1A17 /* NSArray+CTExtensions.m */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		A73235EF1ADC227000CA1A17 /* UIExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				A73235F01ADC227000CA1A17 /* UIButton+CTExtensions.h */,
+				A73235F11ADC227000CA1A17 /* UIButton+CTExtensions.m */,
+				A73235F21ADC227000CA1A17 /* UIView+CTExtensions.h */,
+				A73235F31ADC227000CA1A17 /* UIView+CTExtensions.m */,
+			);
+			path = UIExtentions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A73236021ADC281600CA1A17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73236031ADC282700CA1A17 /* UIView+CTExtensions.h in Headers */,
+				A73236041ADC282B00CA1A17 /* UIButton+CTExtensions.h in Headers */,
+				A73236051ADC282E00CA1A17 /* NSArray+CTExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A73235B81ADC217100CA1A17 /* BIFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A73235CD1ADC217100CA1A17 /* Build configuration list for PBXNativeTarget "BIFoundation" */;
+			buildPhases = (
+				A73235B51ADC217100CA1A17 /* Sources */,
+				A73235B61ADC217100CA1A17 /* Frameworks */,
+				A73235B71ADC217100CA1A17 /* CopyFiles */,
+				A73236021ADC281600CA1A17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BIFoundation;
+			productName = BIFoundation;
+			productReference = A73235B91ADC217100CA1A17 /* libBIFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A73235B11ADC217100CA1A17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Bike;
+				TargetAttributes = {
+					A73235B81ADC217100CA1A17 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = A73235B41ADC217100CA1A17 /* Build configuration list for PBXProject "BIFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A73235B01ADC217100CA1A17;
+			productRefGroup = A73235BA1ADC217100CA1A17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A73235B81ADC217100CA1A17 /* BIFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A73235B51ADC217100CA1A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73235F41ADC227000CA1A17 /* NSArray+CTExtensions.m in Sources */,
+				A73235F61ADC227000CA1A17 /* UIButton+CTExtensions.m in Sources */,
+				A73235F71ADC227000CA1A17 /* UIView+CTExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A73235CB1ADC217100CA1A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A73235CC1ADC217100CA1A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A73235CE1ADC217100CA1A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A73235CF1ADC217100CA1A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A73235B41ADC217100CA1A17 /* Build configuration list for PBXProject "BIFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73235CB1ADC217100CA1A17 /* Debug */,
+				A73235CC1ADC217100CA1A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A73235CD1ADC217100CA1A17 /* Build configuration list for PBXNativeTarget "BIFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A73235CE1ADC217100CA1A17 /* Debug */,
+				A73235CF1ADC217100CA1A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A73235B11ADC217100CA1A17 /* Project object */;
+}

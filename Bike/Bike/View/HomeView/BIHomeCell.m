@@ -8,9 +8,12 @@
 
 #import "BIHomeCell.h"
 #import "coupons.h"
+#import "UIView+CTExtensions.h"
+
 
 @interface BIHomeCell(){
     UILabel *lbl;
+    UIImageView *img;
 }
 
 @end
@@ -28,14 +31,23 @@
 }
 
 - (void)updateCell:(id)model{
-    if(!lbl){
-        lbl = [[UILabel alloc]initWithFrame:self.frame];
-        [self addSubview:lbl];
-    }
+    [self createCellContentView];
     
     coupons *md = (coupons *)model;
     lbl.text = md.cid;
     lbl.font = [UIFont systemFontOfSize:15.0];
+}
+
+- (void)createCellContentView{
+    if(!lbl){
+        lbl = [[UILabel alloc]init];
+        [self addSubview:lbl];
+    }
+    if(!img){
+        img = [[UIImageView alloc]init];
+    }
+    
+    
 }
 
 @end

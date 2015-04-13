@@ -9,6 +9,21 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Pods-FlatUIKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-GCJSONKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-TAOverlay.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,12 +32,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>14571B4053545FD969CDAB2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>242D322E0ECA812113AB10BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2752B0F7ABEF6BDC3064E6B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4C68B215DF824615755D5262</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55D24BC798B3BD712E9F3C47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D41596582E71F34F5B21E5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE6553CE5D0C46D84E31A570</key>
 		<dict>
 			<key>primary</key>
 			<true/>
