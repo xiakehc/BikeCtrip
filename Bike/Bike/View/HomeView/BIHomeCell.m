@@ -8,7 +8,8 @@
 
 #import "BIHomeCell.h"
 #import "coupons.h"
-
+#import "UIImageView+WebCache.h"
+#import "BIAPIService.h"
 
 @interface BIHomeCell(){
     UILabel *lbl;
@@ -35,7 +36,15 @@
     coupons *md = (coupons *)model;
     lbl.text = md.cid;
     lbl.font = [UIFont systemFontOfSize:15.0];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",[BIAPIService getClientAppAPIBaseURLString],md.cpic]];
+    [img sd_setImageWithPreviousCachedImageWithURL:url andPlaceholderImage:[UIImage imageNamed:@"overlay.png"] options:SDWebImageDelayPlaceholder progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        BILog(@"%ld",receivedSize/expectedSize);
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        BILog(@"loadSuccess %@",imageURL);
+    }];
     
+//    CTShowViewBounds(lbl, [UIColor redColor]);
+//    CTShowViewBounds(img, [UIColor greenColor]);
 }
 
 - (void)createCellContentView{
@@ -45,6 +54,7 @@
     }
     if(!img){
         img = [[UIImageView alloc]init];
+        [self addSubview:img];
     }
     
     img.frame = CGRectMake(0, 0, self.viewHeight, self.viewHeight);

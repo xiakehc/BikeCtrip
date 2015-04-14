@@ -23,5 +23,9 @@ static NSString * const AFAppAPIBaseURLString = @"http://www.ruo-bl.com/";
     return _sharedClient;
 }
 
++ (NSString*)getClientAppAPIBaseURLString{
+    return AFAppAPIBaseURLString;
+}
+
 @end
 

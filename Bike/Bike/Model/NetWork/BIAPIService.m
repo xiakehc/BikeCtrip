@@ -7,6 +7,8 @@
 //
 
 #import "BIAPIService.h"
+#import "BIRequestOperationManager.h"
+
 @interface BIAPIService(){
 }
 @end
@@ -21,6 +23,10 @@
     });
     
     return sharedBIAPIService;
+}
+
++ (NSString*)getClientAppAPIBaseURLString{
+    return [BIRequestOperationManager getClientAppAPIBaseURLString];
 }
 
 /**

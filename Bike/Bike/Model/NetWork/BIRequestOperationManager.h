@@ -12,4 +12,6 @@
 
 + (instancetype)sharedClient ;
 
++ (NSString*)getClientAppAPIBaseURLString;
+
 @end

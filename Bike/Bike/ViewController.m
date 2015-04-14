@@ -39,7 +39,7 @@
     [self.mTableView registerClass:[BIHomeCell class] forCellReuseIdentifier:@"BIHomeCellIdentifier"];
     [self.view addSubview:self.mTableView];
 
-    [TAOverlay showOverlayWithLabel:@"骑呀骑呀..." Options:TAOverlayOptionOverlayTypeActivityLeaf|TAOverlayOptionOverlaySizeFullScreen];
+    [self startLoading];
     
     [[BIAPIService shareInstance] getRequest:kTestURL witParam:nil withSuccessBlock:^(id response) {
         BILog(@"%@",response);
@@ -47,12 +47,20 @@
         _dataList = [NSJSONParsing jsonParsing:arrlist WithType:ENUM_CLASSMODEL_COUPONS];
         
         [self.mTableView reloadData];
-        [TAOverlay hideOverlay];
-        
+        [self hideLoading];
     } withFailBlock:^(NSString *erroeMsg) {
         BILog(@"%@", erroeMsg);
+        [self performSelector:@selector(hideLoading) withObject:nil afterDelay:1.5];
+        [TAOverlay showOverlayWithLabel:erroeMsg Options:TAOverlayOptionOverlayTypeError];
     }];
-    
+}
+
+- (void)hideLoading{
+    [TAOverlay hideOverlay];
+}
+
+- (void)startLoading{
+    [TAOverlay showOverlayWithLabel:@"骑呀骑呀..." Options:TAOverlayOptionOverlayTypeActivityLeaf|TAOverlayOptionOverlaySizeFullScreen];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,7 +80,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44;
+    return 50;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

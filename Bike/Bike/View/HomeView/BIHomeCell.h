@@ -6,7 +6,6 @@
 //  Copyright (c) 2015年 kyu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "BIBaseTableViewCell.h"
 
 @interface BIHomeCell : BIBaseTableViewCell

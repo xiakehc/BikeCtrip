@@ -7,6 +7,7 @@
 //
 
 #import "BIUtilNetWork.h"
+#import "AFNetworkReachabilityManager.h"
 
 @implementation BIUtilNetWork
 

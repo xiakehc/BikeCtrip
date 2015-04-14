@@ -1,4 +1,4 @@
-//
+//  底层统一API接口
 //  BIAPIService.h
 //  Bike
 //
@@ -7,7 +7,6 @@
 //  API
 
 #import <Foundation/Foundation.h>
-#import "BIRequestOperationManager.h"
 
 /*service success callback*/
 typedef void (^serviceSuccessBlock)(id response);
@@ -20,6 +19,8 @@ typedef void (^serviceFailBlock)(NSString* erroeMsg);
 
 /*singal model*/
 + (BIAPIService *)shareInstance;
+
++ (NSString*)getClientAppAPIBaseURLString;
 
 /**
  *  GET - JSON
