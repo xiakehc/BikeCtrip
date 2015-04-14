@@ -19,6 +19,16 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>Pods-HJRSeparatableView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Pods-SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Pods-TAOverlay.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +43,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>14571B4053545FD969CDAB2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1BE4CF35AA1BAE0A5F74A613</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>215F3177FA47C915020D95D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +77,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5D518D81A5DF6B4E83D7C594</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63088D68C29F1F376E84ACED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7D41596582E71F34F5B21E5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>855A1439BD3017E2F55D4AE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1043668B7B8D3BC59E4ACDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BBC3C7A8A8598227E5EA19FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

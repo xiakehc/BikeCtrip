@@ -31,6 +31,7 @@
 		A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94641AD8CF6900B31F66 /* BIUtilColor.m */; };
 		A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA946A1AD8F16A00B31F66 /* BIUtilString.m */; };
 		A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */; };
+		A7DC35B41ADD7C49006A6EE1 /* BIScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DC35B31ADD7C49006A6EE1 /* BIScrollImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		A7CA946F1AD8F3A800B31F66 /* BILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILog.h; sourceTree = "<group>"; };
 		A7CA94701AD8F7E200B31F66 /* BIUtilDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilDate.h; sourceTree = "<group>"; };
 		A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilDate.m; sourceTree = "<group>"; };
+		A7DC35B21ADD7C49006A6EE1 /* BIScrollImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIScrollImageView.h; sourceTree = "<group>"; };
+		A7DC35B31ADD7C49006A6EE1 /* BIScrollImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIScrollImageView.m; sourceTree = "<group>"; };
 		DF7202F3F892E5B9AD7FB20E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -245,6 +248,8 @@
 		599A36641ADBB32B0052E642 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				A7DC35B21ADD7C49006A6EE1 /* BIScrollImageView.h */,
+				A7DC35B31ADD7C49006A6EE1 /* BIScrollImageView.m */,
 				599A36651ADBB35A0052E642 /* BIHomeCell.h */,
 				599A36661ADBB35A0052E642 /* BIHomeCell.m */,
 				599A36681ADBB48A0052E642 /* BIBaseTableViewCell.h */,
@@ -521,6 +526,7 @@
 				A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */,
 				599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */,
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
+				A7DC35B41ADD7C49006A6EE1 /* BIScrollImageView.m in Sources */,
 				591E2B071ADD00CE00280FDA /* UISeparatableTableViewCell.m in Sources */,
 				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
 				591E2B151ADD469700280FDA /* BIDetailCell.m in Sources */,

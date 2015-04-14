@@ -7,7 +7,6 @@
 //
 
 #import "BIHomeCell.h"
-
 #import "UIImageView+WebCache.h"
 #import "BIAPIService.h"
 
