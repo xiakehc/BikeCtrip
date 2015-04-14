@@ -31,6 +31,8 @@
 }
 
 - (void)updateCell:(id)model{
+    [super initWithFrame:self.frame separateMode:UISeparatableViewSeparateModeNone];
+    
     [self createCellContentView];
     
     coupons *md = (coupons *)model;
@@ -43,8 +45,7 @@
         BILog(@"loadSuccess %@",imageURL);
     }];
     
-//    CTShowViewBounds(lbl, [UIColor redColor]);
-//    CTShowViewBounds(img, [UIColor greenColor]);
+    [self setSeparateMode:UISeparatableViewSeparateModeBottom];
 }
 
 - (void)createCellContentView{

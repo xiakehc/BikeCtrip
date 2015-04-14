@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UISeparatableTableViewCell.h"
 
-@interface BIBaseTableViewCell : UITableViewCell
+@interface BIBaseTableViewCell : UISeparatableTableViewCell
 
 - (void)updateCell:(id)model;
 

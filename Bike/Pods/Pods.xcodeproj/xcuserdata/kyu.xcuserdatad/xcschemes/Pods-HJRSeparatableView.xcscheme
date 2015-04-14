@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1043668B7B8D3BC59E4ACDC"
-               BuildableName = "libPods-TAOverlay.a"
-               BlueprintName = "Pods-TAOverlay"
+               BlueprintIdentifier = "1BE4CF35AA1BAE0A5F74A613"
+               BuildableName = "libPods-HJRSeparatableView.a"
+               BlueprintName = "Pods-HJRSeparatableView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

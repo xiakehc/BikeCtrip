@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "271B6018A3549EC39658995B"
+               BlueprintIdentifier = "BBC3C7A8A8598227E5EA19FE"
                BuildableName = "libPods-GCJSONKit.a"
                BlueprintName = "Pods-GCJSONKit"
                ReferencedContainer = "container:Pods.xcodeproj">
