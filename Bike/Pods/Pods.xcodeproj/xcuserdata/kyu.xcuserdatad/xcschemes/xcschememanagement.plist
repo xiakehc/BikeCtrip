@@ -8,61 +8,61 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-FlatUIKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-GCJSONKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
+		</dict>
+		<key>Pods-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-TAOverlay.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14571B4053545FD969CDAB2C</key>
+		<key>271B6018A3549EC39658995B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2752B0F7ABEF6BDC3064E6B5</key>
+		<key>4C5F8F7D2D12C3503EDB8593</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>55D24BC798B3BD712E9F3C47</key>
+		<key>53DFDF30DE5897E8ED408AA9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7D41596582E71F34F5B21E5C</key>
+		<key>6CE15FBA6368D29A8EC1A554</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE6553CE5D0C46D84E31A570</key>
+		<key>D3C2C541B837C974D86B2C7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE70D94C126F4E1BB4C1E58F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,7 +8,6 @@
 
 #import "BIHomeCell.h"
 #import "coupons.h"
-#import "UIView+CTExtensions.h"
 
 
 @interface BIHomeCell(){
