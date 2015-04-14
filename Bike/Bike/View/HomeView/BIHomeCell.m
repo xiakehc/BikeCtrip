@@ -7,7 +7,7 @@
 //
 
 #import "BIHomeCell.h"
-#import "coupons.h"
+
 #import "UIImageView+WebCache.h"
 #import "BIAPIService.h"
 
@@ -31,8 +31,8 @@
 }
 
 - (void)updateCell:(id)model{
-    [super initWithFrame:self.frame separateMode:UISeparatableViewSeparateModeNone];
-    
+    id superObj = [super initWithFrame:self.frame separateMode:UISeparatableViewSeparateModeNone];
+    BILog(@"%@",superObj);
     [self createCellContentView];
     
     coupons *md = (coupons *)model;

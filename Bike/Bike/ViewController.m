@@ -89,12 +89,21 @@
         cell = (BIHomeCell*)[[BIHomeCell alloc]init];
     }
     
+    cell.viewHeight = 50;
     [cell updateCell:[_dataList objectAtIndex:indexPath.row]];
+
     
     return cell;
 }
 
-
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSInteger row = indexPath.row;
+    coupons *model = (coupons *)[_dataList objectAtIndex:row];
+    
+    NSString *str = model.cname;
+    UIAlertView *view = [[UIAlertView alloc]initWithTitle:nil message:str delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [view show];
+}
 
 
 

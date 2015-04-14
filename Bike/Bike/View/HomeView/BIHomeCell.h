@@ -7,6 +7,7 @@
 //
 
 #import "BIBaseTableViewCell.h"
+#import "coupons.h"
 
 @interface BIHomeCell : BIBaseTableViewCell
 
