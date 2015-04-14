@@ -159,7 +159,7 @@
 }
 
 // 获取view的最下边的y值
--(CGFloat)viweYBelow
+-(CGFloat)viewYBelow
 {
 	CGRect frame = self.frame;
 	return frame.origin.y + frame.size.height;

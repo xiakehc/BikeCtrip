@@ -36,6 +36,7 @@
     coupons *md = (coupons *)model;
     lbl.text = md.cid;
     lbl.font = [UIFont systemFontOfSize:15.0];
+    
 }
 
 - (void)createCellContentView{
@@ -47,7 +48,8 @@
         img = [[UIImageView alloc]init];
     }
     
-    
+    img.frame = CGRectMake(0, 0, self.viewHeight, self.viewHeight);
+    lbl.frame = CGRectMake(img.viewXRight+15, 10, self.viewWidth-30-img.viewWidth, 15);
 }
 
 @end

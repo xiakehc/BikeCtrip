@@ -51,7 +51,7 @@
 // 获取view的最右边的x值
 -(CGFloat)viewXRight;
 // 获取view的最下边的y值
--(CGFloat)viweYBelow;
+-(CGFloat)viewYBelow;
 
 // Sody modified at 2013.11.12
 /**
