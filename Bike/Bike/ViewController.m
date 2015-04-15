@@ -57,7 +57,8 @@
 //        [TAOverlay showOverlayWithLabel:erroeMsg Options:TAOverlayOptionOverlayTypeError];
 //    }];
     
-    self.imagePlayerView = [[BIScrollImageView alloc]initWithFrame:CGRectMake(0, 0, CURRENTSCREEN_WIDTH, 200)];
+    self.imagePlayerView = [[BIScrollImageView alloc]initWithFrame:CGRectMake(0, 0, CURRENTSCREEN_WIDTH, 100)];
+    self.imagePlayerView.pageControlPosition = ICPageControlPosition_BottomCenter;
     [self.view addSubview:self.imagePlayerView];
 
     NSArray *list = @[[NSURL URLWithString:@"http://www.ghzw.cn/wzsq/UploadFiles_9194/201109/20110915154150869.bmp"],

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59A564021ADE4397000B9536 /* UISeparatableTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A563FE1ADE4397000B9536 /* UISeparatableTableViewCell.h */; };
+		59A564031ADE4397000B9536 /* UISeparatableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A563FF1ADE4397000B9536 /* UISeparatableTableViewCell.m */; };
 		A73235BD1ADC217100CA1A17 /* BIFoundation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A73235BC1ADC217100CA1A17 /* BIFoundation.h */; };
 		A73235F41ADC227000CA1A17 /* NSArray+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A73235EC1ADC227000CA1A17 /* NSArray+CTExtensions.m */; };
 		A73235F61ADC227000CA1A17 /* UIButton+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A73235F11ADC227000CA1A17 /* UIButton+CTExtensions.m */; };
@@ -30,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		59A563FE1ADE4397000B9536 /* UISeparatableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISeparatableTableViewCell.h; sourceTree = "<group>"; };
+		59A563FF1ADE4397000B9536 /* UISeparatableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISeparatableTableViewCell.m; sourceTree = "<group>"; };
 		A73235B91ADC217100CA1A17 /* libBIFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBIFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73235BC1ADC217100CA1A17 /* BIFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIFoundation.h; sourceTree = "<group>"; };
 		A73235EB1ADC227000CA1A17 /* NSArray+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CTExtensions.h"; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59A563FB1ADE4397000B9536 /* UIUtilCommon */ = {
+			isa = PBXGroup;
+			children = (
+				59A563FE1ADE4397000B9536 /* UISeparatableTableViewCell.h */,
+				59A563FF1ADE4397000B9536 /* UISeparatableTableViewCell.m */,
+			);
+			path = UIUtilCommon;
+			sourceTree = "<group>";
+		};
 		A73235B01ADC217100CA1A17 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +86,7 @@
 				A73235BC1ADC217100CA1A17 /* BIFoundation.h */,
 				A73235EA1ADC227000CA1A17 /* Extentions */,
 				A73235EF1ADC227000CA1A17 /* UIExtentions */,
+				59A563FB1ADE4397000B9536 /* UIUtilCommon */,
 			);
 			path = BIFoundation;
 			sourceTree = "<group>";
@@ -105,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73236031ADC282700CA1A17 /* UIView+CTExtensions.h in Headers */,
+				59A564021ADE4397000B9536 /* UISeparatableTableViewCell.h in Headers */,
 				A73236041ADC282B00CA1A17 /* UIButton+CTExtensions.h in Headers */,
 				A73236051ADC282E00CA1A17 /* NSArray+CTExtensions.h in Headers */,
 			);
@@ -169,6 +184,7 @@
 			files = (
 				A73235F41ADC227000CA1A17 /* NSArray+CTExtensions.m in Sources */,
 				A73235F61ADC227000CA1A17 /* UIButton+CTExtensions.m in Sources */,
+				59A564031ADE4397000B9536 /* UISeparatableTableViewCell.m in Sources */,
 				A73235F71ADC227000CA1A17 /* UIView+CTExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +303,7 @@
 				A73235CF1ADC217100CA1A17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

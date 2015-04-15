@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		591E2B021ADCC08100280FDA /* libBIFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73235D91ADC217200CA1A17 /* libBIFoundation.a */; };
-		591E2B071ADD00CE00280FDA /* UISeparatableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E2B061ADD00CE00280FDA /* UISeparatableTableViewCell.m */; };
 		591E2B151ADD469700280FDA /* BIDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E2B141ADD469700280FDA /* BIDetailCell.m */; };
 		591ECA921AD7B90E0007B117 /* BIAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 591ECA911AD7B90E0007B117 /* BIAPIService.m */; };
 		5936B7901AD654FC00227F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936B78F1AD654FC00227F7E /* main.m */; };
@@ -24,6 +23,7 @@
 		599A366A1ADBB48A0052E642 /* BIBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */; };
 		599A36701ADBD09D0052E642 /* overlay_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366E1ADBD09D0052E642 /* overlay_left.png */; };
 		599A36711ADBD09D0052E642 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366F1ADBD09D0052E642 /* overlay.png */; };
+		59A5640D1ADE44F0000B9536 /* BIScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5640C1ADE44F0000B9536 /* BIScrollImageView.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
 		A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */; };
@@ -31,7 +31,6 @@
 		A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94641AD8CF6900B31F66 /* BIUtilColor.m */; };
 		A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA946A1AD8F16A00B31F66 /* BIUtilString.m */; };
 		A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */; };
-		A7DC35B41ADD7C49006A6EE1 /* BIScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DC35B31ADD7C49006A6EE1 /* BIScrollImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		591E2B051ADD00CE00280FDA /* UISeparatableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISeparatableTableViewCell.h; sourceTree = "<group>"; };
-		591E2B061ADD00CE00280FDA /* UISeparatableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISeparatableTableViewCell.m; sourceTree = "<group>"; };
 		591E2B131ADD469700280FDA /* BIDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDetailCell.h; sourceTree = "<group>"; };
 		591E2B141ADD469700280FDA /* BIDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDetailCell.m; sourceTree = "<group>"; };
 		591ECA901AD7B90E0007B117 /* BIAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIAPIService.h; sourceTree = "<group>"; };
@@ -89,6 +86,8 @@
 		599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIBaseTableViewCell.m; sourceTree = "<group>"; };
 		599A366E1ADBD09D0052E642 /* overlay_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_left.png; sourceTree = "<group>"; };
 		599A366F1ADBD09D0052E642 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		59A5640B1ADE44F0000B9536 /* BIScrollImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIScrollImageView.h; sourceTree = "<group>"; };
+		59A5640C1ADE44F0000B9536 /* BIScrollImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIScrollImageView.m; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BIFoundation.xcodeproj; path = BIFoundation/BIFoundation.xcodeproj; sourceTree = "<group>"; };
@@ -105,8 +104,6 @@
 		A7CA946F1AD8F3A800B31F66 /* BILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILog.h; sourceTree = "<group>"; };
 		A7CA94701AD8F7E200B31F66 /* BIUtilDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilDate.h; sourceTree = "<group>"; };
 		A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilDate.m; sourceTree = "<group>"; };
-		A7DC35B21ADD7C49006A6EE1 /* BIScrollImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIScrollImageView.h; sourceTree = "<group>"; };
-		A7DC35B31ADD7C49006A6EE1 /* BIScrollImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIScrollImageView.m; sourceTree = "<group>"; };
 		DF7202F3F892E5B9AD7FB20E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -248,14 +245,10 @@
 		599A36641ADBB32B0052E642 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				A7DC35B21ADD7C49006A6EE1 /* BIScrollImageView.h */,
-				A7DC35B31ADD7C49006A6EE1 /* BIScrollImageView.m */,
 				599A36651ADBB35A0052E642 /* BIHomeCell.h */,
 				599A36661ADBB35A0052E642 /* BIHomeCell.m */,
 				599A36681ADBB48A0052E642 /* BIBaseTableViewCell.h */,
 				599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */,
-				591E2B051ADD00CE00280FDA /* UISeparatableTableViewCell.h */,
-				591E2B061ADD00CE00280FDA /* UISeparatableTableViewCell.m */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -267,6 +260,23 @@
 				599A366F1ADBD09D0052E642 /* overlay.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		59A564091ADE44F0000B9536 /* UtilView */ = {
+			isa = PBXGroup;
+			children = (
+				59A5640A1ADE44F0000B9536 /* AutoScrollImageView */,
+			);
+			path = UtilView;
+			sourceTree = "<group>";
+		};
+		59A5640A1ADE44F0000B9536 /* AutoScrollImageView */ = {
+			isa = PBXGroup;
+			children = (
+				59A5640B1ADE44F0000B9536 /* BIScrollImageView.h */,
+				59A5640C1ADE44F0000B9536 /* BIScrollImageView.m */,
+			);
+			path = AutoScrollImageView;
 			sourceTree = "<group>";
 		};
 		9199391287573D0875A26A97 /* Frameworks */ = {
@@ -309,6 +319,7 @@
 		A7C758561AD6C70E00640F90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				59A564091ADE44F0000B9536 /* UtilView */,
 				599A36641ADBB32B0052E642 /* HomeView */,
 				591E2B121ADD467B00280FDA /* DetailView */,
 			);
@@ -526,9 +537,8 @@
 				A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */,
 				599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */,
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
-				A7DC35B41ADD7C49006A6EE1 /* BIScrollImageView.m in Sources */,
-				591E2B071ADD00CE00280FDA /* UISeparatableTableViewCell.m in Sources */,
 				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
+				59A5640D1ADE44F0000B9536 /* BIScrollImageView.m in Sources */,
 				591E2B151ADD469700280FDA /* BIDetailCell.m in Sources */,
 				A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */,
 				591ECA921AD7B90E0007B117 /* BIAPIService.m in Sources */,
