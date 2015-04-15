@@ -1,9 +1,9 @@
-//  轮询滚动图片
-//  BIScrollImageView.h
+//
+//  ImagePlayerView.h
 //  ImagePlayerView
 //
-//  Created by Yuki on 15/4/14.
-//  Copyright (c) 2015年 Chenyanjun. All rights reserved.
+//  Created by 陈颜俊 on 14-6-5.
+//  Copyright (c) 2014年 Chenyanjun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -17,16 +17,14 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
     ICPageControlPosition_BottomRight
 };
 
-@protocol BIScrollImageViewDelegate;
+@protocol ImagePlayerViewDelegate;
 
-@interface BIScrollImageView : UIView
-
-@property (nonatomic,assign) id<BIScrollImageViewDelegate> imagePlayerViewDelegate;
-@property (nonatomic,assign) BOOL autoScroll;   // default is YES, set NO to turn off autoScroll
-@property (nonatomic,assign) NSInteger scrollInterval; // scroll interval, unit: second, default is 2 seconds
+@interface ImagePlayerView : UIView
+@property (nonatomic, assign) id<ImagePlayerViewDelegate> imagePlayerViewDelegate;
+@property (nonatomic, assign) BOOL autoScroll;  // default is YES, set NO to turn off autoScroll
+@property (nonatomic, assign) NSUInteger scrollInterval;    // scroll interval, unit: second, default is 2 seconds
 @property (nonatomic, assign) ICPageControlPosition pageControlPosition;    // pageControl position, defautl is bottomright
 @property (nonatomic, assign) BOOL hidePageControl; // hide pageControl, default is NO
-
 
 /**
  *  Init image player
@@ -36,7 +34,7 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
  *  @param delegate    delegate
  *  @deprecated use - (void)initWithCount:(NSInteger)count delegate:(id<ImagePlayerViewDelegate>)delegate instead
  */
-- (void)initWithImageURLs:(NSArray *)imageURLs placeholder:(UIImage *)placeholder delegate:(id<BIScrollImageViewDelegate>)delegate;
+- (void)initWithImageURLs:(NSArray *)imageURLs placeholder:(UIImage *)placeholder delegate:(id<ImagePlayerViewDelegate>)delegate DEPRECATED_ATTRIBUTE;
 
 /**
  *  Init image player
@@ -47,7 +45,7 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
  *  @param edgeInsets  scroll view edgeInsets
  *  @deprecated use - (void)initWithCount:(NSInteger)count delegate:(id<ImagePlayerViewDelegate>)delegate edgeInsets:(UIEdgeInsets)edgeInsets instead
  */
-- (void)initWithImageURLs:(NSArray *)imageURLs placeholder:(UIImage *)placeholder delegate:(id<BIScrollImageViewDelegate>)delegate edgeInsets:(UIEdgeInsets)edgeInsets DEPRECATED_ATTRIBUTE;
+- (void)initWithImageURLs:(NSArray *)imageURLs placeholder:(UIImage *)placeholder delegate:(id<ImagePlayerViewDelegate>)delegate edgeInsets:(UIEdgeInsets)edgeInsets DEPRECATED_ATTRIBUTE;
 
 /**
  *  Init image player
@@ -55,7 +53,7 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
  *  @param count
  *  @param delegate
  */
-//- (void)initWithCount:(NSInteger)count delegate:(id<BIScrollImageViewDelegate>)delegate;
+- (void)initWithCount:(NSInteger)count delegate:(id<ImagePlayerViewDelegate>)delegate;
 
 /**
  *  Init image player
@@ -64,11 +62,10 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
  *  @param delegate
  *  @param edgeInsets scroll view edgeInsets
  */
-//- (void)initWithCount:(NSInteger)count delegate:(id<BIScrollImageViewDelegate>)delegate edgeInsets:(UIEdgeInsets)edgeInsets;
-
+- (void)initWithCount:(NSInteger)count delegate:(id<ImagePlayerViewDelegate>)delegate edgeInsets:(UIEdgeInsets)edgeInsets;
 @end
 
-@protocol BIScrollImageViewDelegate <NSObject>
+@protocol ImagePlayerViewDelegate <NSObject>
 
 @required
 /**
@@ -78,7 +75,7 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
  *  @param imageView       UIImageView object
  *  @param index           index of imageview
  */
-//- (void)imagePlayerView:(BIScrollImageView *)imagePlayerView loadImageForImageView:(UIImageView *)imageView index:(NSInteger)index;
+- (void)imagePlayerView:(ImagePlayerView *)imagePlayerView loadImageForImageView:(UIImageView *)imageView index:(NSInteger)index;
 
 @optional
 /**
@@ -89,7 +86,7 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
  *  @param imageURL        image url
  *  @deprecated use - (void)imagePlayerView:(ImagePlayerView *)imagePlayerView didTapAtIndex:(NSInteger)index instead
  */
-//- (void)imagePlayerView:(BIScrollImageView *)imagePlayerView didTapAtIndex:(NSInteger)index imageURL:(NSURL *)imageURL DEPRECATED_ATTRIBUTE;
+- (void)imagePlayerView:(ImagePlayerView *)imagePlayerView didTapAtIndex:(NSInteger)index imageURL:(NSURL *)imageURL DEPRECATED_ATTRIBUTE;
 
 /**
  *  Tap ImageView action
@@ -97,12 +94,5 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
  *  @param imagePlayerView ImagePlayerView object
  *  @param index           index of imageview
  */
-//- (void)imagePlayerView:(BIScrollImageView *)imagePlayerView didTapAtIndex:(NSInteger)index;
-
-/**
- *  Tap ImageView Index
- *
- *  @param index
- */
-- (void)imagePlayerViewDidTapAtIndex:(NSInteger)index;
+- (void)imagePlayerView:(ImagePlayerView *)imagePlayerView didTapAtIndex:(NSInteger)index;
 @end

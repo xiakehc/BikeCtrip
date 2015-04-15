@@ -8,6 +8,7 @@
 
 #import "BIBaseTableViewCell.h"
 #import "coupons.h"
+#import "UIImageView+WebCache.h"
 
 @interface BIHomeCell : BIBaseTableViewCell
 
