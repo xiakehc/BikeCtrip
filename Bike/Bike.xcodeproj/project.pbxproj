@@ -27,6 +27,7 @@
 		59A564301ADE5975000B9536 /* BIListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5642F1ADE5975000B9536 /* BIListCell.m */; };
 		59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564331ADE73B2000B9536 /* BIListViewController.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
+		A761908E1ADEB4AB00967F99 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A761908D1ADEB4AB00967F99 /* banner.png */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
 		A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */; };
 		A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94611AD8CD2100B31F66 /* BIRequestOperationManager.m */; };
@@ -97,6 +98,7 @@
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BIFoundation.xcodeproj; path = BIFoundation/BIFoundation.xcodeproj; sourceTree = "<group>"; };
+		A761908D1ADEB4AB00967F99 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		A79A9E9A1AD90F55006B522C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A7CA945D1AD8C1D500B31F66 /* BIUtilNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilNetWork.h; sourceTree = "<group>"; };
 		A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilNetWork.m; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 		599A366D1ADBCEA10052E642 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A761908D1ADEB4AB00967F99 /* banner.png */,
 				599A366E1ADBD09D0052E642 /* overlay_left.png */,
 				599A366F1ADBD09D0052E642 /* overlay.png */,
 			);
@@ -482,6 +485,7 @@
 			files = (
 				599A36711ADBD09D0052E642 /* overlay.png in Resources */,
 				5936B7991AD654FC00227F7E /* Main.storyboard in Resources */,
+				A761908E1ADEB4AB00967F99 /* banner.png in Resources */,
 				5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */,
 				5936B79B1AD654FC00227F7E /* Images.xcassets in Resources */,
 				599A36701ADBD09D0052E642 /* overlay_left.png in Resources */,

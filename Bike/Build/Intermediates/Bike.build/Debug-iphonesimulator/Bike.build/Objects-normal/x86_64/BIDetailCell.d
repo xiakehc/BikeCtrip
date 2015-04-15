@@ -7,4 +7,4 @@ dependencies: \
   CTLib/BIFoundation/BIFoundation/UIExtentions/UIView+CTExtensions.h \
   /Project/github/BikeCtrip/Bike/Bike/View/DetailView/BIDetailCell.h \
   /Project/github/BikeCtrip/Bike/Bike/View/HomeView/BIBaseTableViewCell.h \
-  /Project/github/BikeCtrip/Bike/Bike/View/HomeView/UISeparatableTableViewCell.h
+  CTLib/BIFoundation/BIFoundation/UIUtilCommon/UISeparatableTableViewCell.h
