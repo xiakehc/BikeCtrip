@@ -99,5 +99,10 @@ typedef NS_ENUM(NSInteger, ICPageControlPosition) {
  */
 //- (void)imagePlayerView:(BIScrollImageView *)imagePlayerView didTapAtIndex:(NSInteger)index;
 
+/**
+ *  Tap ImageView Index
+ *
+ *  @param index
+ */
 - (void)imagePlayerViewDidTapAtIndex:(NSInteger)index;
 @end
