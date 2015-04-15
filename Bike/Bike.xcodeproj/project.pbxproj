@@ -25,6 +25,7 @@
 		599A36711ADBD09D0052E642 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366F1ADBD09D0052E642 /* overlay.png */; };
 		59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564111ADE4F54000B9536 /* ImagePlayerView.m */; };
 		59A564301ADE5975000B9536 /* BIListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5642F1ADE5975000B9536 /* BIListCell.m */; };
+		59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564331ADE73B2000B9536 /* BIListViewController.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
 		A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */; };
@@ -91,6 +92,8 @@
 		59A564111ADE4F54000B9536 /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		59A5642E1ADE5975000B9536 /* BIListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListCell.h; sourceTree = "<group>"; };
 		59A5642F1ADE5975000B9536 /* BIListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIListCell.m; sourceTree = "<group>"; };
+		59A564321ADE73B2000B9536 /* BIListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListViewController.h; sourceTree = "<group>"; };
+		59A564331ADE73B2000B9536 /* BIListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIListViewController.m; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BIFoundation.xcodeproj; path = BIFoundation/BIFoundation.xcodeproj; sourceTree = "<group>"; };
@@ -342,6 +345,8 @@
 		A7C758571AD6C71C00640F90 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				59A564321ADE73B2000B9536 /* BIListViewController.h */,
+				59A564331ADE73B2000B9536 /* BIListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -548,6 +553,7 @@
 				A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */,
 				5936B7961AD654FC00227F7E /* ViewController.m in Sources */,
 				A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */,
+				59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */,
 				599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */,
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
 				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
