@@ -24,6 +24,7 @@
 		599A36701ADBD09D0052E642 /* overlay_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366E1ADBD09D0052E642 /* overlay_left.png */; };
 		599A36711ADBD09D0052E642 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366F1ADBD09D0052E642 /* overlay.png */; };
 		59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564111ADE4F54000B9536 /* ImagePlayerView.m */; };
+		59A564301ADE5975000B9536 /* BIListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5642F1ADE5975000B9536 /* BIListCell.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
 		A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */; };
@@ -88,6 +89,8 @@
 		599A366F1ADBD09D0052E642 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
 		59A564101ADE4F54000B9536 /* ImagePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePlayerView.h; sourceTree = "<group>"; };
 		59A564111ADE4F54000B9536 /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
+		59A5642E1ADE5975000B9536 /* BIListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListCell.h; sourceTree = "<group>"; };
+		59A5642F1ADE5975000B9536 /* BIListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIListCell.m; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BIFoundation.xcodeproj; path = BIFoundation/BIFoundation.xcodeproj; sourceTree = "<group>"; };
@@ -279,6 +282,15 @@
 			path = AutoScrollImageView;
 			sourceTree = "<group>";
 		};
+		59A5642D1ADE592D000B9536 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				59A5642E1ADE5975000B9536 /* BIListCell.h */,
+				59A5642F1ADE5975000B9536 /* BIListCell.m */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
 		9199391287573D0875A26A97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,8 +331,9 @@
 		A7C758561AD6C70E00640F90 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				59A564091ADE44F0000B9536 /* UtilView */,
+				59A5642D1ADE592D000B9536 /* ListView */,
 				599A36641ADBB32B0052E642 /* HomeView */,
+				59A564091ADE44F0000B9536 /* UtilView */,
 				591E2B121ADD467B00280FDA /* DetailView */,
 			);
 			path = View;
@@ -545,6 +558,7 @@
 				599A365F1ADBA4960052E642 /* NSJSONParsing.m in Sources */,
 				A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */,
 				5936B7901AD654FC00227F7E /* main.m in Sources */,
+				59A564301ADE5975000B9536 /* BIListCell.m in Sources */,
 				599A36631ADBA5890052E642 /* coupons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
