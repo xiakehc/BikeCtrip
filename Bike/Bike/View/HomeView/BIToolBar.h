@@ -10,4 +10,6 @@
 
 @interface BIToolBar : UIView
 
+- (instancetype)initWithFrame:(CGRect)frame;
+
 @end

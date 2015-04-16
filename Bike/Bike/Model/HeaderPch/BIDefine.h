@@ -43,4 +43,4 @@ while(0)
 
 #define kCTHotelIPad   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define kCTHotelIPadRetina   ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)&&([UIScreen mainScreen].scale == 2))
-#define isRetina   ([UIScreen mainScreen].scale > 1)s
+#define isRetina   ([UIScreen mainScreen].scale > 1)

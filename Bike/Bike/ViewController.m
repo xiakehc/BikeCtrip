@@ -10,8 +10,8 @@
 #import "ImagePlayerView.h"
 #import "UIImageView+WebCache.h"
 #import "BIModuleVIew.h"
-#import "BIDefine.h"
-
+//#import "BIDefine.h"
+#import "BIToolBar.h"
 
 @interface ViewController ()<ImagePlayerViewDelegate>
 @property (weak, nonatomic) IBOutlet ImagePlayerView *imagePlayerView;
@@ -31,24 +31,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //Adver
-//    self.imageURLs = @[[NSURL URLWithString:@"http://www.ghzw.cn/wzsq/UploadFiles_9194/201109/20110915154150869.bmp"],
-//                       [NSURL URLWithString:@"http://sudasuta.com/wp-content/uploads/2013/10/10143181686_375e063f2c_z.jpg"],
-//                       [NSURL URLWithString:@"http://www.yancheng.gov.cn/ztzl/zgycddhsdgy/xwdt/201109/W020110902584601289616.jpg"],
-//                       [NSURL URLWithString:@"http://a.hiphotos.baidu.com/image/w%3D2048/sign=f0457b80be3eb13544c7b0bb9226a9d3/a5c27d1ed21b0ef46b9acf36dfc451da81cb3e63.jpg"]
-//                       ];
-//    
-//    [self.imagePlayerView initWithCount:self.imageURLs.count delegate:self];
-//    self.imagePlayerView.scrollInterval = 2.0f;
-//    self.imagePlayerView.pageControlPosition = ICPageControlPosition_BottomCenter;
-//    self.imagePlayerView.hidePageControl = NO;
-//    
-//    [self initHomePageContentView];
-    
+    [self initAdver];
+    [self initHomePageContentView];
     [self initToolBar];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initAdver{
+    self.imageURLs = @[[NSURL URLWithString:@"http://www.ghzw.cn/wzsq/UploadFiles_9194/201109/20110915154150869.bmp"],
+                       [NSURL URLWithString:@"http://sudasuta.com/wp-content/uploads/2013/10/10143181686_375e063f2c_z.jpg"],
+                       [NSURL URLWithString:@"http://www.yancheng.gov.cn/ztzl/zgycddhsdgy/xwdt/201109/W020110902584601289616.jpg"],
+                       [NSURL URLWithString:@"http://a.hiphotos.baidu.com/image/w%3D2048/sign=f0457b80be3eb13544c7b0bb9226a9d3/a5c27d1ed21b0ef46b9acf36dfc451da81cb3e63.jpg"]
+                       ];
+    
+    [self.imagePlayerView initWithCount:self.imageURLs.count delegate:self];
+    self.imagePlayerView.scrollInterval = 2.0f;
+    self.imagePlayerView.pageControlPosition = ICPageControlPosition_BottomCenter;
+    self.imagePlayerView.hidePageControl = NO;
 }
 
 - (void)initHomePageContentView{
@@ -123,7 +125,9 @@
 }
 
 - (void)initToolBar{
-    
+    self.toolbar.viewWidth = self.view.viewWidth;
+    BIToolBar *toolbar = [[BIToolBar alloc]initWithFrame:self.toolbar.frame];
+    [self.toolbar addSubview:toolbar];
 }
 
 #pragma mark - ImagePlayerViewDelegate
@@ -138,9 +142,5 @@
 {
     NSLog(@"did tap index = %d", (int)index);
 }
-
-
-
-
 
 @end
