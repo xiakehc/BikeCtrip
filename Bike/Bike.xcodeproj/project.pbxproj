@@ -28,6 +28,10 @@
 		59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564331ADE73B2000B9536 /* BIListViewController.m */; };
 		59A978A31ADF8FDF00F5EABB /* BIModuleVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978A21ADF8FDF00F5EABB /* BIModuleVIew.m */; };
 		59A978A61ADF907000F5EABB /* BIModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978A51ADF907000F5EABB /* BIModuleModel.m */; };
+		59A978DD1ADFBE3500F5EABB /* BIToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978DC1ADFBE3500F5EABB /* BIToolBar.m */; };
+		59A978E31ADFC1C000F5EABB /* Activity.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A978DE1ADFC1C000F5EABB /* Activity.png */; };
+		59A978E51ADFC1C000F5EABB /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A978E11ADFC1C000F5EABB /* Home.png */; };
+		59A978E61ADFC1C000F5EABB /* Person.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A978E21ADFC1C000F5EABB /* Person.png */; };
 		59DC044E1ADF8179003FD49B /* detination.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DC04481ADF8179003FD49B /* detination.png */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A761908E1ADEB4AB00967F99 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A761908D1ADEB4AB00967F99 /* banner.png */; };
@@ -102,6 +106,11 @@
 		59A978A21ADF8FDF00F5EABB /* BIModuleVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIModuleVIew.m; sourceTree = "<group>"; };
 		59A978A41ADF907000F5EABB /* BIModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIModuleModel.h; sourceTree = "<group>"; };
 		59A978A51ADF907000F5EABB /* BIModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIModuleModel.m; sourceTree = "<group>"; };
+		59A978DB1ADFBE3500F5EABB /* BIToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIToolBar.h; sourceTree = "<group>"; };
+		59A978DC1ADFBE3500F5EABB /* BIToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIToolBar.m; sourceTree = "<group>"; };
+		59A978DE1ADFC1C000F5EABB /* Activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Activity.png; sourceTree = "<group>"; };
+		59A978E11ADFC1C000F5EABB /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		59A978E21ADFC1C000F5EABB /* Person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Person.png; sourceTree = "<group>"; };
 		59DC04481ADF8179003FD49B /* detination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detination.png; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +278,8 @@
 				59A978A21ADF8FDF00F5EABB /* BIModuleVIew.m */,
 				59A978A41ADF907000F5EABB /* BIModuleModel.h */,
 				59A978A51ADF907000F5EABB /* BIModuleModel.m */,
+				59A978DB1ADFBE3500F5EABB /* BIToolBar.h */,
+				59A978DC1ADFBE3500F5EABB /* BIToolBar.m */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -277,6 +288,9 @@
 			isa = PBXGroup;
 			children = (
 				59DC04461ADF8179003FD49B /* home */,
+				59A978DE1ADFC1C000F5EABB /* Activity.png */,
+				59A978E11ADFC1C000F5EABB /* Home.png */,
+				59A978E21ADFC1C000F5EABB /* Person.png */,
 				A761908D1ADEB4AB00967F99 /* banner.png */,
 				599A366E1ADBD09D0052E642 /* overlay_left.png */,
 				599A366F1ADBD09D0052E642 /* overlay.png */,
@@ -505,9 +519,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				599A36711ADBD09D0052E642 /* overlay.png in Resources */,
+				59A978E61ADFC1C000F5EABB /* Person.png in Resources */,
 				5936B7991AD654FC00227F7E /* Main.storyboard in Resources */,
+				59A978E51ADFC1C000F5EABB /* Home.png in Resources */,
 				A761908E1ADEB4AB00967F99 /* banner.png in Resources */,
 				5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */,
+				59A978E31ADFC1C000F5EABB /* Activity.png in Resources */,
 				5936B79B1AD654FC00227F7E /* Images.xcassets in Resources */,
 				599A36701ADBD09D0052E642 /* overlay_left.png in Resources */,
 				59DC044E1ADF8179003FD49B /* detination.png in Resources */,
@@ -591,6 +608,7 @@
 				599A365F1ADBA4960052E642 /* NSJSONParsing.m in Sources */,
 				A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */,
 				5936B7901AD654FC00227F7E /* main.m in Sources */,
+				59A978DD1ADFBE3500F5EABB /* BIToolBar.m in Sources */,
 				59A978A61ADF907000F5EABB /* BIModuleModel.m in Sources */,
 				59A564301ADE5975000B9536 /* BIListCell.m in Sources */,
 				599A36631ADBA5890052E642 /* coupons.m in Sources */,
