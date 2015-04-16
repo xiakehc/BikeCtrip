@@ -68,22 +68,6 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCb-oN-acy" userLabel="toolbar">
                                 <rect key="frame" x="0.0" y="540" width="600" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwf-c5-ykw">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
-                                        <state key="normal" title="当地攻略">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-hY-abR">
-                                        <rect key="frame" x="80" y="0.0" width="80" height="60"/>
-                                        <state key="normal" title="当地攻略">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0Qp-Tx-jML"/>
@@ -109,6 +93,7 @@
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="imagePlayerView" destination="P9S-Vj-DQL" id="x7v-fH-Krc"/>
+                        <outlet property="toolbar" destination="zCb-oN-acy" id="OR1-wI-8ZJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

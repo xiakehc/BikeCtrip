@@ -16,6 +16,7 @@
 @interface ViewController ()<ImagePlayerViewDelegate>
 @property (weak, nonatomic) IBOutlet ImagePlayerView *imagePlayerView;
 @property (nonatomic, strong) NSArray *imageURLs;
+@property (weak, nonatomic) IBOutlet UIView *toolbar;
 
 @end
 
@@ -42,8 +43,13 @@
 //    self.imagePlayerView.hidePageControl = NO;
 //    
 //    [self initHomePageContentView];
+    
+    [self initToolBar];
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
 
 - (void)initHomePageContentView{
     NSInteger H = ((CURRENTSCREEN_HEIGHT - 160)-25)/4;
@@ -116,6 +122,10 @@
 
 }
 
+- (void)initToolBar{
+    
+}
+
 #pragma mark - ImagePlayerViewDelegate
 - (void)imagePlayerView:(ImagePlayerView *)imagePlayerView loadImageForImageView:(UIImageView *)imageView index:(NSInteger)index
 {
@@ -129,9 +139,6 @@
     NSLog(@"did tap index = %d", (int)index);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 
 
 
