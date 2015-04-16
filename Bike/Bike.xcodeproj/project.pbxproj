@@ -33,6 +33,7 @@
 		59A978E51ADFC1C000F5EABB /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A978E11ADFC1C000F5EABB /* Home.png */; };
 		59A978E61ADFC1C000F5EABB /* Person.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A978E21ADFC1C000F5EABB /* Person.png */; };
 		59DC044E1ADF8179003FD49B /* detination.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DC04481ADF8179003FD49B /* detination.png */; };
+		59DEEC491ADFF1BD0072386E /* BIMyPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DEEC481ADFF1BD0072386E /* BIMyPersonViewController.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A761908E1ADEB4AB00967F99 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A761908D1ADEB4AB00967F99 /* banner.png */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
@@ -112,6 +113,8 @@
 		59A978E11ADFC1C000F5EABB /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		59A978E21ADFC1C000F5EABB /* Person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Person.png; sourceTree = "<group>"; };
 		59DC04481ADF8179003FD49B /* detination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detination.png; sourceTree = "<group>"; };
+		59DEEC471ADFF1BD0072386E /* BIMyPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIMyPersonViewController.h; sourceTree = "<group>"; };
+		59DEEC481ADFF1BD0072386E /* BIMyPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIMyPersonViewController.m; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BIFoundation.xcodeproj; path = BIFoundation/BIFoundation.xcodeproj; sourceTree = "<group>"; };
@@ -385,6 +388,8 @@
 			children = (
 				59A564321ADE73B2000B9536 /* BIListViewController.h */,
 				59A564331ADE73B2000B9536 /* BIListViewController.m */,
+				59DEEC471ADFF1BD0072386E /* BIMyPersonViewController.h */,
+				59DEEC481ADFF1BD0072386E /* BIMyPersonViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -594,6 +599,7 @@
 			files = (
 				599A366A1ADBB48A0052E642 /* BIBaseTableViewCell.m in Sources */,
 				A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */,
+				59DEEC491ADFF1BD0072386E /* BIMyPersonViewController.m in Sources */,
 				5936B7961AD654FC00227F7E /* ViewController.m in Sources */,
 				A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */,
 				59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */,

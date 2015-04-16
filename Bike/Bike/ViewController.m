@@ -73,7 +73,7 @@
                                                                                                [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"公寓"],
                                                                                                 [[BIModuleModel alloc]initWithContent:@"钟点房"], nil]
                                                                                                ]
-                                       withColor:CTColorHex(0xFF4500)];
+                                       withColor:CTColorHex(0xFF4500) withKey:1000];
                 [view addSubview:view1];
             }
                 break;
@@ -86,7 +86,7 @@
                                                                                                [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"特价机票"],
                                                                                                 [[BIModuleModel alloc]initWithContent:@"接送用车"], nil],
                                                                                                ]
-                                                    withColor:CTColorHex(0x00BFFF)];
+                                                    withColor:CTColorHex(0x00BFFF) withKey:2000];
                 [view addSubview:view1];
             }
                 break;
@@ -99,7 +99,7 @@
                                                                                                [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"攻略"],
                                                                                                 [[BIModuleModel alloc]initWithContent:@"骑行书"], nil],
                                                                                                ]
-                                                               withColor:CTColorHex(0x2E8B57)];
+                                                               withColor:CTColorHex(0x2E8B57) withKey:3000];
                 [view addSubview:view1];
             }
                 break;
@@ -112,7 +112,7 @@
                                                                                                [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"导游"],
                                                                                                 [[BIModuleModel alloc]initWithContent:@"本地游"], nil],
                                                                                                ]
-                                       withColor:CTColorHex(0xFFA500)];
+                                       withColor:CTColorHex(0xFFA500) withKey:4000];
                 [view addSubview:view1];
             }
                 break;

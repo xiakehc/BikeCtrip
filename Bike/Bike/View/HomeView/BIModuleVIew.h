@@ -11,6 +11,6 @@
 
 @interface BIModuleVIew : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame withList:(NSArray*)list withColor:(UIColor *)color;
+- (instancetype)initWithFrame:(CGRect)frame withList:(NSArray*)list withColor:(UIColor *)color withKey:(NSInteger)key;
 
 @end

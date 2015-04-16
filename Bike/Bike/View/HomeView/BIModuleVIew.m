@@ -9,13 +9,21 @@
 #import "BIModuleVIew.h"
 #import <Masonry/Masonry.h>
 
+@interface BIModuleVIew(){
+    NSInteger _tagKey;
+}
+
+@end
+
 @implementation BIModuleVIew
 
-- (instancetype)initWithFrame:(CGRect)frame withList:(NSArray*)list withColor:(UIColor *)color{
+- (instancetype)initWithFrame:(CGRect)frame withList:(NSArray*)list withColor:(UIColor *)color withKey:(NSInteger)key{
     CGRect rect = frame;
     rect.origin.y = 0;//转换Y
     rect.origin.x = 0;//转换X
     self = [super initWithFrame:rect];
+    
+    _tagKey = key;
     if(self){
         [self initBaseView:list withColor:color];
     }
@@ -32,6 +40,18 @@
     leftView.backgroundColor = centerTopView.backgroundColor =
     centerBottomView.backgroundColor = rightBottomView.backgroundColor
     = rightTopView.backgroundColor = color;
+    //tag
+    leftView.tag = _tagKey;
+    centerTopView.tag = _tagKey + 1;
+    centerBottomView.tag = _tagKey + 2;
+    rightTopView.tag = _tagKey + 3;
+    rightBottomView.tag = _tagKey + 4;
+    //action
+    [leftView addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [centerTopView addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [centerBottomView addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [rightTopView addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [rightBottomView addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
     NSInteger width = (self.viewWidth - 10)/3;
     NSInteger height = (self.viewHeight - 5)/2;
@@ -60,6 +80,10 @@
     [self addSubview:centerBottomView];
     [self addSubview:rightBottomView];
     [self addSubview:rightTopView];
+}
+
+- (void)btnClick:(id)sender{
+    
 }
 
 @end
