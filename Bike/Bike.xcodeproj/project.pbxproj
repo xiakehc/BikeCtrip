@@ -26,6 +26,9 @@
 		59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564111ADE4F54000B9536 /* ImagePlayerView.m */; };
 		59A564301ADE5975000B9536 /* BIListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5642F1ADE5975000B9536 /* BIListCell.m */; };
 		59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564331ADE73B2000B9536 /* BIListViewController.m */; };
+		59A978A31ADF8FDF00F5EABB /* BIModuleVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978A21ADF8FDF00F5EABB /* BIModuleVIew.m */; };
+		59A978A61ADF907000F5EABB /* BIModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978A51ADF907000F5EABB /* BIModuleModel.m */; };
+		59DC044E1ADF8179003FD49B /* detination.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DC04481ADF8179003FD49B /* detination.png */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A761908E1ADEB4AB00967F99 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A761908D1ADEB4AB00967F99 /* banner.png */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
@@ -95,6 +98,11 @@
 		59A5642F1ADE5975000B9536 /* BIListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIListCell.m; sourceTree = "<group>"; };
 		59A564321ADE73B2000B9536 /* BIListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListViewController.h; sourceTree = "<group>"; };
 		59A564331ADE73B2000B9536 /* BIListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIListViewController.m; sourceTree = "<group>"; };
+		59A978A11ADF8FDF00F5EABB /* BIModuleVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIModuleVIew.h; sourceTree = "<group>"; };
+		59A978A21ADF8FDF00F5EABB /* BIModuleVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIModuleVIew.m; sourceTree = "<group>"; };
+		59A978A41ADF907000F5EABB /* BIModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIModuleModel.h; sourceTree = "<group>"; };
+		59A978A51ADF907000F5EABB /* BIModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIModuleModel.m; sourceTree = "<group>"; };
+		59DC04481ADF8179003FD49B /* detination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detination.png; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BIFoundation.xcodeproj; path = BIFoundation/BIFoundation.xcodeproj; sourceTree = "<group>"; };
@@ -257,6 +265,10 @@
 				599A36661ADBB35A0052E642 /* BIHomeCell.m */,
 				599A36681ADBB48A0052E642 /* BIBaseTableViewCell.h */,
 				599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */,
+				59A978A11ADF8FDF00F5EABB /* BIModuleVIew.h */,
+				59A978A21ADF8FDF00F5EABB /* BIModuleVIew.m */,
+				59A978A41ADF907000F5EABB /* BIModuleModel.h */,
+				59A978A51ADF907000F5EABB /* BIModuleModel.m */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -264,6 +276,7 @@
 		599A366D1ADBCEA10052E642 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				59DC04461ADF8179003FD49B /* home */,
 				A761908D1ADEB4AB00967F99 /* banner.png */,
 				599A366E1ADBD09D0052E642 /* overlay_left.png */,
 				599A366F1ADBD09D0052E642 /* overlay.png */,
@@ -295,6 +308,14 @@
 				59A5642F1ADE5975000B9536 /* BIListCell.m */,
 			);
 			path = ListView;
+			sourceTree = "<group>";
+		};
+		59DC04461ADF8179003FD49B /* home */ = {
+			isa = PBXGroup;
+			children = (
+				59DC04481ADF8179003FD49B /* detination.png */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 		9199391287573D0875A26A97 /* Frameworks */ = {
@@ -489,6 +510,7 @@
 				5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */,
 				5936B79B1AD654FC00227F7E /* Images.xcassets in Resources */,
 				599A36701ADBD09D0052E642 /* overlay_left.png in Resources */,
+				59DC044E1ADF8179003FD49B /* detination.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,12 +584,14 @@
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
 				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
 				59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */,
+				59A978A31ADF8FDF00F5EABB /* BIModuleVIew.m in Sources */,
 				591E2B151ADD469700280FDA /* BIDetailCell.m in Sources */,
 				A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */,
 				591ECA921AD7B90E0007B117 /* BIAPIService.m in Sources */,
 				599A365F1ADBA4960052E642 /* NSJSONParsing.m in Sources */,
 				A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */,
 				5936B7901AD654FC00227F7E /* main.m in Sources */,
+				59A978A61ADF907000F5EABB /* BIModuleModel.m in Sources */,
 				59A564301ADE5975000B9536 /* BIListCell.m in Sources */,
 				599A36631ADBA5890052E642 /* coupons.m in Sources */,
 			);
