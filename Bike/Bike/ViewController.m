@@ -41,10 +41,10 @@
 }
 
 - (void)initAdver{
-    self.imageURLs = @[[NSURL URLWithString:@"http://www.ghzw.cn/wzsq/UploadFiles_9194/201109/20110915154150869.bmp"],
-                       [NSURL URLWithString:@"http://sudasuta.com/wp-content/uploads/2013/10/10143181686_375e063f2c_z.jpg"],
-                       [NSURL URLWithString:@"http://www.yancheng.gov.cn/ztzl/zgycddhsdgy/xwdt/201109/W020110902584601289616.jpg"],
-                       [NSURL URLWithString:@"http://a.hiphotos.baidu.com/image/w%3D2048/sign=f0457b80be3eb13544c7b0bb9226a9d3/a5c27d1ed21b0ef46b9acf36dfc451da81cb3e63.jpg"]
+    self.imageURLs = @[[NSURL URLWithString:@"http://images.rednet.cn/articleimage/2014/05/13/103213658.jpg"],
+                       [NSURL URLWithString:@"http://img.taopic.com/uploads/allimg/120520/159368-1205201R44746.jpg"],
+                       [NSURL URLWithString:@"http://pic21.nipic.com/20120513/2786001_165117083000_2.jpg"],
+                       [NSURL URLWithString:@"http://pic21.nipic.com/20120513/2786001_165116541000_2.jpg"]
                        ];
     
     [self.imagePlayerView initWithCount:self.imageURLs.count delegate:self];
