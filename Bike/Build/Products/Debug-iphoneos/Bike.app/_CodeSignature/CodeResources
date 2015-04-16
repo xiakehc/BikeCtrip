@@ -4,11 +4,19 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Activity.png</key>
+		<data>
+		4Bazsc6NYxoM7BXMf+kAkA1WrGM=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		41+DDVoOqGEjUcUsC4TaaSH27g0=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s2zAwiyg6hKygdEfALgfpNqTmBg=
+			htetXbM1w3TWWQIhfh9z9w9wiEg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -17,7 +25,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W6xksWI5riTrthXy0EZESStYE40=
+			HDwk7JTyg6mekq0zqjMzpH7OPDA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +34,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CEXEaClxuo2vxEf9ygPIKVCC6Pg=
+			8ycPts1yMOCd6JLQ1C0Ex2MopTs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +43,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eH2J6JxRJn7yTSoR0upDL9snG0w=
+			Im2mGxlZ6l/M4jBw4+3a2yYBoQc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,7 +52,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G2qRJAmn8AKUZe/lN+u+j2R8FPE=
+			31hkbzOQm1e58yuKET0qoK1tc+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +61,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Bw+rQLtdyN31CMG7o9fAJDaO7w=
+			9mMQaxkrtst5uvhnxV72ohW/6Uw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,7 +70,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y3Q6uzwV+T4r7t/BhC6ioEPevUc=
+			1alC7P/77fm7R6LGuRaZB3nlKrg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,7 +79,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KBrkiT1dYPsd5gBxaLSTCjm0GhY=
+			bgc58xIYkx06Rhredk6XaEHTMXA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,7 +88,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wIkUDuTTJ34njd9ZD3Yo/RYyOgQ=
+			Awoy1AtRubrBcWiGWB4inIdlxtA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -89,7 +97,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rzXUr/FcS6CAhirp9fP5ZORYTXU=
+			qtizw6I4NfgAOscB5eSCRuOrwps=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -98,7 +106,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9+h0gKntTHMFGJkjIo44Wj+Cur4=
+			N4xLS/9NKhhXxlCDRegvbrQ7L1I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -107,7 +115,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pV/NP1O4Saa8xA/vsnHzuFVJbWc=
+			WPYHcokiAOaFswDUviFuAeBxC/U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -116,7 +124,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rzip/vN4gEF3viGBMdW8LWyasgM=
+			8G0xdI8bdNcWTN65ZKj/WB3Pbj8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -161,22 +169,294 @@
 		<data>
 		GXmYFcRJLQY9F0PPxrxEHwbAHjg=
 		</data>
+		<key>Home.png</key>
+		<data>
+		HijqN5aU06jmXoYfsNv8DRnClKM=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		t6B5zUx3Or2r96CseOlHa1n7dbY=
+		DGDWyLtm8W7q9V15WeTESgSH2Go=
+		</data>
+		<key>Lato-Bold.ttf</key>
+		<data>
+		wzDVnz5k4HolccK6T0EJsgoWj2k=
+		</data>
+		<key>Lato-Italic.ttf</key>
+		<data>
+		5M6oA1olioaaYTn7905tDCR71Js=
+		</data>
+		<key>Lato-Light.ttf</key>
+		<data>
+		brlRCP74G9jPv34g1MoGNOWYkBk=
+		</data>
+		<key>Lato-Regular.ttf</key>
+		<data>
+		En8kGHGp/kLNjQc6CDVBDzgk1Xw=
+		</data>
+		<key>Person.png</key>
+		<data>
+		3/euvIoTuCZXS9hL5DHzxIahPwE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/10@2x.png</key>
+		<data>
+		LH7sQGuOrNK208gy+Jfr7vlaV3A=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/11@2x.png</key>
+		<data>
+		LrRJJ28Qk5VpQoz/Mztr8VDIgj4=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/12@2x.png</key>
+		<data>
+		jVW9ZdBEN2cVGB8yXxAyXcmkjAg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/13@2x.png</key>
+		<data>
+		g4i3rC0o4TUjOzyK/qb4R42qhlg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/14@2x.png</key>
+		<data>
+		ELCU4qPzKQa/+b76mIuzB7VNxLI=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/15@2x.png</key>
+		<data>
+		kuMQRbmL495YdLWXMrPQe+jR+UM=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/16@2x.png</key>
+		<data>
+		nLPMtsU4PpcvOyWbuUoMAT4cm8M=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/17@2x.png</key>
+		<data>
+		YMq180U4PLzj1sj9hBrXKaTOFlg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/18@2x.png</key>
+		<data>
+		BFX1X464kckViR6k6VLp3RQiHtQ=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/19@2x.png</key>
+		<data>
+		SCFZIVi9GLiEohkqfgWDSbPUZk8=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/1@2x.png</key>
+		<data>
+		7kkVhJgvQzEsFFAuiP1+FpqpJ2U=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/2@2x.png</key>
+		<data>
+		DlBmCpF/pXFknUi6QPcxiWQmGwQ=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/3@2x.png</key>
+		<data>
+		oRKy28dJ5DWulE/2whHTDmP5k3U=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/4@2x.png</key>
+		<data>
+		JIM3Zyjh6DtiB/GF1P3dW/rgHHc=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/5@2x.png</key>
+		<data>
+		252Ie+Qfd5fHhit0Mb1nCW+2pqU=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/6@2x.png</key>
+		<data>
+		og7fwwfkePpsCUYq5Zy9BrTuBQ8=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/7@2x.png</key>
+		<data>
+		3qyqmX/w+uE1Pq6uQ3GH+MjrHos=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/8@2x.png</key>
+		<data>
+		dBjsH9paKOs5tDO9QMV+3iOq/a0=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/9@2x.png</key>
+		<data>
+		+DWg3woKXYcwG6h1FVvSlfLbi4E=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/10@2x.png</key>
+		<data>
+		J92pP6skTXXSxLZQ+FCBIgYCh40=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/11@2x.png</key>
+		<data>
+		tUf/cgXHjoZxj6R7qDNl8xmy5/M=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/12@2x.png</key>
+		<data>
+		eccydBD+kMq+skq5NI3k2505njI=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/13@2x.png</key>
+		<data>
+		N/yEycvAhuXx3xxh9kCNHroMOr8=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/14@2x.png</key>
+		<data>
+		yKCm9w19tTA+y65w+yta9zo87po=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/15@2x.png</key>
+		<data>
+		aWQPqp4BLtpmCT1wWUSu+vF17kg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/16@2x.png</key>
+		<data>
+		R7o8bg1qdE6lHKDr1X1yAOEKf7o=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/17@2x.png</key>
+		<data>
+		zbjZZdq5XXYbMwGbB6B3/NgoSVg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/18@2x.png</key>
+		<data>
+		LF6ylE0w1liZ+J3gvRH7ROuTf98=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/1@2x.png</key>
+		<data>
+		AmFpXAYkLVneOwAA+VhlXLMy93g=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/2@2x.png</key>
+		<data>
+		61SAShDqcrASGoV6h1ZBsbqQQgY=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/3@2x.png</key>
+		<data>
+		vKztku5Vd3lAZvnBIxXG1sdkDPo=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/4@2x.png</key>
+		<data>
+		EuQiQiT6vhsPEkuSX+2qLF18fsU=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/5@2x.png</key>
+		<data>
+		k7hPeLeiOQJyl1YxRnuGLQ97XQM=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/6@2x.png</key>
+		<data>
+		K22R1sh1cJu5J5MZfFUiHz9YKqk=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/7@2x.png</key>
+		<data>
+		EvUk54RLIeXCrNwfkE4qeLmZfDA=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/8@2x.png</key>
+		<data>
+		qD5fFxusxuN+f7bwpsF0Pkr6VW0=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/9@2x.png</key>
+		<data>
+		rMTSvVBOKZxTAbAmEyBtO+YkEzg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/10@2x.png</key>
+		<data>
+		RHLwDk0q1rCNeDOarmj4baOMhdQ=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/11@2x.png</key>
+		<data>
+		cKZc1hjFP9yzolN5iiZv3Ueurbo=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/12@2x.png</key>
+		<data>
+		JHxznXTvtCPGkYjvm636KgKrTgQ=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/13@2x.png</key>
+		<data>
+		MexyW3TXdkKVLtMUqIRmSprmTgs=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/14@2x.png</key>
+		<data>
+		A182BuHUcJ1Q/me4YM2YlFOsnnw=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/15@2x.png</key>
+		<data>
+		0uAi2u0uXCjjQJveAuB41Qo8hNo=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/16@2x.png</key>
+		<data>
+		IS54xeYYpk8+tDvjnPG6beaUqRk=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/17@2x.png</key>
+		<data>
+		JOX2E0G8X+gh/c5f1O2b5o0rroo=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/18@2x.png</key>
+		<data>
+		79GZwP02mM+IQ+X7MkzIddtbG5k=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/1@2x.png</key>
+		<data>
+		g9eMS5M1SYQQAR6pnQ2EgNyUkyI=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/2@2x.png</key>
+		<data>
+		E2VrMQAanlsL8ZHQsN7NUTwhHew=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/3@2x.png</key>
+		<data>
+		pNOcXkI9U3DAh4VA5v5GmZpUjXE=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/4@2x.png</key>
+		<data>
+		Kug0OX81jPbHFHQug0tFUlGleI4=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/5@2x.png</key>
+		<data>
+		l/5XPE42u2+WBndLR+5zIE5Q/dE=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/6@2x.png</key>
+		<data>
+		+7+Vng0UN1Xj3PcoLhpF3kNCQVY=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/7@2x.png</key>
+		<data>
+		sBqAjmrPSiSyUJpINoAhkhkVX4I=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/8@2x.png</key>
+		<data>
+		qzbpgLPQmlErB5ATuU5/zAPdHoI=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/9@2x.png</key>
+		<data>
+		vZjkkBXxoNFUM213ZrPncrLBjSI=
+		</data>
+		<key>banner.png</key>
+		<data>
+		3qZ8QMzFL3rAtoD9ZoQPZyKEJl4=
+		</data>
+		<key>detination.png</key>
+		<data>
+		fgmYiItdIzlg6sy7JEPqB47W26A=
+		</data>
+		<key>flat-ui-icons-regular.ttf</key>
+		<data>
+		OMIWLvbu4CvjKZzq3atPLEtIaqE=
+		</data>
+		<key>overlay.png</key>
+		<data>
+		Q0kY/GDS1KMgwdkId2ujh9Mx118=
+		</data>
+		<key>overlay_left.png</key>
+		<data>
+		n1FB7XonXRLHrh1JtDPod/54MXE=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Activity.png</key>
+		<data>
+		4Bazsc6NYxoM7BXMf+kAkA1WrGM=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		41+DDVoOqGEjUcUsC4TaaSH27g0=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s2zAwiyg6hKygdEfALgfpNqTmBg=
+			htetXbM1w3TWWQIhfh9z9w9wiEg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -185,7 +465,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W6xksWI5riTrthXy0EZESStYE40=
+			HDwk7JTyg6mekq0zqjMzpH7OPDA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -194,7 +474,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CEXEaClxuo2vxEf9ygPIKVCC6Pg=
+			8ycPts1yMOCd6JLQ1C0Ex2MopTs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -203,7 +483,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eH2J6JxRJn7yTSoR0upDL9snG0w=
+			Im2mGxlZ6l/M4jBw4+3a2yYBoQc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -212,7 +492,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G2qRJAmn8AKUZe/lN+u+j2R8FPE=
+			31hkbzOQm1e58yuKET0qoK1tc+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -221,7 +501,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Bw+rQLtdyN31CMG7o9fAJDaO7w=
+			9mMQaxkrtst5uvhnxV72ohW/6Uw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -230,7 +510,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y3Q6uzwV+T4r7t/BhC6ioEPevUc=
+			1alC7P/77fm7R6LGuRaZB3nlKrg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -239,7 +519,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KBrkiT1dYPsd5gBxaLSTCjm0GhY=
+			bgc58xIYkx06Rhredk6XaEHTMXA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -248,7 +528,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wIkUDuTTJ34njd9ZD3Yo/RYyOgQ=
+			Awoy1AtRubrBcWiGWB4inIdlxtA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -257,7 +537,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rzXUr/FcS6CAhirp9fP5ZORYTXU=
+			qtizw6I4NfgAOscB5eSCRuOrwps=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -266,7 +546,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9+h0gKntTHMFGJkjIo44Wj+Cur4=
+			N4xLS/9NKhhXxlCDRegvbrQ7L1I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -275,7 +555,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pV/NP1O4Saa8xA/vsnHzuFVJbWc=
+			WPYHcokiAOaFswDUviFuAeBxC/U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -284,7 +564,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rzip/vN4gEF3viGBMdW8LWyasgM=
+			8G0xdI8bdNcWTN65ZKj/WB3Pbj8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -328,6 +608,270 @@
 		<key>Bike.xcent</key>
 		<data>
 		GXmYFcRJLQY9F0PPxrxEHwbAHjg=
+		</data>
+		<key>Home.png</key>
+		<data>
+		HijqN5aU06jmXoYfsNv8DRnClKM=
+		</data>
+		<key>Lato-Bold.ttf</key>
+		<data>
+		wzDVnz5k4HolccK6T0EJsgoWj2k=
+		</data>
+		<key>Lato-Italic.ttf</key>
+		<data>
+		5M6oA1olioaaYTn7905tDCR71Js=
+		</data>
+		<key>Lato-Light.ttf</key>
+		<data>
+		brlRCP74G9jPv34g1MoGNOWYkBk=
+		</data>
+		<key>Lato-Regular.ttf</key>
+		<data>
+		En8kGHGp/kLNjQc6CDVBDzgk1Xw=
+		</data>
+		<key>Person.png</key>
+		<data>
+		3/euvIoTuCZXS9hL5DHzxIahPwE=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/10@2x.png</key>
+		<data>
+		LH7sQGuOrNK208gy+Jfr7vlaV3A=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/11@2x.png</key>
+		<data>
+		LrRJJ28Qk5VpQoz/Mztr8VDIgj4=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/12@2x.png</key>
+		<data>
+		jVW9ZdBEN2cVGB8yXxAyXcmkjAg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/13@2x.png</key>
+		<data>
+		g4i3rC0o4TUjOzyK/qb4R42qhlg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/14@2x.png</key>
+		<data>
+		ELCU4qPzKQa/+b76mIuzB7VNxLI=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/15@2x.png</key>
+		<data>
+		kuMQRbmL495YdLWXMrPQe+jR+UM=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/16@2x.png</key>
+		<data>
+		nLPMtsU4PpcvOyWbuUoMAT4cm8M=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/17@2x.png</key>
+		<data>
+		YMq180U4PLzj1sj9hBrXKaTOFlg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/18@2x.png</key>
+		<data>
+		BFX1X464kckViR6k6VLp3RQiHtQ=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/19@2x.png</key>
+		<data>
+		SCFZIVi9GLiEohkqfgWDSbPUZk8=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/1@2x.png</key>
+		<data>
+		7kkVhJgvQzEsFFAuiP1+FpqpJ2U=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/2@2x.png</key>
+		<data>
+		DlBmCpF/pXFknUi6QPcxiWQmGwQ=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/3@2x.png</key>
+		<data>
+		oRKy28dJ5DWulE/2whHTDmP5k3U=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/4@2x.png</key>
+		<data>
+		JIM3Zyjh6DtiB/GF1P3dW/rgHHc=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/5@2x.png</key>
+		<data>
+		252Ie+Qfd5fHhit0Mb1nCW+2pqU=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/6@2x.png</key>
+		<data>
+		og7fwwfkePpsCUYq5Zy9BrTuBQ8=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/7@2x.png</key>
+		<data>
+		3qyqmX/w+uE1Pq6uQ3GH+MjrHos=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/8@2x.png</key>
+		<data>
+		dBjsH9paKOs5tDO9QMV+3iOq/a0=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_blur/9@2x.png</key>
+		<data>
+		+DWg3woKXYcwG6h1FVvSlfLbi4E=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/10@2x.png</key>
+		<data>
+		J92pP6skTXXSxLZQ+FCBIgYCh40=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/11@2x.png</key>
+		<data>
+		tUf/cgXHjoZxj6R7qDNl8xmy5/M=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/12@2x.png</key>
+		<data>
+		eccydBD+kMq+skq5NI3k2505njI=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/13@2x.png</key>
+		<data>
+		N/yEycvAhuXx3xxh9kCNHroMOr8=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/14@2x.png</key>
+		<data>
+		yKCm9w19tTA+y65w+yta9zo87po=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/15@2x.png</key>
+		<data>
+		aWQPqp4BLtpmCT1wWUSu+vF17kg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/16@2x.png</key>
+		<data>
+		R7o8bg1qdE6lHKDr1X1yAOEKf7o=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/17@2x.png</key>
+		<data>
+		zbjZZdq5XXYbMwGbB6B3/NgoSVg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/18@2x.png</key>
+		<data>
+		LF6ylE0w1liZ+J3gvRH7ROuTf98=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/1@2x.png</key>
+		<data>
+		AmFpXAYkLVneOwAA+VhlXLMy93g=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/2@2x.png</key>
+		<data>
+		61SAShDqcrASGoV6h1ZBsbqQQgY=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/3@2x.png</key>
+		<data>
+		vKztku5Vd3lAZvnBIxXG1sdkDPo=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/4@2x.png</key>
+		<data>
+		EuQiQiT6vhsPEkuSX+2qLF18fsU=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/5@2x.png</key>
+		<data>
+		k7hPeLeiOQJyl1YxRnuGLQ97XQM=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/6@2x.png</key>
+		<data>
+		K22R1sh1cJu5J5MZfFUiHz9YKqk=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/7@2x.png</key>
+		<data>
+		EvUk54RLIeXCrNwfkE4qeLmZfDA=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/8@2x.png</key>
+		<data>
+		qD5fFxusxuN+f7bwpsF0Pkr6VW0=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_leaf/9@2x.png</key>
+		<data>
+		rMTSvVBOKZxTAbAmEyBtO+YkEzg=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/10@2x.png</key>
+		<data>
+		RHLwDk0q1rCNeDOarmj4baOMhdQ=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/11@2x.png</key>
+		<data>
+		cKZc1hjFP9yzolN5iiZv3Ueurbo=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/12@2x.png</key>
+		<data>
+		JHxznXTvtCPGkYjvm636KgKrTgQ=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/13@2x.png</key>
+		<data>
+		MexyW3TXdkKVLtMUqIRmSprmTgs=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/14@2x.png</key>
+		<data>
+		A182BuHUcJ1Q/me4YM2YlFOsnnw=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/15@2x.png</key>
+		<data>
+		0uAi2u0uXCjjQJveAuB41Qo8hNo=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/16@2x.png</key>
+		<data>
+		IS54xeYYpk8+tDvjnPG6beaUqRk=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/17@2x.png</key>
+		<data>
+		JOX2E0G8X+gh/c5f1O2b5o0rroo=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/18@2x.png</key>
+		<data>
+		79GZwP02mM+IQ+X7MkzIddtbG5k=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/1@2x.png</key>
+		<data>
+		g9eMS5M1SYQQAR6pnQ2EgNyUkyI=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/2@2x.png</key>
+		<data>
+		E2VrMQAanlsL8ZHQsN7NUTwhHew=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/3@2x.png</key>
+		<data>
+		pNOcXkI9U3DAh4VA5v5GmZpUjXE=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/4@2x.png</key>
+		<data>
+		Kug0OX81jPbHFHQug0tFUlGleI4=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/5@2x.png</key>
+		<data>
+		l/5XPE42u2+WBndLR+5zIE5Q/dE=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/6@2x.png</key>
+		<data>
+		+7+Vng0UN1Xj3PcoLhpF3kNCQVY=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/7@2x.png</key>
+		<data>
+		sBqAjmrPSiSyUJpINoAhkhkVX4I=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/8@2x.png</key>
+		<data>
+		qzbpgLPQmlErB5ATuU5/zAPdHoI=
+		</data>
+		<key>TAOverlay.bundle/ACTIVITY_square/9@2x.png</key>
+		<data>
+		vZjkkBXxoNFUM213ZrPncrLBjSI=
+		</data>
+		<key>banner.png</key>
+		<data>
+		3qZ8QMzFL3rAtoD9ZoQPZyKEJl4=
+		</data>
+		<key>detination.png</key>
+		<data>
+		fgmYiItdIzlg6sy7JEPqB47W26A=
+		</data>
+		<key>flat-ui-icons-regular.ttf</key>
+		<data>
+		OMIWLvbu4CvjKZzq3atPLEtIaqE=
+		</data>
+		<key>overlay.png</key>
+		<data>
+		Q0kY/GDS1KMgwdkId2ujh9Mx118=
+		</data>
+		<key>overlay_left.png</key>
+		<data>
+		n1FB7XonXRLHrh1JtDPod/54MXE=
 		</data>
 	</dict>
 	<key>rules</key>
