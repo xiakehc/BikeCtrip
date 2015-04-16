@@ -23,6 +23,7 @@ PODS:
   - FlatUIKit (1.6)
   - GCJSONKit (1.5.0)
   - HJRSeparatableView (1.1.0)
+  - Masonry (0.6.1)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - FlatUIKit (~> 1.6)
   - GCJSONKit (~> 1.5.0)
   - HJRSeparatableView (~> 1.1.0)
+  - Masonry (~> 0.6.1)
   - SDWebImage (~> 3.7.2)
   - TAOverlay (~> 2.0.1)
 
@@ -41,6 +43,7 @@ SPEC CHECKSUMS:
   FlatUIKit: a59c93fe2fde5329dfb71dd9317b1b0386d6a178
   GCJSONKit: 8ad0067945efd217af8e610fa09ca0d02283b36b
   HJRSeparatableView: 88defde0d46baab13ab8c858be1433074124954c
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   TAOverlay: 940e37fdb45fbc9acfc73bf1089668367e3b1be6
 

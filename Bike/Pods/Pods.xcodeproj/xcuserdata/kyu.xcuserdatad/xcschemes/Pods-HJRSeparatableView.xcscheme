@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1BE4CF35AA1BAE0A5F74A613"
+               BlueprintIdentifier = "F208AD0936CFB13D576098F8"
                BuildableName = "libPods-HJRSeparatableView.a"
                BlueprintName = "Pods-HJRSeparatableView"
                ReferencedContainer = "container:Pods.xcodeproj">
