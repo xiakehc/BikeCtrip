@@ -42,8 +42,9 @@
     BIRequestOperationManager *manager = [BIRequestOperationManager sharedClient];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [manager.requestSerializer setValue:@"" forHTTPHeaderField:@""];
+    manager.requestSerializer.timeoutInterval = 5.0;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -59,7 +60,6 @@
     BIRequestOperationManager *manager = [BIRequestOperationManager sharedClient];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [manager.requestSerializer setValue:@"" forHTTPHeaderField:@""];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
     [manager POST:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {

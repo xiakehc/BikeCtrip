@@ -13,11 +13,13 @@
     NSInteger _tagKey;
 }
 
+@property (nonatomic,strong) id<BIModuleVIewDelegate> delegate;
+
 @end
 
 @implementation BIModuleVIew
 
-- (instancetype)initWithFrame:(CGRect)frame withList:(NSArray*)list withColor:(UIColor *)color withKey:(NSInteger)key{
+- (instancetype)initWithFrame:(CGRect)frame withList:(NSArray*)list withColor:(UIColor *)color withKey:(NSInteger)key withDelegate:(id<BIModuleVIewDelegate>)delegate{
     CGRect rect = frame;
     rect.origin.y = 0;//转换Y
     rect.origin.x = 0;//转换X
@@ -26,6 +28,7 @@
     _tagKey = key;
     if(self){
         [self initBaseView:list withColor:color];
+        self.delegate = delegate;
     }
     return self;
 }
@@ -83,7 +86,9 @@
 }
 
 - (void)btnClick:(id)sender{
+    NSInteger tag = ((UIButton*)sender).tag;
     
+    [self.delegate homeBIModuleVIewButtonClick:tag];
 }
 
 @end

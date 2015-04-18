@@ -1,16 +1,16 @@
+////
+////  BIHomeCell.h
+////  Bike
+////
+////  Created by kyu on 15/4/13.
+////  Copyright (c) 2015年 kyu. All rights reserved.
+////
 //
-//  BIHomeCell.h
-//  Bike
+//#import "BIBaseTableViewCell.h"
+//#import "coupons.h"
+//#import "UIImageView+WebCache.h"
 //
-//  Created by kyu on 15/4/13.
-//  Copyright (c) 2015年 kyu. All rights reserved.
+//@interface BIHomeCell : BIBaseTableViewCell
 //
-
-#import "BIBaseTableViewCell.h"
-#import "coupons.h"
-#import "UIImageView+WebCache.h"
-
-@interface BIHomeCell : BIBaseTableViewCell
-
-
-@end
+//
+//@end

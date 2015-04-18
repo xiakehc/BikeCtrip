@@ -10,10 +10,13 @@
 #import "ImagePlayerView.h"
 #import "UIImageView+WebCache.h"
 #import "BIModuleVIew.h"
-//#import "BIDefine.h"
+#import "BIListViewController.h"
 #import "BIToolBar.h"
 
-@interface ViewController ()<ImagePlayerViewDelegate>
+@interface ViewController ()<ImagePlayerViewDelegate, BIModuleVIewDelegate>
+{
+    NSArray *_dataList;
+}
 @property (weak, nonatomic) IBOutlet ImagePlayerView *imagePlayerView;
 @property (nonatomic, strong) NSArray *imageURLs;
 @property (weak, nonatomic) IBOutlet UIView *toolbar;
@@ -54,65 +57,47 @@
 }
 
 - (void)initHomePageContentView{
-    NSInteger H = ((CURRENTSCREEN_HEIGHT - 160)-25)/4;
-    for(int i = 0;i<4;i++)
+     [self initDataModel];
+    if(!_dataList || _dataList.count == 0){
+        return;
+    }
+    
+    //5px 是间距
+    NSInteger H = ((CURRENTSCREEN_HEIGHT - (self.imagePlayerView.viewYBelow + self.toolbar.viewHeight))-5*(_dataList.count+1))/_dataList.count;
+    
+    for(int i = 0;i<_dataList.count;i++)
     {
         UIView *view = [self.view viewWithTag:100+i];
         view.viewWidth = self.view.viewWidth -10;
         view.frame = CGRectMake(0, (5+H)*i, self.view.viewWidth-10, H);
-        //CTShowViewBounds(view, [UIColor redColor]);
         
+        NSInteger key = (i+1)*1000;
         switch (i) {
             case 0:
             {
-                BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList:@[
-                                                                                               [[BIModuleModel alloc]initWithContent:@"酒店"],
-                                                                                               [NSArray arrayWithObjects:
-                                                                                                [[BIModuleModel alloc]initWithContent:@"团购"],
-                                                                                                [[BIModuleModel alloc]initWithContent:@"今日特惠"], nil],
-                                                                                               [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"公寓"],
-                                                                                                [[BIModuleModel alloc]initWithContent:@"钟点房"], nil]
-                                                                                               ]
-                                       withColor:CTColorHex(0xFF4500) withKey:1000];
+                BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
+                                       withColor:CTColorHex(0xFF4500) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
             case 1:
             {
-                BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList:@[
-                                                                                               [[BIModuleModel alloc]initWithContent:@"机票"],
-                                                                                               [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"火车票"],
-                                                                                                [[BIModuleModel alloc]initWithContent:@"车车"], nil],
-                                                                                               [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"特价机票"],
-                                                                                                [[BIModuleModel alloc]initWithContent:@"接送用车"], nil],
-                                                                                               ]
-                                                    withColor:CTColorHex(0x00BFFF) withKey:2000];
+                BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
+                                                    withColor:CTColorHex(0x00BFFF) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
             case 2:
             {
-                BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList:@[
-                                                                                               [[BIModuleModel alloc]initWithContent:@"度假旅游"],
-                                                                                               [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"门票"],
-                                                                                                [[BIModuleModel alloc]initWithContent:@"签证"], nil],
-                                                                                               [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"攻略"],
-                                                                                                [[BIModuleModel alloc]initWithContent:@"骑行书"], nil],
-                                                                                               ]
-                                                               withColor:CTColorHex(0x2E8B57) withKey:3000];
+                BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
+                                                               withColor:CTColorHex(0x2E8B57) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
             case 3:
             {
-                BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList:@[
-                                                                                               [[BIModuleModel alloc]initWithContent:@"当地玩乐"],
-                                                                                               [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"电影票"],
-                                                                                                [[BIModuleModel alloc]initWithContent:@"周末游"], nil],
-                                                                                               [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"导游"],
-                                                                                                [[BIModuleModel alloc]initWithContent:@"本地游"], nil],
-                                                                                               ]
-                                       withColor:CTColorHex(0xFFA500) withKey:4000];
+                BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
+                                       withColor:CTColorHex(0xFFA500) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
@@ -121,7 +106,41 @@
                 break;
         }
     }
+}
 
+/**
+ *  模块数据配置化
+ */
+- (void)initDataModel{
+    _dataList =@[
+                 @[[[BIModuleModel alloc]initWithContent:@"酒店"],
+                   [NSArray arrayWithObjects:
+                    [[BIModuleModel alloc]initWithContent:@"团购"],
+                    [[BIModuleModel alloc]initWithContent:@"今日特惠"], nil],
+                   [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"公寓"],
+                    [[BIModuleModel alloc]initWithContent:@"钟点房"], nil]],
+                 @[
+                     [[BIModuleModel alloc]initWithContent:@"机票"],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"火车票"],
+                      [[BIModuleModel alloc]initWithContent:@"车车"], nil],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"特价机票"],
+                      [[BIModuleModel alloc]initWithContent:@"接送用车"], nil],
+                     ],
+                 @[
+                     [[BIModuleModel alloc]initWithContent:@"度假旅游"],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"门票"],
+                      [[BIModuleModel alloc]initWithContent:@"签证"], nil],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"攻略"],
+                      [[BIModuleModel alloc]initWithContent:@"骑行书"], nil],
+                     ],
+                 @[
+                     [[BIModuleModel alloc]initWithContent:@"当地玩乐"],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"电影票"],
+                      [[BIModuleModel alloc]initWithContent:@"周末游"], nil],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"导游"],
+                      [[BIModuleModel alloc]initWithContent:@"本地游"], nil],
+                     ]
+                 ];
 }
 
 - (void)initToolBar{
@@ -141,6 +160,31 @@
 - (void)imagePlayerView:(ImagePlayerView *)imagePlayerView didTapAtIndex:(NSInteger)index
 {
     NSLog(@"did tap index = %d", (int)index);
+}
+
+#pragma mark - BIModuleVIewDelegate
+- (void)homeBIModuleVIewButtonClick:(NSInteger)index{
+    NSInteger row = index/1000-1;
+    NSInteger column = index%1000;
+    BILog(@"you select row is :%ld And column is :%ld",row, column);
+    
+    NSArray *list = [_dataList objectAtIndex:row];
+    NSString * title = @"";
+    if(column == 0){
+        title = ((BIModuleModel*)[list objectAtIndex:0]).content;
+    }
+    else if (column >= 1 && column <=2){
+        BIModuleModel *md = (BIModuleModel*)[[list objectAtIndex:1] objectAtIndex:column-1];
+        title = md.content;
+    }
+    else if (column >= 3 && column <=4){
+        BIModuleModel *md = (BIModuleModel*)[[list objectAtIndex:2] objectAtIndex:column-3];
+        title = md.content;
+    }
+    
+    BIListViewController *vc = [[BIListViewController alloc]init];
+    vc.title = title;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

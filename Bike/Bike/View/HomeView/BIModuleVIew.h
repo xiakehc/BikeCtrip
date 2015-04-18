@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "BIModuleModel.h"
 
+@protocol BIModuleVIewDelegate
+
+- (void)homeBIModuleVIewButtonClick:(NSInteger)index;
+
+@end
+
 @interface BIModuleVIew : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame withList:(NSArray*)list withColor:(UIColor *)color withKey:(NSInteger)key;
+- (instancetype)initWithFrame:(CGRect)frame withList:(NSArray*)list withColor:(UIColor *)color withKey:(NSInteger)key withDelegate:(id<BIModuleVIewDelegate>)delegate;
+
 
 @end

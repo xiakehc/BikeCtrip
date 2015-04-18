@@ -22,6 +22,12 @@
 
 @implementation BIListViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)viewDidLoad{
     self.mTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT)];
     self.mTableView.dataSource = self;
@@ -51,7 +57,7 @@
 }
 
 - (void)startLoading{
-    [TAOverlay showOverlayWithLabel:@"骑呀骑呀..." Options:TAOverlayOptionOverlayTypeActivityLeaf|TAOverlayOptionOverlaySizeFullScreen];
+    [TAOverlay showOverlayWithLabel:@"玩命的加载中..." Options:TAOverlayOptionOverlayTypeActivityLeaf|TAOverlayOptionOverlaySizeFullScreen];
 }
 
 
