@@ -11,10 +11,18 @@
 @implementation BIMyPersonViewController
 
 - (void)viewDidLoad{
-    UITableView *view = [[UITableView alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:view];
     
-    view.backgroundColor= [UIColor redColor];
+//    UITableView *view = [[UITableView alloc]initWithFrame:self.view.frame];
+//    [self.view addSubview:view];
+//    
+//    view.backgroundColor= [UIColor redColor];
+    
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 200, 80)];
+    [self.view addSubview:btn];
+    
+    [btn setTitle:@"登陆" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    
 }
 
 @end

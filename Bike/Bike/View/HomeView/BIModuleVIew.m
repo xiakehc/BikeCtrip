@@ -87,8 +87,9 @@
 
 - (void)btnClick:(id)sender{
     NSInteger tag = ((UIButton*)sender).tag;
-    
-    [self.delegate homeBIModuleVIewButtonClick:tag];
+    if(self.delegate && [self.delegate respondsToSelector:@selector(homeBIModuleVIewButtonClick:)]){
+        [self.delegate homeBIModuleVIewButtonClick:tag];
+    }
 }
 
 @end

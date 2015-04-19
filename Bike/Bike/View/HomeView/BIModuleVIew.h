@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BIModuleModel.h"
 
-@protocol BIModuleVIewDelegate
+@protocol BIModuleVIewDelegate<NSObject>
 
 - (void)homeBIModuleVIewButtonClick:(NSInteger)index;
 

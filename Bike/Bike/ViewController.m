@@ -12,14 +12,17 @@
 #import "BIModuleVIew.h"
 #import "BIListViewController.h"
 #import "BIToolBar.h"
+#import "BIHomeVCManager.h"
 
-@interface ViewController ()<ImagePlayerViewDelegate, BIModuleVIewDelegate>
+@interface ViewController ()<ImagePlayerViewDelegate, BIModuleVIewDelegate,BIToolBarDelegate>
 {
     NSArray *_dataList;
+    BIHomeVCManager *_manager;
 }
 @property (weak, nonatomic) IBOutlet ImagePlayerView *imagePlayerView;
 @property (nonatomic, strong) NSArray *imageURLs;
 @property (weak, nonatomic) IBOutlet UIView *toolbar;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 
 @end
 
@@ -37,6 +40,11 @@
     [self initAdver];
     [self initHomePageContentView];
     [self initToolBar];
+    
+    _manager = [BIHomeVCManager shareInstance];
+    [_manager addViewINProperty];
+    [_manager.vList addObject:self.view];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -145,7 +153,7 @@
 
 - (void)initToolBar{
     self.toolbar.viewWidth = self.view.viewWidth;
-    BIToolBar *toolbar = [[BIToolBar alloc]initWithFrame:self.toolbar.frame];
+    BIToolBar *toolbar = [[BIToolBar alloc]initWithFrame:self.toolbar.frame withDelegate:self];
     [self.toolbar addSubview:toolbar];
 }
 
@@ -185,6 +193,15 @@
     BIListViewController *vc = [[BIListViewController alloc]init];
     vc.title = title;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - BIToolBarDelegate
+- (void)homeBIToolBarDelegateButtonClick:(NSInteger)index{
+     [self.contentView removeFromSuperview];
+    
+    UIView *pVC = [_manager.vList objectAtIndex:0];
+    pVC.frame =CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
+    [self.view addSubview:pVC];
 }
 
 @end

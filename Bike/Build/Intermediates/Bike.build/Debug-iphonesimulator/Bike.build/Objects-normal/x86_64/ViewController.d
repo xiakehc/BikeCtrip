@@ -9,4 +9,5 @@ dependencies: /Project/github/BikeCtrip/Bike/Bike/ViewController.m \
   /Project/github/BikeCtrip/Bike/Bike/View/HomeView/BIModuleVIew.h \
   /Project/github/BikeCtrip/Bike/Bike/View/HomeView/BIModuleModel.h \
   /Project/github/BikeCtrip/Bike/Bike/Controller/BIListViewController.h \
-  /Project/github/BikeCtrip/Bike/Bike/View/HomeView/BIToolBar.h
+  /Project/github/BikeCtrip/Bike/Bike/View/HomeView/BIToolBar.h \
+  /Project/github/BikeCtrip/Bike/Bike/Controller/BIHomeVCManager.h

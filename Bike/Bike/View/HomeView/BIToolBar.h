@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol BIToolBarDelegate<NSObject>
+
+- (void)homeBIToolBarDelegateButtonClick:(NSInteger)index;
+
+@end
+
 @interface BIToolBar : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame;
+- (instancetype)initWithFrame:(CGRect)frame withDelegate:(id<BIToolBarDelegate>)delegate;
 
 @end
