@@ -77,4 +77,5 @@
     currentView.frame = CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
     [self.view addSubview:currentView];
 }
+
 @end
