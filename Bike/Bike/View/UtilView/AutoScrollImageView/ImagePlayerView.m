@@ -160,7 +160,7 @@
         [viewsDictionary setObject:imageView forKey:imageViewName];
     }
     
-    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|-(-20)-[%@]-0-|", [imageViewNames objectAtIndex:0]]
+    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|-(0)-[%@]-0-|", [imageViewNames objectAtIndex:0]]
                                                                             options:kNilOptions
                                                                             metrics:nil
                                                                               views:viewsDictionary]];

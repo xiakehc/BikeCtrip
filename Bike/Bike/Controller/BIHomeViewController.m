@@ -11,19 +11,14 @@
 #import "UIImageView+WebCache.h"
 #import "BIModuleVIew.h"
 #import "BIListViewController.h"
-#import "BIToolBar.h"
 #import "BIHomeVCManager.h"
 
-#define TAG_View_KEY    11
-
-@interface BIHomeViewController ()<ImagePlayerViewDelegate, BIModuleVIewDelegate,BIToolBarDelegate>
+@interface BIHomeViewController ()<ImagePlayerViewDelegate, BIModuleVIewDelegate>
 {
     NSArray *_dataList;/*首页板块数据模型*/
-    NSInteger currentToolBarIndex;
 }
 @property (weak, nonatomic) IBOutlet ImagePlayerView *imagePlayerView;
 @property (nonatomic, strong) NSArray *imageURLs;/*广告URL*/
-@property (weak, nonatomic) IBOutlet UIView *toolbar;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
 @end
@@ -34,17 +29,18 @@
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBarHidden = YES;
-    self.contentView.tag = TAG_View_KEY;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.viewSize = CGSizeMake(CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
+    self.contentView.frame = CGRectMake(0, 100, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT -100-60);
+    self.imagePlayerView.frame = CGRectMake(0, 0, CURRENTSCREEN_WIDTH, 100);
+
     //Adver
     [self initAdver];
     [self initHomePageContentView];
-    [self initToolBar];
-    
-    currentToolBarIndex = 0;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,16 +65,12 @@
     if(!_dataList || _dataList.count == 0){
         return;
     }
-    
     //5px 是间距
-    NSInteger H = ((CURRENTSCREEN_HEIGHT - (self.imagePlayerView.viewYBelow + self.toolbar.viewHeight))-5*(_dataList.count+1))/_dataList.count;
-    
+    NSInteger H = (self.contentView.viewHeight-5*(_dataList.count+1))/_dataList.count;
     for(int i = 0;i<_dataList.count;i++)
     {
         UIView *view = [self.view viewWithTag:100+i];
-        view.viewWidth = self.view.viewWidth -10;
-        view.frame = CGRectMake(0, (5+H)*i, self.view.viewWidth-10, H);
-        
+        view.frame = CGRectMake(5, (5+H)*i+5, self.view.viewWidth-10, H);
         NSInteger key = (i+1)*1000;
         switch (i) {
             case 0:
@@ -151,11 +143,6 @@
                  ];
 }
 
-- (void)initToolBar{
-    self.toolbar.viewWidth = self.view.viewWidth;
-    BIToolBar *toolbar = [[BIToolBar alloc]initWithFrame:self.toolbar.frame withDelegate:self];
-    [self.toolbar addSubview:toolbar];
-}
 
 #pragma mark - ImagePlayerViewDelegate
 - (void)imagePlayerView:(ImagePlayerView *)imagePlayerView loadImageForImageView:(UIImageView *)imageView index:(NSInteger)index
@@ -195,29 +182,5 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-#pragma mark - BIToolBarDelegate
-- (void)homeBIToolBarDelegateButtonClick:(NSInteger)index{
-    if(index == currentToolBarIndex)
-    {
-        return ;
-    }
-    currentToolBarIndex = index;    //设置index
-    
-    BIHomeVCManager *_manager = [BIHomeVCManager shareInstance];
-    UIView *removeView = [self.view viewWithTag:TAG_View_KEY];
-    [removeView removeFromSuperview];
-    UIViewController *vc = [_manager.vList objectAtIndex:index];
-    
-    if(index != 0){
-        vc.view.frame =CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
-        vc.view.tag = TAG_View_KEY;
-        [self.view addSubview:vc.view];
-    }
-    else{
-        ((BIHomeViewController*)vc).contentView.frame = CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
-        ((BIHomeViewController*)vc).contentView.tag = TAG_View_KEY;
-        [self.view addSubview:((BIHomeViewController*)vc).contentView];
-    }
-}
 
 @end

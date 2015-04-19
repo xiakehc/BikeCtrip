@@ -9,8 +9,10 @@
 #import "BIHomeVCManager.h"
 #import "BIMyPersonViewController.h"
 #import "BIActivityViewController.h"
+#import "BIHomeViewController.h"
 
 @interface BIHomeVCManager(){
+    BIHomeViewController *homeVC;
     BIMyPersonViewController *personVC;
     BIActivityViewController *activityVC;
 }
@@ -38,14 +40,12 @@
         [self.vList removeAllObjects];
     }
     
-    [self.vList addObject:rootVC];
+    homeVC = [[BIHomeViewController alloc]init];
+    [self.vList addObject:homeVC];
     activityVC = [[BIActivityViewController alloc]init];
     [self.vList addObject:activityVC];
     personVC = [[BIMyPersonViewController alloc]init];
     [self.vList addObject:personVC];
-    
-//    [rootVC addChildViewController:activityVC];
-//    [rootVC addChildViewController:personVC];
 
 }
 
