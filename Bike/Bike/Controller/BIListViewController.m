@@ -75,7 +75,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 50;
+    return 80;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -84,9 +84,9 @@
         cell = (BIListCell*)[[BIListCell alloc]init];
     }
     
-    cell.viewHeight = 50;
+    cell.viewHeight = 80;
+    cell.viewWidth = tableView.viewWidth;
     [cell updateCell:[_dataList objectAtIndex:indexPath.row]];
-    
     
     return cell;
 }

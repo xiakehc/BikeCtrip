@@ -29,22 +29,21 @@
 		59A978A31ADF8FDF00F5EABB /* BIModuleVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978A21ADF8FDF00F5EABB /* BIModuleVIew.m */; };
 		59A978A61ADF907000F5EABB /* BIModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978A51ADF907000F5EABB /* BIModuleModel.m */; };
 		59A978DD1ADFBE3500F5EABB /* BIToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978DC1ADFBE3500F5EABB /* BIToolBar.m */; };
-		59A978E31ADFC1C000F5EABB /* Activity.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A978DE1ADFC1C000F5EABB /* Activity.png */; };
-		59A978E51ADFC1C000F5EABB /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A978E11ADFC1C000F5EABB /* Home.png */; };
-		59A978E61ADFC1C000F5EABB /* Person.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A978E21ADFC1C000F5EABB /* Person.png */; };
-		59DC044E1ADF8179003FD49B /* detination.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DC04481ADF8179003FD49B /* detination.png */; };
 		59DEEC491ADFF1BD0072386E /* BIMyPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DEEC481ADFF1BD0072386E /* BIMyPersonViewController.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
 		A7303CAF1AE374CC003CEC98 /* BIActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7303CAE1AE374CC003CEC98 /* BIActivityViewController.m */; };
 		A7303CB31AE37CF3003CEC98 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7303CB11AE37CF3003CEC98 /* BIHomeViewController.m */; };
 		A7303CB41AE37CF3003CEC98 /* BIHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7303CB21AE37CF3003CEC98 /* BIHomeViewController.xib */; };
-		A761908E1ADEB4AB00967F99 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A761908D1ADEB4AB00967F99 /* banner.png */; };
+		A79423DF1AE3BD560098DF63 /* Activity_select.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423D81AE3BD560098DF63 /* Activity_select.png */; };
+		A79423E01AE3BD560098DF63 /* Activity.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423D91AE3BD560098DF63 /* Activity.png */; };
+		A79423E11AE3BD560098DF63 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423DA1AE3BD560098DF63 /* banner.png */; };
+		A79423E21AE3BD560098DF63 /* Home_select.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423DB1AE3BD560098DF63 /* Home_select.png */; };
+		A79423E31AE3BD560098DF63 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423DC1AE3BD560098DF63 /* Home.png */; };
+		A79423E41AE3BD560098DF63 /* Person_select.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423DD1AE3BD560098DF63 /* Person_select.png */; };
+		A79423E51AE3BD560098DF63 /* Person.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423DE1AE3BD560098DF63 /* Person.png */; };
+		A79423E71AE3BD700098DF63 /* icon_collect.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423E61AE3BD700098DF63 /* icon_collect.png */; };
 		A79A9E9B1AD90F55006B522C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79A9E9A1AD90F55006B522C /* CoreLocation.framework */; };
 		A7AD995B1AE2B0800078CBB6 /* BIHomeVCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AD995A1AE2B0800078CBB6 /* BIHomeVCManager.m */; };
-		A7AD99611AE2B4460078CBB6 /* Activity_select.png in Resources */ = {isa = PBXBuildFile; fileRef = A7AD995C1AE2B4460078CBB6 /* Activity_select.png */; };
-		A7AD99621AE2B4460078CBB6 /* detination.png in Resources */ = {isa = PBXBuildFile; fileRef = A7AD995E1AE2B4460078CBB6 /* detination.png */; };
-		A7AD99631AE2B4460078CBB6 /* Home_select.png in Resources */ = {isa = PBXBuildFile; fileRef = A7AD995F1AE2B4460078CBB6 /* Home_select.png */; };
-		A7AD99641AE2B4460078CBB6 /* Person_select.png in Resources */ = {isa = PBXBuildFile; fileRef = A7AD99601AE2B4460078CBB6 /* Person_select.png */; };
 		A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */; };
 		A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94611AD8CD2100B31F66 /* BIRequestOperationManager.m */; };
 		A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94641AD8CF6900B31F66 /* BIUtilColor.m */; };
@@ -117,10 +116,6 @@
 		59A978A51ADF907000F5EABB /* BIModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIModuleModel.m; sourceTree = "<group>"; };
 		59A978DB1ADFBE3500F5EABB /* BIToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIToolBar.h; sourceTree = "<group>"; };
 		59A978DC1ADFBE3500F5EABB /* BIToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIToolBar.m; sourceTree = "<group>"; };
-		59A978DE1ADFC1C000F5EABB /* Activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Activity.png; sourceTree = "<group>"; };
-		59A978E11ADFC1C000F5EABB /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
-		59A978E21ADFC1C000F5EABB /* Person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Person.png; sourceTree = "<group>"; };
-		59DC04481ADF8179003FD49B /* detination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detination.png; sourceTree = "<group>"; };
 		59DEEC471ADFF1BD0072386E /* BIMyPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIMyPersonViewController.h; sourceTree = "<group>"; };
 		59DEEC481ADFF1BD0072386E /* BIMyPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIMyPersonViewController.m; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,14 +126,17 @@
 		A7303CB11AE37CF3003CEC98 /* BIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeViewController.m; sourceTree = "<group>"; };
 		A7303CB21AE37CF3003CEC98 /* BIHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIHomeViewController.xib; sourceTree = "<group>"; };
 		A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BIFoundation.xcodeproj; path = BIFoundation/BIFoundation.xcodeproj; sourceTree = "<group>"; };
-		A761908D1ADEB4AB00967F99 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		A79423D81AE3BD560098DF63 /* Activity_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Activity_select.png; sourceTree = "<group>"; };
+		A79423D91AE3BD560098DF63 /* Activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Activity.png; sourceTree = "<group>"; };
+		A79423DA1AE3BD560098DF63 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		A79423DB1AE3BD560098DF63 /* Home_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_select.png; sourceTree = "<group>"; };
+		A79423DC1AE3BD560098DF63 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		A79423DD1AE3BD560098DF63 /* Person_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Person_select.png; sourceTree = "<group>"; };
+		A79423DE1AE3BD560098DF63 /* Person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Person.png; sourceTree = "<group>"; };
+		A79423E61AE3BD700098DF63 /* icon_collect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_collect.png; sourceTree = "<group>"; };
 		A79A9E9A1AD90F55006B522C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A7AD99591AE2B0800078CBB6 /* BIHomeVCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeVCManager.h; sourceTree = "<group>"; };
 		A7AD995A1AE2B0800078CBB6 /* BIHomeVCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeVCManager.m; sourceTree = "<group>"; };
-		A7AD995C1AE2B4460078CBB6 /* Activity_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Activity_select.png; sourceTree = "<group>"; };
-		A7AD995E1AE2B4460078CBB6 /* detination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detination.png; sourceTree = "<group>"; };
-		A7AD995F1AE2B4460078CBB6 /* Home_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_select.png; sourceTree = "<group>"; };
-		A7AD99601AE2B4460078CBB6 /* Person_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Person_select.png; sourceTree = "<group>"; };
 		A7CA945D1AD8C1D500B31F66 /* BIUtilNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilNetWork.h; sourceTree = "<group>"; };
 		A7CA945E1AD8C1D500B31F66 /* BIUtilNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilNetWork.m; sourceTree = "<group>"; };
 		A7CA94601AD8CD2100B31F66 /* BIRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRequestOperationManager.h; sourceTree = "<group>"; };
@@ -309,15 +307,8 @@
 		599A366D1ADBCEA10052E642 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A7AD995C1AE2B4460078CBB6 /* Activity_select.png */,
+				A79423E61AE3BD700098DF63 /* icon_collect.png */,
 				A7AD995D1AE2B4460078CBB6 /* home */,
-				A7AD995F1AE2B4460078CBB6 /* Home_select.png */,
-				A7AD99601AE2B4460078CBB6 /* Person_select.png */,
-				59DC04461ADF8179003FD49B /* home */,
-				59A978DE1ADFC1C000F5EABB /* Activity.png */,
-				59A978E11ADFC1C000F5EABB /* Home.png */,
-				59A978E21ADFC1C000F5EABB /* Person.png */,
-				A761908D1ADEB4AB00967F99 /* banner.png */,
 				599A366E1ADBD09D0052E642 /* overlay_left.png */,
 				599A366F1ADBD09D0052E642 /* overlay.png */,
 			);
@@ -350,14 +341,6 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
-		59DC04461ADF8179003FD49B /* home */ = {
-			isa = PBXGroup;
-			children = (
-				59DC04481ADF8179003FD49B /* detination.png */,
-			);
-			path = home;
-			sourceTree = "<group>";
-		};
 		9199391287573D0875A26A97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,7 +369,13 @@
 		A7AD995D1AE2B4460078CBB6 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				A7AD995E1AE2B4460078CBB6 /* detination.png */,
+				A79423D81AE3BD560098DF63 /* Activity_select.png */,
+				A79423D91AE3BD560098DF63 /* Activity.png */,
+				A79423DA1AE3BD560098DF63 /* banner.png */,
+				A79423DB1AE3BD560098DF63 /* Home_select.png */,
+				A79423DC1AE3BD560098DF63 /* Home.png */,
+				A79423DD1AE3BD560098DF63 /* Person_select.png */,
+				A79423DE1AE3BD560098DF63 /* Person.png */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -561,21 +550,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7AD99641AE2B4460078CBB6 /* Person_select.png in Resources */,
+				A79423E41AE3BD560098DF63 /* Person_select.png in Resources */,
+				A79423E01AE3BD560098DF63 /* Activity.png in Resources */,
 				599A36711ADBD09D0052E642 /* overlay.png in Resources */,
-				59A978E61ADFC1C000F5EABB /* Person.png in Resources */,
 				5936B7991AD654FC00227F7E /* Main.storyboard in Resources */,
-				59A978E51ADFC1C000F5EABB /* Home.png in Resources */,
-				A761908E1ADEB4AB00967F99 /* banner.png in Resources */,
 				5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */,
-				A7AD99631AE2B4460078CBB6 /* Home_select.png in Resources */,
-				59A978E31ADFC1C000F5EABB /* Activity.png in Resources */,
+				A79423E71AE3BD700098DF63 /* icon_collect.png in Resources */,
+				A79423E31AE3BD560098DF63 /* Home.png in Resources */,
 				5936B79B1AD654FC00227F7E /* Images.xcassets in Resources */,
 				A7303CB41AE37CF3003CEC98 /* BIHomeViewController.xib in Resources */,
-				A7AD99621AE2B4460078CBB6 /* detination.png in Resources */,
+				A79423E11AE3BD560098DF63 /* banner.png in Resources */,
 				599A36701ADBD09D0052E642 /* overlay_left.png in Resources */,
-				A7AD99611AE2B4460078CBB6 /* Activity_select.png in Resources */,
-				59DC044E1ADF8179003FD49B /* detination.png in Resources */,
+				A79423E21AE3BD560098DF63 /* Home_select.png in Resources */,
+				A79423E51AE3BD560098DF63 /* Person.png in Resources */,
+				A79423DF1AE3BD560098DF63 /* Activity_select.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
