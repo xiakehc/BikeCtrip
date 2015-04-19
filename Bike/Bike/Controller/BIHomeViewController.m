@@ -18,8 +18,8 @@
     NSArray *_dataList;/*首页板块数据模型*/
 }
 @property (weak, nonatomic) IBOutlet ImagePlayerView *imagePlayerView;
-@property (nonatomic, strong) NSArray *imageURLs;/*广告URL*/
 @property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (nonatomic, strong) NSArray *imageURLs;/*广告URL*/
 
 @end
 

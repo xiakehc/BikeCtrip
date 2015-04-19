@@ -33,13 +33,17 @@
     
     [self initToolBar];
     [self addAllVC];
-    //设置当前VC
+    
+    /*设置当前显示VC*/
     currentToolBarIndex = 0;
     UIViewController *vc =  [[BIHomeVCManager shareInstance].vList objectAtIndex:currentToolBarIndex];
     currentView = vc.view;
     [self.view addSubview:currentView];
 }
 
+/**
+ *  添加所有子ViewController
+ */
 - (void)addAllVC{
     BIHomeVCManager *_mange = [BIHomeVCManager shareInstance];
     for(int i =0;i<_mange.vList.count ; i++){
