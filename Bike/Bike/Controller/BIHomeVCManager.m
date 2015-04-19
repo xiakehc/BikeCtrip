@@ -8,9 +8,11 @@
 
 #import "BIHomeVCManager.h"
 #import "BIMyPersonViewController.h"
+#import "BIActivityViewController.h"
 
 @interface BIHomeVCManager(){
     BIMyPersonViewController *personVC;
+    BIActivityViewController *activityVC;
 }
 
 @end
@@ -28,7 +30,7 @@
     return sharedBIAPIService;
 }
 
-- (void)addViewINProperty{
+- (void)addVCINProperty:(UIViewController*)rootVC{
     if(!self.vList){
         self.vList = [NSMutableArray array];
     }
@@ -36,8 +38,15 @@
         [self.vList removeAllObjects];
     }
     
+    [self.vList addObject:rootVC];
+    activityVC = [[BIActivityViewController alloc]init];
+    [self.vList addObject:activityVC];
     personVC = [[BIMyPersonViewController alloc]init];
-    [self.vList addObject:personVC.view];
+    [self.vList addObject:personVC];
+    
+//    [rootVC addChildViewController:activityVC];
+//    [rootVC addChildViewController:personVC];
+
 }
 
 @end

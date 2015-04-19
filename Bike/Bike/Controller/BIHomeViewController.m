@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 kyu. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BIHomeViewController.h"
 #import "ImagePlayerView.h"
 #import "UIImageView+WebCache.h"
 #import "BIModuleVIew.h"
@@ -16,7 +16,7 @@
 
 #define TAG_View_KEY    11
 
-@interface ViewController ()<ImagePlayerViewDelegate, BIModuleVIewDelegate,BIToolBarDelegate>
+@interface BIHomeViewController ()<ImagePlayerViewDelegate, BIModuleVIewDelegate,BIToolBarDelegate>
 {
     NSArray *_dataList;/*首页板块数据模型*/
     NSInteger currentToolBarIndex;
@@ -28,7 +28,7 @@
 
 @end
 
-@implementation ViewController
+@implementation BIHomeViewController
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -65,7 +65,7 @@
 }
 
 - (void)initHomePageContentView{
-     [self initDataModel];
+    [self initDataModel];
     if(!_dataList || _dataList.count == 0){
         return;
     }
@@ -84,14 +84,14 @@
             case 0:
             {
                 BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
-                                       withColor:CTColorHex(0xFF4500) withKey:key withDelegate:self];
+                                                               withColor:CTColorHex(0xFF4500) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
             case 1:
             {
                 BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
-                                                    withColor:CTColorHex(0x00BFFF) withKey:key withDelegate:self];
+                                                               withColor:CTColorHex(0x00BFFF) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
@@ -105,7 +105,7 @@
             case 3:
             {
                 BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
-                                       withColor:CTColorHex(0xFFA500) withKey:key withDelegate:self];
+                                                               withColor:CTColorHex(0xFFA500) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
@@ -206,7 +206,7 @@
     BIHomeVCManager *_manager = [BIHomeVCManager shareInstance];
     UIView *removeView = [self.view viewWithTag:TAG_View_KEY];
     [removeView removeFromSuperview];
-    ViewController *vc = [_manager.vList objectAtIndex:index];
+    UIViewController *vc = [_manager.vList objectAtIndex:index];
     
     if(index != 0){
         vc.view.frame =CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
@@ -214,9 +214,9 @@
         [self.view addSubview:vc.view];
     }
     else{
-        ((ViewController*)vc).contentView.frame = CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
-        ((ViewController*)vc).contentView.tag = TAG_View_KEY;
-        [self.view addSubview:((ViewController*)vc).contentView];
+        ((BIHomeViewController*)vc).contentView.frame = CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
+        ((BIHomeViewController*)vc).contentView.tag = TAG_View_KEY;
+        [self.view addSubview:((BIHomeViewController*)vc).contentView];
     }
 }
 

@@ -10,10 +10,12 @@
 #import "BIUtilNetWork.h"
 #import "BIUtilString.h"
  #import <CoreLocation/CoreLocation.h>
+#import "BIHomeVCManager.h"
 
 @interface AppDelegate ()<CLLocationManagerDelegate>
 {
     CLLocationManager *locationManager;
+    BIHomeVCManager *_manager;
 }
 
 @end
@@ -29,24 +31,11 @@
     [self startDetectInternet];
     
     // 初始化定位
-    
-    if (locationManager==nil)
-    {
-        locationManager =[[CLLocationManager alloc] init];
-    }
-    
-    if ([CLLocationManager locationServicesEnabled])
-    {
-        locationManager.delegate=self;
-        locationManager.desiredAccuracy=kCLLocationAccuracyBest;
-        locationManager.distanceFilter=10.0f;
-        if([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-            [locationManager requestAlwaysAuthorization]; // 永久授权
-        }
-        [locationManager startUpdatingLocation];
-    }
+    [self startLocationService];
 
-
+    //开启VC管理类
+    _manager = [BIHomeVCManager shareInstance];
+    [_manager addVCINProperty:self.window.rootViewController];
     
     return YES;
 }
@@ -68,6 +57,24 @@
     {
         UIAlertView *view = [[UIAlertView alloc]initWithTitle:nil message:str delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:nil, nil];
         [view show];
+    }
+}
+
+- (void)startLocationService{
+    if (locationManager==nil)
+    {
+        locationManager =[[CLLocationManager alloc] init];
+    }
+    
+    if ([CLLocationManager locationServicesEnabled])
+    {
+        locationManager.delegate=self;
+        locationManager.desiredAccuracy=kCLLocationAccuracyBest;
+        locationManager.distanceFilter=10.0f;
+        if([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+            [locationManager requestAlwaysAuthorization]; // 永久授权
+        }
+        [locationManager startUpdatingLocation];
     }
 }
 

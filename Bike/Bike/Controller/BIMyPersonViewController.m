@@ -22,6 +22,10 @@
     
     [btn setTitle:@"登陆" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)btnClick:(id)sender{
     
 }
 
