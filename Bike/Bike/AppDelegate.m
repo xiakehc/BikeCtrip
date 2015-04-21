@@ -66,8 +66,8 @@
      连接微信应用以使用相关功能，此应用需要引用WeChatConnection.framework和微信官方SDK
      http://open.weixin.qq.com上注册应用，并将相关信息填写以下字段
      **/
-    [ShareSDK connectWeChatWithAppId:@""
-                           appSecret:@""
+    [ShareSDK connectWeChatWithAppId:@"wxac383bbc8a40bfa7"
+                           appSecret:@"36422141f5321a61573e756cab2bab36"
                            wechatCls:[WXApi class]];
     
     //连接短信分享
