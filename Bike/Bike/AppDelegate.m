@@ -48,6 +48,8 @@
     [self initializePlat];
     [self initializePlatForTrusteeship];
     
+
+    
     return YES;
 }
 
@@ -60,10 +62,6 @@
     [ShareSDK connectSinaWeiboWithAppKey:@"2624857760"
                                appSecret:@"bbfe4ae005b7134d5ef448b384f1e07f"
                              redirectUri:@"https://api.weibo.com/oauth2/default.html"];
-    
-    //连接短信分享
-    [ShareSDK connectSMS];
-    
     /**
      连接微信应用以使用相关功能，此应用需要引用WeChatConnection.framework和微信官方SDK
      http://open.weixin.qq.com上注册应用，并将相关信息填写以下字段
@@ -71,6 +69,9 @@
     [ShareSDK connectWeChatWithAppId:@""
                            appSecret:@""
                            wechatCls:[WXApi class]];
+    
+    //连接短信分享
+    [ShareSDK connectSMS];
     
     //连接邮件
     [ShareSDK connectMail];
