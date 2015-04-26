@@ -54,6 +54,7 @@
 		A77FD53F1AECDBF300265BBF /* PayU_Trans_Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD52B1AECDBF300265BBF /* PayU_Trans_Icon@3x.png */; };
 		A77FD5401AECDBF300265BBF /* PayU_WechatSecure_Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD52C1AECDBF300265BBF /* PayU_WechatSecure_Icon@2x.png */; };
 		A77FD5411AECDBF300265BBF /* PayU_WechatSecure_Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD52D1AECDBF300265BBF /* PayU_WechatSecure_Icon@3x.png */; };
+		A77FD5451AED43C400265BBF /* BIDisCoveryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FD5441AED43C400265BBF /* BIDisCoveryCell.m */; };
 		A79423DF1AE3BD560098DF63 /* Activity_select.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423D81AE3BD560098DF63 /* Activity_select.png */; };
 		A79423E01AE3BD560098DF63 /* Activity.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423D91AE3BD560098DF63 /* Activity.png */; };
 		A79423E11AE3BD560098DF63 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A79423DA1AE3BD560098DF63 /* banner.png */; };
@@ -190,6 +191,8 @@
 		A77FD52B1AECDBF300265BBF /* PayU_Trans_Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PayU_Trans_Icon@3x.png"; sourceTree = "<group>"; };
 		A77FD52C1AECDBF300265BBF /* PayU_WechatSecure_Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PayU_WechatSecure_Icon@2x.png"; sourceTree = "<group>"; };
 		A77FD52D1AECDBF300265BBF /* PayU_WechatSecure_Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PayU_WechatSecure_Icon@3x.png"; sourceTree = "<group>"; };
+		A77FD5431AED43C400265BBF /* BIDisCoveryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDisCoveryCell.h; sourceTree = "<group>"; };
+		A77FD5441AED43C400265BBF /* BIDisCoveryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDisCoveryCell.m; sourceTree = "<group>"; };
 		A79423D81AE3BD560098DF63 /* Activity_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Activity_select.png; sourceTree = "<group>"; };
 		A79423D91AE3BD560098DF63 /* Activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Activity.png; sourceTree = "<group>"; };
 		A79423DA1AE3BD560098DF63 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
@@ -512,6 +515,15 @@
 			path = discovery;
 			sourceTree = "<group>";
 		};
+		A77FD5421AED439C00265BBF /* DisCovery */ = {
+			isa = PBXGroup;
+			children = (
+				A77FD5431AED43C400265BBF /* BIDisCoveryCell.h */,
+				A77FD5441AED43C400265BBF /* BIDisCoveryCell.m */,
+			);
+			path = DisCovery;
+			sourceTree = "<group>";
+		};
 		A794242A1AE552910098DF63 /* ShareSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -615,6 +627,7 @@
 		A7C758561AD6C70E00640F90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A77FD5421AED439C00265BBF /* DisCovery */,
 				59A5642D1ADE592D000B9536 /* ListView */,
 				599A36641ADBB32B0052E642 /* HomeView */,
 				59A564091ADE44F0000B9536 /* UtilView */,
@@ -877,6 +890,7 @@
 				599A366A1ADBB48A0052E642 /* BIBaseTableViewCell.m in Sources */,
 				A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */,
 				59DEEC491ADFF1BD0072386E /* BIMyPersonViewController.m in Sources */,
+				A77FD5451AED43C400265BBF /* BIDisCoveryCell.m in Sources */,
 				5936B7961AD654FC00227F7E /* ViewController.m in Sources */,
 				A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */,
 				59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */,
