@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "BIHomeVCManager.h"
 #import "BIToolBar.h"
-
+#import "BIColorCollection.h"
 
 @interface ViewController ()<BIToolBarDelegate>
 {
@@ -36,7 +36,7 @@
     
     /*设置当前显示VC*/
     currentToolBarIndex = 0;
-    UIViewController *vc =  [[BIHomeVCManager shareInstance].vList objectAtIndex:currentToolBarIndex];
+    UIViewController *vc =  [[BIHomeVCManager shareInstance].vcList objectAtIndex:currentToolBarIndex];
     currentView = vc.view;
     currentView.frame =CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);
     [self.view addSubview:currentView];
@@ -49,8 +49,8 @@
  */
 - (void)addAllVC{
     BIHomeVCManager *_mange = [BIHomeVCManager shareInstance];
-    for(int i =0;i<_mange.vList.count ; i++){
-        UIViewController *vc = [[BIHomeVCManager shareInstance].vList objectAtIndex:i];
+    for(int i =0;i<_mange.vcList.count ; i++){
+        UIViewController *vc = [[BIHomeVCManager shareInstance].vcList objectAtIndex:i];
         [self addChildViewController:vc];
     }
 }
@@ -74,7 +74,12 @@
     currentToolBarIndex = index;    //设置index
     
     BIHomeVCManager *_manager = [BIHomeVCManager shareInstance];
-    UIViewController *detationVC = [_manager.vList objectAtIndex:index];
+    UIViewController *detationVC = [_manager.vcList objectAtIndex:index];
+    self.title  = [_manager.titleList objectAtIndex:index];
+    //set NavigationBar 背景颜色&title 颜色
+    [self.navigationController.navigationBar setBarTintColor:kBIMediumSeaGreen];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],UITextAttributeTextColor,nil]];
+    
     [currentView removeFromSuperview];
     currentView = detationVC.view;
     currentView.frame = CGRectMake(0, 0, CURRENTSCREEN_WIDTH, CURRENTSCREEN_HEIGHT-60);

@@ -20,7 +20,7 @@
 @end
 
 @implementation BIHomeVCManager
-@synthesize vList;
+@synthesize vcList, titleList;
 
 + (BIHomeVCManager *)shareInstance{
     static BIHomeVCManager *sharedBIAPIService = nil;
@@ -33,20 +33,31 @@
 }
 
 - (void)addVCINProperty:(UIViewController*)rootVC{
-    if(!self.vList){
-        self.vList = [NSMutableArray array];
+    if(!self.vcList){
+        self.vcList = [NSMutableArray array];
     }
     else{
-        [self.vList removeAllObjects];
+        [self.vcList removeAllObjects];
     }
     
     homeVC = [[BIHomeViewController alloc]init];
-    [self.vList addObject:homeVC];
+    [self.vcList addObject:homeVC];
     activityVC = [[BIActivityViewController alloc]init];
-    [self.vList addObject:activityVC];
+    activityVC.title = @"self.navigationController.navigationBarHidden = NO;";
+    [self.vcList addObject:activityVC];
     personVC = [[BIMyPersonViewController alloc]init];
-    [self.vList addObject:personVC];
+    [self.vcList addObject:personVC];
 
+    
+    if(!self.titleList){
+        self.titleList = [NSMutableArray array];
+    }else{
+        [self.titleList removeAllObjects];
+    }
+    
+    [self.titleList addObject:@"首页"];
+    [self.titleList addObject:@"发现"];
+    [self.titleList addObject:@"个人"];
 }
 
 @end

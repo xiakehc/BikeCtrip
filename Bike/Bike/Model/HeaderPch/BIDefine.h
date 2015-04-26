@@ -41,6 +41,6 @@ while(0)
 #define CURRENTSCREEN_HEIGHT [[UIApplication sharedApplication].delegate window].frame.size.height
 
 
-#define kCTHotelIPad   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-#define kCTHotelIPadRetina   ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)&&([UIScreen mainScreen].scale == 2))
+#define kCTHIPad   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define kCTHIPadRetina   ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)&&([UIScreen mainScreen].scale == 2))
 #define isRetina   ([UIScreen mainScreen].scale > 1)

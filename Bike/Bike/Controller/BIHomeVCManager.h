@@ -12,7 +12,8 @@
 
 + (BIHomeVCManager *)shareInstance;
 
-@property (nonatomic,strong) NSMutableArray *vList;
+@property (nonatomic,strong) NSMutableArray *vcList;
+@property (nonatomic,strong) NSMutableArray *titleList;
 
 - (void)addVCINProperty:(UIViewController*)rootVC;
 

@@ -8,4 +8,5 @@ dependencies: \
   /Project/github/BikeCtrip/Bike/Bike/Controller/BIHomeVCManager.h \
   /Project/github/BikeCtrip/Bike/Bike/Controller/BIMyPersonViewController.h \
   /Project/github/BikeCtrip/Bike/Bike/Controller/BIActivityViewController.h \
+  /Project/github/BikeCtrip/Bike/Bike/Model/Util/BIColorCollection.h \
   /Project/github/BikeCtrip/Bike/Bike/Controller/BIHomeViewController.h

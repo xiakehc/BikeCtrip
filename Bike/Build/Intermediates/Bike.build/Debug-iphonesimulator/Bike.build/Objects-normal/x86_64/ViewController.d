@@ -6,4 +6,5 @@ dependencies: /Project/github/BikeCtrip/Bike/Bike/ViewController.m \
   CTLib/BIFoundation/BIFoundation/UIExtentions/UIView+CTExtensions.h \
   /Project/github/BikeCtrip/Bike/Bike/ViewController.h \
   /Project/github/BikeCtrip/Bike/Bike/Controller/BIHomeVCManager.h \
-  /Project/github/BikeCtrip/Bike/Bike/View/HomeView/BIToolBar.h
+  /Project/github/BikeCtrip/Bike/Bike/View/HomeView/BIToolBar.h \
+  /Project/github/BikeCtrip/Bike/Bike/Model/Util/BIColorCollection.h
