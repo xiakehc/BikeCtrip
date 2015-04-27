@@ -7,14 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <Foundation/Foundation.h>
-//
-//@interface DisCoveryModel : NSObject
-//@property (nonatomic,strong) NSString* name;
-//@property (nonatomic,strong) NSString* img;
-//@end
+#import "BIBaseTableViewCell.h"
 
-@interface BIDisCoveryCell : UITableViewCell
+@interface BIDisCoveryCell : BIBaseTableViewCell
 
 - (void)updeteCell:(NSString*)name withImg:(NSString*)img;
 

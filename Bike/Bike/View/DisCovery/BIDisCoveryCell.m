@@ -7,6 +7,8 @@
 //
 
 #import "BIDisCoveryCell.h"
+#import "BIColorCollection.h"
+
 
 @interface BIDisCoveryCell(){
     UIImageView *img;
@@ -43,6 +45,10 @@
     
     [img setFrame:CGRectMake(15, (self.viewHeight-25)/2, 25, 25)];
     [lbl setFrame:CGRectMake(60, 0, 200, self.viewHeight)];
+    
+    [self setSeparateMode:UISeparatableViewSeparateModeBottom];
+    [self setSeparatorLineWidth:0.5];
+    [self setSeparatorColor:kBIGainsBoro];
 }
 
 @end

@@ -12,3 +12,6 @@
 
 
 #define kBIMediumSeaGreen                     CTColorHex(0x3cb371)  //中海蓝
+#define kBISnow                                         CTColorHex(0xfffafa)  //雪白色
+#define kBIGainsBoro                                  CTColorHex(0xdcdcdc)  //暗灰色
+
