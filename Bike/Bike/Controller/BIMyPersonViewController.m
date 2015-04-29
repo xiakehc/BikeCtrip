@@ -8,26 +8,48 @@
 
 #import "BIMyPersonViewController.h"
 #import <ShareSDK/ShareSDK.h>
+#import "BITwitterScroll.h"
+
+@interface BIMyPersonViewController ()<UITableViewDataSource,UITableViewDelegate,MBTwitterScrollDelegate>
+
+@end
 
 @implementation BIMyPersonViewController
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    self.navigationController.navigationBarHidden = YES;
+}
+
 - (void)viewDidLoad{
     
-//    UITableView *view = [[UITableView alloc]initWithFrame:self.view.frame];
-//    [self.view addSubview:view];
+//    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 200, 80)];
+//    [self.view addSubview:btn];
 //    
-    self.view.backgroundColor= [UIColor redColor];
+//    [btn setTitle:@"登陆" forState:UIControlStateNormal];
+//    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+//    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 200, 80)];
-    [self.view addSubview:btn];
+    BITwitterScroll *myTableView = [[BITwitterScroll alloc]
+                                    initTableViewWithBackgound:[UIImage imageNamed:@"background.png"]
+                                    avatarImage:[UIImage imageNamed:@"icon_collect"]
+                                    titleString:@"余康"
+                                    subtitleString:@"初级骑行者"
+                                    buttonTitle:@"关注"];  
     
-    [btn setTitle:@"登陆" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    myTableView.tableView.delegate = self;
+    myTableView.tableView.dataSource = self;
+    myTableView.delegate = self;
+    [self.view addSubview:myTableView];
+}
+
+- (void)recievedMBTwitterScrollEvent{
+    BILog(@"To Do Nothing!");
 }
 
 - (void)btnClick:(id)sender{
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"overlay" ofType:@"png"];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"background" ofType:@"png"];
     
     //1、构造分享内容
     id<ISSContent> publishContent = [ShareSDK content:@"要分享的内容"
@@ -70,6 +92,25 @@
                                     [alert show];
                                 }
                             }];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 30;
+}
+
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *identifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    
+    cell.textLabel.text =  @"Cell";
+    
+    return cell;
 }
 
 @end

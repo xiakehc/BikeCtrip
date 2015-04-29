@@ -21,8 +21,6 @@
 		599A36631ADBA5890052E642 /* coupons.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36621ADBA5890052E642 /* coupons.m */; };
 		599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36661ADBB35A0052E642 /* BIHomeCell.m */; };
 		599A366A1ADBB48A0052E642 /* BIBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */; };
-		599A36701ADBD09D0052E642 /* overlay_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366E1ADBD09D0052E642 /* overlay_left.png */; };
-		599A36711ADBD09D0052E642 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 599A366F1ADBD09D0052E642 /* overlay.png */; };
 		59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564111ADE4F54000B9536 /* ImagePlayerView.m */; };
 		59A564301ADE5975000B9536 /* BIListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5642F1ADE5975000B9536 /* BIListCell.m */; };
 		59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564331ADE73B2000B9536 /* BIListViewController.m */; };
@@ -34,6 +32,10 @@
 		A7303CAF1AE374CC003CEC98 /* BIActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7303CAE1AE374CC003CEC98 /* BIActivityViewController.m */; };
 		A7303CB31AE37CF3003CEC98 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7303CB11AE37CF3003CEC98 /* BIHomeViewController.m */; };
 		A7303CB41AE37CF3003CEC98 /* BIHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7303CB21AE37CF3003CEC98 /* BIHomeViewController.xib */; };
+		A736BD641AF12A1500AF150E /* BITwitterScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = A736BD601AF12A1500AF150E /* BITwitterScroll.m */; };
+		A736BD651AF12A1500AF150E /* UIScrollView+TwitterCover.m in Sources */ = {isa = PBXBuildFile; fileRef = A736BD631AF12A1500AF150E /* UIScrollView+TwitterCover.m */; };
+		A736BD671AF1310700AF150E /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = A736BD661AF1310700AF150E /* mine.png */; };
+		A736BD6B1AF1331A00AF150E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A736BD6A1AF1331A00AF150E /* background.png */; };
 		A77FD52E1AECDBF300265BBF /* Action_MyFavAdd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51A1AECDBF300265BBF /* Action_MyFavAdd@2x.png */; };
 		A77FD52F1AECDBF300265BBF /* Action_MyFavAdd@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51B1AECDBF300265BBF /* Action_MyFavAdd@3x.png */; };
 		A77FD5301AECDBF300265BBF /* ff_IconBottle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51C1AECDBF300265BBF /* ff_IconBottle@2x.png */; };
@@ -146,8 +148,6 @@
 		599A36661ADBB35A0052E642 /* BIHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeCell.m; sourceTree = "<group>"; };
 		599A36681ADBB48A0052E642 /* BIBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIBaseTableViewCell.h; sourceTree = "<group>"; };
 		599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIBaseTableViewCell.m; sourceTree = "<group>"; };
-		599A366E1ADBD09D0052E642 /* overlay_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_left.png; sourceTree = "<group>"; };
-		599A366F1ADBD09D0052E642 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
 		59A564101ADE4F54000B9536 /* ImagePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePlayerView.h; sourceTree = "<group>"; };
 		59A564111ADE4F54000B9536 /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		59A5642E1ADE5975000B9536 /* BIListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListCell.h; sourceTree = "<group>"; };
@@ -170,6 +170,12 @@
 		A7303CB11AE37CF3003CEC98 /* BIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeViewController.m; sourceTree = "<group>"; };
 		A7303CB21AE37CF3003CEC98 /* BIHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIHomeViewController.xib; sourceTree = "<group>"; };
 		A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BIFoundation.xcodeproj; path = BIFoundation/BIFoundation.xcodeproj; sourceTree = "<group>"; };
+		A736BD5F1AF12A1500AF150E /* BITwitterScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BITwitterScroll.h; sourceTree = "<group>"; };
+		A736BD601AF12A1500AF150E /* BITwitterScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BITwitterScroll.m; sourceTree = "<group>"; };
+		A736BD621AF12A1500AF150E /* UIScrollView+TwitterCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TwitterCover.h"; sourceTree = "<group>"; };
+		A736BD631AF12A1500AF150E /* UIScrollView+TwitterCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TwitterCover.m"; sourceTree = "<group>"; };
+		A736BD661AF1310700AF150E /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine.png; sourceTree = "<group>"; };
+		A736BD6A1AF1331A00AF150E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		A77FD5161AECCC2B00265BBF /* BIColorCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIColorCollection.h; sourceTree = "<group>"; };
 		A77FD51A1AECDBF300265BBF /* Action_MyFavAdd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Action_MyFavAdd@2x.png"; sourceTree = "<group>"; };
 		A77FD51B1AECDBF300265BBF /* Action_MyFavAdd@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Action_MyFavAdd@3x.png"; sourceTree = "<group>"; };
@@ -420,11 +426,11 @@
 		599A366D1ADBCEA10052E642 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A736BD6A1AF1331A00AF150E /* background.png */,
+				A736BD661AF1310700AF150E /* mine.png */,
 				A77FD5191AECDBF300265BBF /* discovery */,
 				A79423E61AE3BD700098DF63 /* icon_collect.png */,
 				A7AD995D1AE2B4460078CBB6 /* home */,
-				599A366E1ADBD09D0052E642 /* overlay_left.png */,
-				599A366F1ADBD09D0052E642 /* overlay.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 		A73234BE1ADC1D6C00CA1A17 /* CTLib */ = {
 			isa = PBXGroup;
 			children = (
+				A736BD5E1AF12A1500AF150E /* MBTwitterScroll */,
 				A794242A1AE552910098DF63 /* ShareSDK */,
 				A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */,
 			);
@@ -486,6 +493,25 @@
 				A73235D91ADC217200CA1A17 /* libBIFoundation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A736BD5E1AF12A1500AF150E /* MBTwitterScroll */ = {
+			isa = PBXGroup;
+			children = (
+				A736BD5F1AF12A1500AF150E /* BITwitterScroll.h */,
+				A736BD601AF12A1500AF150E /* BITwitterScroll.m */,
+				A736BD611AF12A1500AF150E /* TwitterCover */,
+			);
+			path = MBTwitterScroll;
+			sourceTree = "<group>";
+		};
+		A736BD611AF12A1500AF150E /* TwitterCover */ = {
+			isa = PBXGroup;
+			children = (
+				A736BD621AF12A1500AF150E /* UIScrollView+TwitterCover.h */,
+				A736BD631AF12A1500AF150E /* UIScrollView+TwitterCover.m */,
+			);
+			path = TwitterCover;
 			sourceTree = "<group>";
 		};
 		A77FD5191AECDBF300265BBF /* discovery */ = {
@@ -791,12 +817,12 @@
 				A77FD5331AECDBF300265BBF /* ff_IconLocationService@3x.png in Resources */,
 				A77FD53D1AECDBF300265BBF /* MoreSetting@3x.png in Resources */,
 				A79423E01AE3BD560098DF63 /* Activity.png in Resources */,
-				599A36711ADBD09D0052E642 /* overlay.png in Resources */,
 				A77FD5391AECDBF300265BBF /* ff_IconShowAlbum@3x.png in Resources */,
 				A77FD5371AECDBF300265BBF /* ff_IconShake@3x.png in Resources */,
 				5936B7991AD654FC00227F7E /* Main.storyboard in Resources */,
 				A79424531AE552910098DF63 /* ShareSDKFlatShareViewUI.bundle in Resources */,
 				5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */,
+				A736BD6B1AF1331A00AF150E /* background.png in Resources */,
 				A77FD5411AECDBF300265BBF /* PayU_WechatSecure_Icon@3x.png in Resources */,
 				A79423E71AE3BD700098DF63 /* icon_collect.png in Resources */,
 				A77FD52E1AECDBF300265BBF /* Action_MyFavAdd@2x.png in Resources */,
@@ -808,7 +834,6 @@
 				A7303CB41AE37CF3003CEC98 /* BIHomeViewController.xib in Resources */,
 				A77FD5401AECDBF300265BBF /* PayU_WechatSecure_Icon@2x.png in Resources */,
 				A79423E11AE3BD560098DF63 /* banner.png in Resources */,
-				599A36701ADBD09D0052E642 /* overlay_left.png in Resources */,
 				A79423E21AE3BD560098DF63 /* Home_select.png in Resources */,
 				A77FD5361AECDBF300265BBF /* ff_IconShake@2x.png in Resources */,
 				A77FD53A1AECDBF300265BBF /* MoreGame@2x.png in Resources */,
@@ -823,6 +848,7 @@
 				A794244D1AE552910098DF63 /* Resource.bundle in Resources */,
 				A77FD53F1AECDBF300265BBF /* PayU_Trans_Icon@3x.png in Resources */,
 				A77FD53C1AECDBF300265BBF /* MoreSetting@2x.png in Resources */,
+				A736BD671AF1310700AF150E /* mine.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -893,6 +919,7 @@
 				A77FD5451AED43C400265BBF /* BIDisCoveryCell.m in Sources */,
 				5936B7961AD654FC00227F7E /* ViewController.m in Sources */,
 				A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */,
+				A736BD651AF12A1500AF150E /* UIScrollView+TwitterCover.m in Sources */,
 				59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */,
 				599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */,
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
@@ -900,6 +927,7 @@
 				59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */,
 				59A978A31ADF8FDF00F5EABB /* BIModuleVIew.m in Sources */,
 				591E2B151ADD469700280FDA /* BIDetailCell.m in Sources */,
+				A736BD641AF12A1500AF150E /* BITwitterScroll.m in Sources */,
 				A7303CB31AE37CF3003CEC98 /* BIHomeViewController.m in Sources */,
 				A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */,
 				A7303CAF1AE374CC003CEC98 /* BIActivityViewController.m in Sources */,

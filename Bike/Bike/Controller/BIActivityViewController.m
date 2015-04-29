@@ -165,6 +165,7 @@ typedef enum {
 - (UITableViewCell*)returnDefineCell{
     BIBaseTableViewCell *cell = [[BIBaseTableViewCell alloc]init];
     cell.separateMode = UISeparatableViewSeparateModeBottom;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell setSeparatorLineWidth:0.5];
     [cell setSeparatorColor:kBIGainsBoro];
     cell.backgroundColor = CTColorHexA(0xd3d3d3,0.1);// [UIColor whiteColor];//kBISnow;

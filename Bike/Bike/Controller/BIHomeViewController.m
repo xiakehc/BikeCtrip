@@ -76,21 +76,21 @@
             case 0:
             {
                 BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
-                                                               withColor:CTColorHex(0xFF4500) withKey:key withDelegate:self];
+                                                               withColor:CTColorHex(0x1e90ff  ) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
             case 1:
             {
                 BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
-                                                               withColor:CTColorHex(0x00BFFF) withKey:key withDelegate:self];
+                                                               withColor:CTColorHex(0xFF4500) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
             case 2:
             {
                 BIModuleVIew *view1 = [[BIModuleVIew alloc]initWithFrame:view.frame withList: [_dataList objectAtIndex:i]
-                                                               withColor:CTColorHex(0x2E8B57) withKey:key withDelegate:self];
+                                                               withColor:CTColorHex(0x32cd32) withKey:key withDelegate:self];
                 [view addSubview:view1];
             }
                 break;
