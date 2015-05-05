@@ -28,6 +28,7 @@ PODS:
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
   - TAOverlay (2.0.1)
+  - UITableView+FDTemplateLayoutCell (1.1-beta)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.2)
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - Masonry (~> 0.6.1)
   - SDWebImage (~> 3.7.2)
   - TAOverlay (~> 2.0.1)
+  - UITableView+FDTemplateLayoutCell (~> 1.1-beta)
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
@@ -46,5 +48,6 @@ SPEC CHECKSUMS:
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   TAOverlay: 940e37fdb45fbc9acfc73bf1089668367e3b1be6
+  UITableView+FDTemplateLayoutCell: 058bc73b876f3bf0fb7f0bcb31c92af7ecd2587c
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.37.0
