@@ -161,9 +161,9 @@ CGFloat const distance_W_LabelHeader = 35.0;
     CATransform3D avatarTransform = CATransform3DIdentity;
     
     // DOWN -----------------
-    NSLog(@"++++++++%f",offset);
+//    NSLog(@"++++++++%f",offset);
     if (offset < 0) {
-        NSLog(@"offset < 000000000");
+        //NSLog(@"offset < 000000000");
         CGFloat headerScaleFactor = -(offset) / self.header.bounds.size.height;
         CGFloat headerSizevariation = ((self.header.bounds.size.height * (1.0 + headerScaleFactor)) - self.header.bounds.size.height)/2.0;
         headerTransform = CATransform3DTranslate(headerTransform, 0, headerSizevariation, 0);
@@ -180,7 +180,7 @@ CGFloat const distance_W_LabelHeader = 35.0;
     // SCROLL UP/DOWN ------------
     
     else {
-         NSLog(@"offset > 11111111");
+         //NSLog(@"offset > 11111111");
         // Header -----------
         headerTransform = CATransform3DTranslate(headerTransform, 0, MAX(-offset_HeaderStop, -offset), 0);
         

@@ -168,12 +168,14 @@ typedef enum {
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell setSeparatorLineWidth:0.5];
     [cell setSeparatorColor:kBIGainsBoro];
+    cell.separatorViewWidth = CURRENTSCREEN_WIDTH;
     cell.backgroundColor = CTColorHexA(0xd3d3d3,0.1);// [UIColor whiteColor];//kBISnow;
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"个人信息 " message:@"点击Click" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [view show];
 }
 
 

@@ -25,6 +25,6 @@ typedef NS_ENUM(NSInteger, UISeparatableViewSeparateMode) {
 @property (nonatomic, assign) UIEdgeInsets separatorInset UI_APPEARANCE_SELECTOR; // allows customization of the frame of separators
 @property (nonatomic, assign) CGFloat separatorLineWidth UI_APPEARANCE_SELECTOR; // default = 0.5
 @property (nonatomic, strong) UIColor *separatorColor UI_APPEARANCE_SELECTOR; // default is the standard separator gray
-
+@property (nonatomic, assign) CGFloat separatorViewWidth UI_APPEARANCE_SELECTOR; // default = self.bound
 
 @end

@@ -55,6 +55,7 @@
 {
     _separateMode = UISeparatableViewSeparateModeTop;
     _separatorLineWidth = .5f;
+    _separatorViewWidth = CGRectGetWidth(self.bounds);
 }
 
 #pragma mark - Getters
@@ -123,17 +124,17 @@
     switch (self.separateMode) {
         case UISeparatableViewSeparateModeTop:
             return (CGRect) {
-                .origin.x = 0,
+                .origin.x = CGRectGetWidth(self.bounds)-_separatorViewWidth,
                 .origin.y = 0,
-                .size.width = CGRectGetWidth(self.bounds),
+                .size.width = _separatorViewWidth,
                 .size.height = self.separatorLineWidth,
             };
             break;
         case UISeparatableViewSeparateModeBottom:
             return (CGRect) {
-                .origin.x = 0,
+                .origin.x = CGRectGetWidth(self.bounds)-_separatorViewWidth,
                 .origin.y = CGRectGetMaxY(self.bounds) - self.separatorLineWidth,
-                .size.width = CGRectGetWidth(self.bounds),
+                .size.width = _separatorViewWidth,
                 .size.height = self.separatorLineWidth,
             };
             break;

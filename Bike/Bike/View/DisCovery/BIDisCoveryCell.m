@@ -49,6 +49,7 @@
     [self setSeparateMode:UISeparatableViewSeparateModeBottom];
     [self setSeparatorLineWidth:0.5];
     [self setSeparatorColor:kBIGainsBoro];
+    self.separatorViewWidth = CURRENTSCREEN_WIDTH;
 }
 
 @end

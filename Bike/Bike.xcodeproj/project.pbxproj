@@ -98,6 +98,7 @@
 		A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94641AD8CF6900B31F66 /* BIUtilColor.m */; };
 		A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA946A1AD8F16A00B31F66 /* BIUtilString.m */; };
 		A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */; };
+		A7E612141B0251DD0056DE94 /* personalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E612131B0251DD0056DE94 /* personalViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +258,8 @@
 		A7CA946F1AD8F3A800B31F66 /* BILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILog.h; sourceTree = "<group>"; };
 		A7CA94701AD8F7E200B31F66 /* BIUtilDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilDate.h; sourceTree = "<group>"; };
 		A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilDate.m; sourceTree = "<group>"; };
+		A7E612121B0251DD0056DE94 /* personalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalViewCell.h; sourceTree = "<group>"; };
+		A7E612131B0251DD0056DE94 /* personalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalViewCell.m; sourceTree = "<group>"; };
 		DF7202F3F892E5B9AD7FB20E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -680,6 +683,7 @@
 		A7C758561AD6C70E00640F90 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7E612111B0251A90056DE94 /* PersonalView */,
 				A7566DDE1AF7C3B000153186 /* ActivityView */,
 				A77FD5421AED439C00265BBF /* DisCovery */,
 				59A5642D1ADE592D000B9536 /* ListView */,
@@ -732,6 +736,15 @@
 				A7CA946F1AD8F3A800B31F66 /* BILog.h */,
 			);
 			path = HeaderPch;
+			sourceTree = "<group>";
+		};
+		A7E612111B0251A90056DE94 /* PersonalView */ = {
+			isa = PBXGroup;
+			children = (
+				A7E612121B0251DD0056DE94 /* personalViewCell.h */,
+				A7E612131B0251DD0056DE94 /* personalViewCell.m */,
+			);
+			path = PersonalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -945,6 +958,7 @@
 			files = (
 				599A366A1ADBB48A0052E642 /* BIBaseTableViewCell.m in Sources */,
 				A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */,
+				A7E612141B0251DD0056DE94 /* personalViewCell.m in Sources */,
 				59DEEC491ADFF1BD0072386E /* BIMyPersonViewController.m in Sources */,
 				A77FD5451AED43C400265BBF /* BIDisCoveryCell.m in Sources */,
 				A7566DDD1AF7BD1400153186 /* BIGroupTableViewController.m in Sources */,
