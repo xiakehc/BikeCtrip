@@ -21,6 +21,8 @@
 		599A36631ADBA5890052E642 /* coupons.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36621ADBA5890052E642 /* coupons.m */; };
 		599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36661ADBB35A0052E642 /* BIHomeCell.m */; };
 		599A366A1ADBB48A0052E642 /* BIBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */; };
+		599AFCF01B0383960020C0E9 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599AFCEE1B0383960020C0E9 /* Fabric.framework */; };
+		599AFCF11B0383960020C0E9 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599AFCEF1B0383960020C0E9 /* Crashlytics.framework */; };
 		59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564111ADE4F54000B9536 /* ImagePlayerView.m */; };
 		59A564301ADE5975000B9536 /* BIListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5642F1ADE5975000B9536 /* BIListCell.m */; };
 		59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A564331ADE73B2000B9536 /* BIListViewController.m */; };
@@ -152,6 +154,8 @@
 		599A36661ADBB35A0052E642 /* BIHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIHomeCell.m; sourceTree = "<group>"; };
 		599A36681ADBB48A0052E642 /* BIBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIBaseTableViewCell.h; sourceTree = "<group>"; };
 		599A36691ADBB48A0052E642 /* BIBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIBaseTableViewCell.m; sourceTree = "<group>"; };
+		599AFCEE1B0383960020C0E9 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		599AFCEF1B0383960020C0E9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		59A564101ADE4F54000B9536 /* ImagePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePlayerView.h; sourceTree = "<group>"; };
 		59A564111ADE4F54000B9536 /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		59A5642E1ADE5975000B9536 /* BIListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListCell.h; sourceTree = "<group>"; };
@@ -268,6 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599AFCF01B0383960020C0E9 /* Fabric.framework in Frameworks */,
 				A79424291AE5518F0098DF63 /* MessageUI.framework in Frameworks */,
 				A79424551AE552910098DF63 /* ShareSDKShareActionSheet.framework in Frameworks */,
 				A79424481AE552910098DF63 /* SinaWeiboConnection.framework in Frameworks */,
@@ -277,6 +282,7 @@
 				A794244A1AE552910098DF63 /* WeChatConnection.framework in Frameworks */,
 				A79424251AE5517D0098DF63 /* Security.framework in Frameworks */,
 				A79424231AE551770098DF63 /* libicucore.dylib in Frameworks */,
+				599AFCF11B0383960020C0E9 /* Crashlytics.framework in Frameworks */,
 				A79424211AE551670098DF63 /* CoreTelephony.framework in Frameworks */,
 				A794244E1AE552910098DF63 /* ShareSDKCoreService.framework in Frameworks */,
 				A794241F1AE5515F0098DF63 /* QuartzCore.framework in Frameworks */,
@@ -492,6 +498,8 @@
 		A73234BE1ADC1D6C00CA1A17 /* CTLib */ = {
 			isa = PBXGroup;
 			children = (
+				599AFCEE1B0383960020C0E9 /* Fabric.framework */,
+				599AFCEF1B0383960020C0E9 /* Crashlytics.framework */,
 				A736BD5E1AF12A1500AF150E /* MBTwitterScroll */,
 				A794242A1AE552910098DF63 /* ShareSDK */,
 				A73235D31ADC217100CA1A17 /* BIFoundation.xcodeproj */,
@@ -760,6 +768,7 @@
 				5936B7881AD654FC00227F7E /* Resources */,
 				5E5044EE87C946302A4B7B65 /* Copy Pods Resources */,
 				A7CA94731AD90C1B00B31F66 /* ShellScript */,
+				599AFCED1B0383600020C0E9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -920,6 +929,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		599AFCED1B0383600020C0E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 3915419462dfb4d0cbaf42cc323c20d6c13e680f 76e5194ad1ecf2b251cf20aaffba685f1dcc57ecdb0ecdf2663b848ae98ece74";
+		};
 		5E5044EE87C946302A4B7B65 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -944,6 +966,7 @@
 				"",
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/myfile",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1141,6 +1164,7 @@
 					"$(PROJECT_DIR)/CTLib/ShareSDK/Extend/QQConnectSDK",
 					"$(PROJECT_DIR)/CTLib/ShareSDK",
 					"$(PROJECT_DIR)/CTLib/ShareSDK/UI",
+					"$(PROJECT_DIR)/CTLib",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Bike/BikeFile.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1199,6 +1223,7 @@
 					"$(PROJECT_DIR)/CTLib/ShareSDK/Extend/QQConnectSDK",
 					"$(PROJECT_DIR)/CTLib/ShareSDK",
 					"$(PROJECT_DIR)/CTLib/ShareSDK/UI",
+					"$(PROJECT_DIR)/CTLib",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Bike/BikeFile.pch";
 				HEADER_SEARCH_PATHS = (

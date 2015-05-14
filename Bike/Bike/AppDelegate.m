@@ -16,6 +16,9 @@
 #import "WeiboSDK.h"
 #import <ShareSDK/ShareSDK.h>
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 #define ShareKeyDefine    @"6dfa8227bfca"
 
 @interface AppDelegate ()<CLLocationManagerDelegate>
@@ -48,6 +51,8 @@
     [self initializePlat];
     [self initializePlatForTrusteeship];
     
+    //开启Fabric
+    [Fabric with:@[CrashlyticsKit]];
 
     
     return YES;
