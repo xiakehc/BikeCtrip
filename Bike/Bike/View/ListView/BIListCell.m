@@ -36,19 +36,21 @@
     BILog(@"%@",superObj);
     [self createCellContentView];
     
-    coupons *md = (coupons *)model;
-    lbl.text = md.cname;
+    NSString *month = [model objectForKey:@"month"];
+    NSString *pic = [model objectForKey:@"pic"];
+    NSString *year = [model objectForKey:@"year"];
+    lbl.text = [NSString stringWithFormat:@"%@年%@月份70个大中城市住宅销售价格变动情况",year,month];
     lbl.font = [UIFont systemFontOfSize:15.0];
     [lbl sizeToFit];
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",[BIAPIService getClientAppAPIBaseURLString],md.cpic]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",pic]];
     [img sd_setImageWithPreviousCachedImageWithURL:url andPlaceholderImage:[UIImage imageNamed:@"overlay.png"] options:SDWebImageDelayPlaceholder progress:^(NSInteger receivedSize, NSInteger expectedSize) {
         BILog(@"%ld",receivedSize/expectedSize);
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         BILog(@"loadSuccess %@",imageURL);
     }];
-    timeLbl.text = md.cnowPirce;
-    recommandLbl.text = md.camount;
+    timeLbl.text = @"来源：国家统计局";
+    recommandLbl.text = @"推荐";
     recommandLbl.textAlignment = NSTextAlignmentRight;
     CGSize size =[recommandLbl.text sizeWithFont:recommandLbl.font constrainedToSize:CGSizeMake(100, 15) lineBreakMode:NSLineBreakByClipping];
     recommandLbl.viewX = self.viewWidth - size.width - 10;
@@ -73,10 +75,12 @@
     
     if(!recommandLbl){
         recommandLbl = [[UILabel alloc]init];
+        recommandLbl.font = [UIFont systemFontOfSize:14.f];
         [self addSubview:recommandLbl];
     }
     if(!timeLbl){
         timeLbl = [[UILabel alloc]init];
+        timeLbl.font = [UIFont systemFontOfSize:14.f];
         [self addSubview:timeLbl];
     }
     if(!iconImg){
@@ -90,10 +94,6 @@
     recommandLbl.frame = CGRectMake(timeLbl.viewXRight, timeLbl.viewY, lbl.viewWidth/2, 15);
     iconImg.frame = CGRectMake(0, timeLbl.viewY, 15, 15);
     
-    
-//    CTShowViewBounds(lbl, [UIColor redColor]);
-//    CTShowViewBounds(timeLbl, [UIColor greenColor]);
-//    CTShowViewBounds(recommandLbl, [UIColor blackColor]);
 }
 
 @end

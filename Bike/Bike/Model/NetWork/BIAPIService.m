@@ -42,10 +42,10 @@
     BIRequestOperationManager *manager = [BIRequestOperationManager sharedClient];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    manager.requestSerializer.timeoutInterval = 5.0;
+    manager.requestSerializer.timeoutInterval = 15.0;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    manager.requestSerializer= [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer= [AFHTTPResponseSerializer serializer];
     
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         successBlock(responseObject);

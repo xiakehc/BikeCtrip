@@ -10,7 +10,7 @@
 
 @implementation BIRequestOperationManager
 
-static NSString * const AFAppAPIBaseURLString = @"http://www.ruo-bl.com/";
+static NSString * const AFAppAPIBaseURLString = @"http://bikectrip.aliapp.com/";
 
 + (instancetype)sharedClient {
     static BIRequestOperationManager *_sharedClient = nil;

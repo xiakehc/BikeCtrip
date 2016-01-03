@@ -78,7 +78,7 @@
     self.title  = [_manager.titleList objectAtIndex:index];
     //set NavigationBar 背景颜色&title 颜色
     [self.navigationController.navigationBar setBarTintColor:kBIMediumSeaGreen];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],UITextAttributeTextColor,nil]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
     
     [currentView removeFromSuperview];
     currentView = detationVC.view;

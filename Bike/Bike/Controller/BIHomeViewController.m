@@ -113,7 +113,7 @@
  */
 - (void)initDataModel{
     _dataList =@[
-                 @[[[BIModuleModel alloc]initWithContent:@"酒店"],
+                 @[[[BIModuleModel alloc]initWithContent:@"房价"],
                    [NSArray arrayWithObjects:
                     [[BIModuleModel alloc]initWithContent:@"团购"],
                     [[BIModuleModel alloc]initWithContent:@"今日特惠"], nil],

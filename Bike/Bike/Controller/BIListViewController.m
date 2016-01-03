@@ -11,7 +11,7 @@
 #import "BIListCell.h"
 #import "TAOverlay.h"
 
-#define kTestURL    @"index.php?s=/wap/ajax/coupons/"
+#define kTestURL    @"fjAppList"
 
 @interface BIListViewController(){
     NSMutableArray *_dataList;
@@ -37,11 +37,12 @@
     [self.view addSubview:self.mTableView];
     
     [self startLoading];
-    
+
     [[BIAPIService shareInstance] getRequest:kTestURL witParam:nil withSuccessBlock:^(id response) {
         BILog(@"%@",response);
-        NSArray *arrlist = (NSArray*)response;
-        _dataList = [NSJSONParsing jsonParsing:arrlist WithType:ENUM_CLASSMODEL_COUPONS];
+        NSData*data = response;
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        _dataList = [dict objectForKey:@"list"];
         
         [self.mTableView reloadData];
         [self hideLoading];
@@ -93,9 +94,9 @@
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSInteger row = indexPath.row;
-    coupons *model = (coupons *)[_dataList objectAtIndex:row];
+    NSDictionary* dict = [_dataList objectAtIndex:row];
     
-    NSString *str = model.cname;
+    NSString *str = [dict objectForKey:@"month"];
     UIAlertView *view = [[UIAlertView alloc]initWithTitle:nil message:str delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [view show];
 }
