@@ -38,8 +38,9 @@
     
     _dataList = [NSMutableArray array];
     [self startLoading];
-    NSString *url = [NSString stringWithFormat:@"%@/%@/%@", LISTDETAILURL, self.year, self.month];
-    [[BIAPIService shareInstance] getRequest:url witParam:nil withSuccessBlock:^(id response) {
+    NSString *url = [NSString stringWithFormat:@"%@", LISTDETAILURL];
+    NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:self.year,@"year",self.month,@"month", nil];
+    [[BIAPIService shareInstance] getRequest:url witParam:param withSuccessBlock:^(id response) {
         BILog(@"%@",response);
         NSData* data = response;
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
