@@ -41,6 +41,8 @@
 		A7566DD91AF7B9BE00153186 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7566DD71AF7B9BE00153186 /* LaunchImage@2x.png */; };
 		A7566DDD1AF7BD1400153186 /* BIGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7566DDC1AF7BD1400153186 /* BIGroupTableViewController.m */; };
 		A7566DE11AF7C5D000153186 /* BIGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7566DE01AF7C5D000153186 /* BIGroupCell.m */; };
+		A7732F921C3A18EB00F374CB /* BikeWatch.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7732F911C3A18EB00F374CB /* BikeWatch.h */; };
+		A7732F941C3A18EB00F374CB /* BikeWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A7732F931C3A18EB00F374CB /* BikeWatch.m */; };
 		A77FD52E1AECDBF300265BBF /* Action_MyFavAdd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51A1AECDBF300265BBF /* Action_MyFavAdd@2x.png */; };
 		A77FD52F1AECDBF300265BBF /* Action_MyFavAdd@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51B1AECDBF300265BBF /* Action_MyFavAdd@3x.png */; };
 		A77FD5301AECDBF300265BBF /* ff_IconBottle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51C1AECDBF300265BBF /* ff_IconBottle@2x.png */; };
@@ -127,6 +129,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A7732F8D1C3A18EB00F374CB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A7732F921C3A18EB00F374CB /* BikeWatch.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		591E2B131ADD469700280FDA /* BIDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDetailCell.h; sourceTree = "<group>"; };
 		591E2B141ADD469700280FDA /* BIDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDetailCell.m; sourceTree = "<group>"; };
@@ -189,6 +204,9 @@
 		A7566DDC1AF7BD1400153186 /* BIGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIGroupTableViewController.m; sourceTree = "<group>"; };
 		A7566DDF1AF7C5D000153186 /* BIGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIGroupCell.h; sourceTree = "<group>"; };
 		A7566DE01AF7C5D000153186 /* BIGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIGroupCell.m; sourceTree = "<group>"; };
+		A7732F8F1C3A18EB00F374CB /* libBikeWatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBikeWatch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7732F911C3A18EB00F374CB /* BikeWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BikeWatch.h; sourceTree = "<group>"; };
+		A7732F931C3A18EB00F374CB /* BikeWatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikeWatch.m; sourceTree = "<group>"; };
 		A77FD5161AECCC2B00265BBF /* BIColorCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIColorCollection.h; sourceTree = "<group>"; };
 		A77FD51A1AECDBF300265BBF /* Action_MyFavAdd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Action_MyFavAdd@2x.png"; sourceTree = "<group>"; };
 		A77FD51B1AECDBF300265BBF /* Action_MyFavAdd@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Action_MyFavAdd@3x.png"; sourceTree = "<group>"; };
@@ -306,6 +324,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7732F8C1C3A18EB00F374CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -343,6 +368,7 @@
 			children = (
 				5936B78C1AD654FC00227F7E /* Bike */,
 				5936B7A61AD654FC00227F7E /* BikeTests */,
+				A7732F901C3A18EB00F374CB /* BikeWatch */,
 				5936B78B1AD654FC00227F7E /* Products */,
 				4DDCC8724567D9465A07C1DA /* Pods */,
 				A73234BE1ADC1D6C00CA1A17 /* CTLib */,
@@ -355,6 +381,7 @@
 			children = (
 				5936B78A1AD654FC00227F7E /* Bike.app */,
 				5936B7A31AD654FC00227F7E /* BikeTests.xctest */,
+				A7732F8F1C3A18EB00F374CB /* libBikeWatch.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -550,6 +577,15 @@
 				A7566DE01AF7C5D000153186 /* BIGroupCell.m */,
 			);
 			path = ActivityView;
+			sourceTree = "<group>";
+		};
+		A7732F901C3A18EB00F374CB /* BikeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A7732F911C3A18EB00F374CB /* BikeWatch.h */,
+				A7732F931C3A18EB00F374CB /* BikeWatch.m */,
+			);
+			path = BikeWatch;
 			sourceTree = "<group>";
 		};
 		A77FD5191AECDBF300265BBF /* discovery */ = {
@@ -798,13 +834,30 @@
 			productReference = 5936B7A31AD654FC00227F7E /* BikeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A7732F8E1C3A18EB00F374CB /* BikeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7732F951C3A18EB00F374CB /* Build configuration list for PBXNativeTarget "BikeWatch" */;
+			buildPhases = (
+				A7732F8B1C3A18EB00F374CB /* Sources */,
+				A7732F8C1C3A18EB00F374CB /* Frameworks */,
+				A7732F8D1C3A18EB00F374CB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BikeWatch;
+			productName = BikeWatch;
+			productReference = A7732F8F1C3A18EB00F374CB /* libBikeWatch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5936B7821AD654FC00227F7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = kyu;
 				TargetAttributes = {
 					5936B7891AD654FC00227F7E = {
@@ -818,6 +871,9 @@
 					5936B7A21AD654FC00227F7E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 5936B7891AD654FC00227F7E;
+					};
+					A7732F8E1C3A18EB00F374CB = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
@@ -842,6 +898,7 @@
 			projectRoot = "";
 			targets = (
 				5936B7891AD654FC00227F7E /* Bike */,
+				A7732F8E1C3A18EB00F374CB /* BikeWatch */,
 				5936B7A21AD654FC00227F7E /* BikeTests */,
 			);
 		};
@@ -1020,6 +1077,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7732F8B1C3A18EB00F374CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7732F941C3A18EB00F374CB /* BikeWatch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1084,6 +1149,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1167,6 +1233,7 @@
 					"$(PROJECT_DIR)/CTLib",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Bike/BikeFile.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1205,6 +1272,7 @@
 					"-framework",
 					"\"SystemConfiguration\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_NAME:rfc1034identifier).com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1226,6 +1294,7 @@
 					"$(PROJECT_DIR)/CTLib",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Bike/BikeFile.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1264,6 +1333,7 @@
 					"-framework",
 					"\"SystemConfiguration\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_NAME:rfc1034identifier).com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1283,6 +1353,7 @@
 				INFOPLIST_FILE = BikeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ctrip.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bike.app/Bike";
 			};
@@ -1299,8 +1370,35 @@
 				INFOPLIST_FILE = BikeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ctrip.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bike.app/Bike";
+			};
+			name = Release;
+		};
+		A7732F961C3A18EB00F374CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A7732F971C3A18EB00F374CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1333,6 +1431,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A7732F951C3A18EB00F374CB /* Build configuration list for PBXNativeTarget "BikeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7732F961C3A18EB00F374CB /* Debug */,
+				A7732F971C3A18EB00F374CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

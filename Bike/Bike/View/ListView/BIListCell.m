@@ -52,7 +52,9 @@
     timeLbl.text = @"来源：国家统计局";
     recommandLbl.text = @"推荐";
     recommandLbl.textAlignment = NSTextAlignmentRight;
-    CGSize size =[recommandLbl.text sizeWithFont:recommandLbl.font constrainedToSize:CGSizeMake(100, 15) lineBreakMode:NSLineBreakByClipping];
+    //CGSize size =[recommandLbl.text sizeWithFont:recommandLbl.font constrainedToSize:CGSizeMake(100, 15) lineBreakMode:NSLineBreakByClipping];
+    NSDictionary *attribute = @{NSFontAttributeName: recommandLbl.font};
+    CGSize size = [recommandLbl.text boundingRectWithSize:CGSizeMake(100, 15) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
     recommandLbl.viewX = self.viewWidth - size.width - 10;
     recommandLbl.viewWidth = size.width;
     

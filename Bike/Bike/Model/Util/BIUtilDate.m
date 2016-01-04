@@ -10,8 +10,8 @@
 #import "BIUtilDate.h"
 #import "BILog.h"
 
-#define kCtripCalendarTimeZone_CN   @"Asia/Shanghai"
-#define kCtripCalendarTimeZone_GMT  @"GMT"
+#define kBikeCtripCalendarTimeZone_CN   @"Asia/Shanghai"
+#define kBikeCtripCalendarTimeZone_GMT  @"GMT"
 
 /**
  * 星期数组
@@ -119,12 +119,12 @@ static long lunarInfo[] = { 0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950
 
 + (NSString *)storageTimeZone
 {
-    return kCtripCalendarTimeZone_GMT;
+    return kBikeCtripCalendarTimeZone_GMT;
 }
 
 + (NSString *)displayTimeZone
 {
-    return kCtripCalendarTimeZone_CN;
+    return kBikeCtripCalendarTimeZone_CN;
 }
 
 + (NSString *)SIMPLEFORMATTYPESTRING1;
@@ -2329,9 +2329,9 @@ static long lunarInfo[] = { 0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950
     
     long time = [startDate timeIntervalSinceDate:endDate];
     
-    int days = time/(60*60*24);
+    NSInteger days = time/(60*60*24);
     
-    return abs(days);
+    return labs(days);
 }
 
 
@@ -2349,7 +2349,7 @@ static long lunarInfo[] = { 0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950
     
     long time = [endDate timeIntervalSinceDate:startDate];
     
-    int days = time/(60*60*24);
+    NSInteger days = time/(60*60*24);
     
     return days;
 }
@@ -2378,9 +2378,9 @@ static long lunarInfo[] = { 0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950
     
     long time = [startDate timeIntervalSinceDate:endDate];
     
-    int days = time/(60*60*24);
+    NSInteger days = time/(60*60*24);
     
-    return abs(days);
+    return labs(days);
 }
 
 #pragma mark 获取两天之间相差多少天,可能是负数
@@ -2406,7 +2406,7 @@ static long lunarInfo[] = { 0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950
     
     long time = [startDate timeIntervalSinceDate:endDate];
     
-    int days = time/(60*60*24);
+    NSInteger days = time/(60*60*24);
     
     return days;
 }
@@ -2454,9 +2454,9 @@ static long lunarInfo[] = { 0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950
     
     long time = [startDate timeIntervalSinceDate:endDate];
     
-    int minutes = time/(60);
+    NSInteger minutes = time/(60);
     
-    return abs(minutes);
+    return labs(minutes);
 }
 
 #pragma mark 获取两天之间相差多少秒
@@ -2480,7 +2480,7 @@ static long lunarInfo[] = { 0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950
     
 //    int minutes = time/(60);
     
-    return abs(time);
+    return labs(time);
 }
 
 #pragma mark - ----------获取某月的第一天和最后一天----------

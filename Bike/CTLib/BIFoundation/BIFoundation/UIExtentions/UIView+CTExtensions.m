@@ -174,6 +174,7 @@
 
 -(void) printPositionInfo{
     CGRect myFrame = self.frame;
+    NSLog(@"%@",NSStringFromCGRect(myFrame));
 }
 
 + (instancetype)extractFromXib

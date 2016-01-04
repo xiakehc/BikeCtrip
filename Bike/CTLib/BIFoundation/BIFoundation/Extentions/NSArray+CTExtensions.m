@@ -22,7 +22,7 @@
 
 @implementation NSMutableArray(Safe)
 
-- (void)addObjectForCtrip:(id)obj {
+- (void)addObjectForBikeCtrip:(id)obj {
     if (obj != NULL) {
         [self addObject:obj];
     }

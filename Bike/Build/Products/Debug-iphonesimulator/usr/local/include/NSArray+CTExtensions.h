@@ -28,6 +28,6 @@
  *
  *  @param obj 添加的对象
  */
-- (void)addObjectForCtrip:(id)obj;
+- (void)addObjectForBikeCtrip:(id)obj;
 
 @end

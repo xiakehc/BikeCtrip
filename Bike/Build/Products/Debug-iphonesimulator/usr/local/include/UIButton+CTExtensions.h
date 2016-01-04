@@ -1,9 +1,5 @@
 //
 //  UIButton+CTExtensions.h
-//  CTRIP_WIRELESS
-//
-//  Created by Haoran Chen on 11/13/13.
-//  Copyright (c) 2013 携程. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

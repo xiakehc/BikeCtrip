@@ -95,7 +95,7 @@
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSInteger row = indexPath.row;
     NSDictionary* dict = [_dataList objectAtIndex:row];
-    
+
     NSString *str = [dict objectForKey:@"month"];
     UIAlertView *view = [[UIAlertView alloc]initWithTitle:nil message:str delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [view show];
