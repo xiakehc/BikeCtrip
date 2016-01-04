@@ -16,4 +16,5 @@
     #import "BIDefine.h"
     #import "BILog.h"
     #import "UIView+CTExtensions.h"
+    #import "BIURL.h"
 #endif

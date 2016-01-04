@@ -10,8 +10,7 @@
 #import "NSJSONParsing.h"
 #import "BIListCell.h"
 #import "TAOverlay.h"
-
-#define kTestURL    @"fjAppList"
+#import "BIListDetailViewController.h"
 
 @interface BIListViewController(){
     NSMutableArray *_dataList;
@@ -38,7 +37,7 @@
     
     [self startLoading];
 
-    [[BIAPIService shareInstance] getRequest:kTestURL witParam:nil withSuccessBlock:^(id response) {
+    [[BIAPIService shareInstance] getRequest:LISTURL witParam:nil withSuccessBlock:^(id response) {
         BILog(@"%@",response);
         NSData*data = response;
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -92,13 +91,19 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     NSInteger row = indexPath.row;
     NSDictionary* dict = [_dataList objectAtIndex:row];
 
-    NSString *str = [dict objectForKey:@"month"];
-    UIAlertView *view = [[UIAlertView alloc]initWithTitle:nil message:str delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    [view show];
+    NSString *month = [dict objectForKey:@"month"];
+    NSString *year = [dict objectForKey:@"year"];
+    BIListDetailViewController *detailVC = [[BIListDetailViewController alloc]init];
+    detailVC.year = year;
+    detailVC.month = month;
+    detailVC.title = [NSString stringWithFormat:@"%@年%@月份70个大中城市销售价格", year, month];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
+    self.navigationItem.backBarButtonItem = barButtonItem;
+    [self.navigationController pushViewController:detailVC animated:NO];
 }
 
 

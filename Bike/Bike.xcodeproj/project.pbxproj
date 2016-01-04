@@ -43,6 +43,9 @@
 		A7566DE11AF7C5D000153186 /* BIGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7566DE01AF7C5D000153186 /* BIGroupCell.m */; };
 		A7732F921C3A18EB00F374CB /* BikeWatch.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7732F911C3A18EB00F374CB /* BikeWatch.h */; };
 		A7732F941C3A18EB00F374CB /* BikeWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A7732F931C3A18EB00F374CB /* BikeWatch.m */; };
+		A7732F9C1C3A1D5D00F374CB /* BIListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7732F9B1C3A1D5D00F374CB /* BIListDetailViewController.m */; };
+		A7732FA31C3A263300F374CB /* CityFJView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7732FA21C3A263300F374CB /* CityFJView.m */; };
+		A7732FA61C3A2BF900F374CB /* BIDetailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7732FA51C3A2BF900F374CB /* BIDetailListCell.m */; };
 		A77FD52E1AECDBF300265BBF /* Action_MyFavAdd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51A1AECDBF300265BBF /* Action_MyFavAdd@2x.png */; };
 		A77FD52F1AECDBF300265BBF /* Action_MyFavAdd@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51B1AECDBF300265BBF /* Action_MyFavAdd@3x.png */; };
 		A77FD5301AECDBF300265BBF /* ff_IconBottle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77FD51C1AECDBF300265BBF /* ff_IconBottle@2x.png */; };
@@ -207,6 +210,13 @@
 		A7732F8F1C3A18EB00F374CB /* libBikeWatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBikeWatch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7732F911C3A18EB00F374CB /* BikeWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BikeWatch.h; sourceTree = "<group>"; };
 		A7732F931C3A18EB00F374CB /* BikeWatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikeWatch.m; sourceTree = "<group>"; };
+		A7732F9A1C3A1D5D00F374CB /* BIListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListDetailViewController.h; sourceTree = "<group>"; };
+		A7732F9B1C3A1D5D00F374CB /* BIListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIListDetailViewController.m; sourceTree = "<group>"; };
+		A7732F9D1C3A1E4C00F374CB /* BIURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIURL.h; sourceTree = "<group>"; };
+		A7732FA11C3A263300F374CB /* CityFJView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityFJView.h; sourceTree = "<group>"; };
+		A7732FA21C3A263300F374CB /* CityFJView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityFJView.m; sourceTree = "<group>"; };
+		A7732FA41C3A2BF900F374CB /* BIDetailListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDetailListCell.h; sourceTree = "<group>"; };
+		A7732FA51C3A2BF900F374CB /* BIDetailListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDetailListCell.m; sourceTree = "<group>"; };
 		A77FD5161AECCC2B00265BBF /* BIColorCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIColorCollection.h; sourceTree = "<group>"; };
 		A77FD51A1AECDBF300265BBF /* Action_MyFavAdd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Action_MyFavAdd@2x.png"; sourceTree = "<group>"; };
 		A77FD51B1AECDBF300265BBF /* Action_MyFavAdd@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Action_MyFavAdd@3x.png"; sourceTree = "<group>"; };
@@ -500,6 +510,10 @@
 		59A5642D1ADE592D000B9536 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
+				A7732FA41C3A2BF900F374CB /* BIDetailListCell.h */,
+				A7732FA51C3A2BF900F374CB /* BIDetailListCell.m */,
+				A7732FA11C3A263300F374CB /* CityFJView.h */,
+				A7732FA21C3A263300F374CB /* CityFJView.m */,
 				59A5642E1ADE5975000B9536 /* BIListCell.h */,
 				59A5642F1ADE5975000B9536 /* BIListCell.m */,
 			);
@@ -586,6 +600,15 @@
 				A7732F931C3A18EB00F374CB /* BikeWatch.m */,
 			);
 			path = BikeWatch;
+			sourceTree = "<group>";
+		};
+		A7732F991C3A1C5400F374CB /* ListVC */ = {
+			isa = PBXGroup;
+			children = (
+				A7732F9A1C3A1D5D00F374CB /* BIListDetailViewController.h */,
+				A7732F9B1C3A1D5D00F374CB /* BIListDetailViewController.m */,
+			);
+			path = ListVC;
 			sourceTree = "<group>";
 		};
 		A77FD5191AECDBF300265BBF /* discovery */ = {
@@ -741,6 +764,7 @@
 		A7C758571AD6C71C00640F90 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A7732F991C3A1C5400F374CB /* ListVC */,
 				A7566DDA1AF7BCA200153186 /* ActivityVC */,
 				59A564321ADE73B2000B9536 /* BIListViewController.h */,
 				59A564331ADE73B2000B9536 /* BIListViewController.m */,
@@ -778,6 +802,7 @@
 			children = (
 				A7CA946E1AD8F3A800B31F66 /* BIDefine.h */,
 				A7CA946F1AD8F3A800B31F66 /* BILog.h */,
+				A7732F9D1C3A1E4C00F374CB /* BIURL.h */,
 			);
 			path = HeaderPch;
 			sourceTree = "<group>";
@@ -1048,7 +1073,9 @@
 				59A564341ADE73B2000B9536 /* BIListViewController.m in Sources */,
 				599A36671ADBB35A0052E642 /* BIHomeCell.m in Sources */,
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
+				A7732FA31C3A263300F374CB /* CityFJView.m in Sources */,
 				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
+				A7732FA61C3A2BF900F374CB /* BIDetailListCell.m in Sources */,
 				59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */,
 				59A978A31ADF8FDF00F5EABB /* BIModuleVIew.m in Sources */,
 				591E2B151ADD469700280FDA /* BIDetailCell.m in Sources */,
@@ -1062,6 +1089,7 @@
 				A7CA945F1AD8C1D500B31F66 /* BIUtilNetWork.m in Sources */,
 				5936B7901AD654FC00227F7E /* main.m in Sources */,
 				59A978DD1ADFBE3500F5EABB /* BIToolBar.m in Sources */,
+				A7732F9C1C3A1D5D00F374CB /* BIListDetailViewController.m in Sources */,
 				A7AD995B1AE2B0800078CBB6 /* BIHomeVCManager.m in Sources */,
 				59A978A61ADF907000F5EABB /* BIModuleModel.m in Sources */,
 				59A564301ADE5975000B9536 /* BIListCell.m in Sources */,
@@ -1439,6 +1467,7 @@
 				A7732F971C3A18EB00F374CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
