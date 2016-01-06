@@ -11,5 +11,6 @@
 
 #define LISTURL    @"fjAppList"
 #define LISTDETAILURL    @"fjApp"
+#define MovieURL    @"movie"
 
 #endif /* BIURL_h */

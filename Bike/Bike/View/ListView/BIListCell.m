@@ -32,16 +32,57 @@
 }
 
 - (void)updateCell:(id)model{
+    if (![model isKindOfClass:[NSDictionary class]]) {
+        return;
+    }
     id superObj = [super initWithFrame:self.frame separateMode:UISeparatableViewSeparateModeNone];
     BILog(@"%@",superObj);
     [self createCellContentView];
     
-    NSString *month = [model objectForKey:@"month"];
-    NSString *pic = [model objectForKey:@"pic"];
-    NSString *year = [model objectForKey:@"year"];
-    lbl.text = [NSString stringWithFormat:@"%@年%@月份70个大中城市住宅销售价格变动情况",year,month];
-    lbl.font = [UIFont systemFontOfSize:15.0];
-    [lbl sizeToFit];
+    NSString *pic;
+    if([model objectForKey:@"month"] &&  ![[model objectForKey:@"month"] isEqualToString:@""]){//房价
+        NSString *month= [model objectForKey:@"month"];
+        pic = [model objectForKey:@"pic"];
+        NSString *year = [model objectForKey:@"year"];
+        lbl.text = [NSString stringWithFormat:@"%@年%@月份70个大中城市住宅销售价格变动情况",year,month];
+        timeLbl.text = @"来源：国家统计局";
+        recommandLbl.text = @"推荐";
+        lbl.font = [UIFont systemFontOfSize:15.0];
+        [lbl sizeToFit];
+    }
+    else if([model objectForKey:@"score"]){//movie  score<int>类型
+        lbl.text =  [model objectForKey:@"name"] ;
+        lbl.font = [UIFont systemFontOfSize:18.0];
+        pic =[model objectForKey:@"url"] ;
+        id score = [model objectForKey:@"score"];
+        timeLbl.hidden = YES;
+        NSString *startImg = @"";
+        NSInteger size = ((NSNumber*)score).integerValue;
+        if (size ==10) {
+            startImg = @"start10.png";
+        }
+        else if(size>=9 && size<10){
+            startImg = @"start9.png";
+        }
+        else if (size>2 && size<9){
+             startImg = @"start6.png";
+        }
+        else{
+            startImg = @"start2.png";
+        }
+        recommandLbl.text = @"豆瓣Top电影";
+        //强插图片
+        UIImageView *imgv = [[UIImageView alloc]init];
+        [imgv setImage:[UIImage imageNamed:startImg]];
+        imgv.frame = CGRectMake(timeLbl.viewX, timeLbl.viewY, 84, 15);
+        [self addSubview:imgv];
+        timeLbl.viewX = imgv.viewXRight+5;
+        UILabel *commentlbl = [[UILabel alloc]initWithFrame:CGRectMake(imgv.viewX, imgv.viewY - 20, 100, 12)];
+        commentlbl.text = [model objectForKey:@"comment"];
+        commentlbl.font = [UIFont systemFontOfSize:12.0];
+        [self addSubview:commentlbl];
+    }
+
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",pic]];
     [img sd_setImageWithPreviousCachedImageWithURL:url andPlaceholderImage:[UIImage imageNamed:@"overlay.png"] options:SDWebImageDelayPlaceholder progress:^(NSInteger receivedSize, NSInteger expectedSize) {
@@ -49,12 +90,10 @@
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         BILog(@"loadSuccess %@",imageURL);
     }];
-    timeLbl.text = @"来源：国家统计局";
-    recommandLbl.text = @"推荐";
+    
     recommandLbl.textAlignment = NSTextAlignmentRight;
-    //CGSize size =[recommandLbl.text sizeWithFont:recommandLbl.font constrainedToSize:CGSizeMake(100, 15) lineBreakMode:NSLineBreakByClipping];
     NSDictionary *attribute = @{NSFontAttributeName: recommandLbl.font};
-    CGSize size = [recommandLbl.text boundingRectWithSize:CGSizeMake(100, 15) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+    CGSize size = [recommandLbl.text boundingRectWithSize:CGSizeMake(200, 15) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
     recommandLbl.viewX = self.viewWidth - size.width - 10;
     recommandLbl.viewWidth = size.width;
     

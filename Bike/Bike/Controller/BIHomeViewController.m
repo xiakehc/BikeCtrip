@@ -12,6 +12,7 @@
 #import "BIModuleVIew.h"
 #import "BIListViewController.h"
 #import "BIHomeVCManager.h"
+#import "BIMoiveViewController.h"
 
 @interface BIHomeViewController ()<ImagePlayerViewDelegate, BIModuleVIewDelegate>
 {
@@ -115,29 +116,29 @@
     _dataList =@[
                  @[[[BIModuleModel alloc]initWithContent:@"房价"],
                    [NSArray arrayWithObjects:
-                    [[BIModuleModel alloc]initWithContent:@"团购"],
-                    [[BIModuleModel alloc]initWithContent:@"今日特惠"], nil],
+                    [[BIModuleModel alloc]initWithContent:@"购房"],
+                    [[BIModuleModel alloc]initWithContent:@"新房房价"], nil],
                    [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"公寓"],
-                    [[BIModuleModel alloc]initWithContent:@"钟点房"], nil]],
+                    [[BIModuleModel alloc]initWithContent:@"二手房"], nil]],
                  @[
-                     [[BIModuleModel alloc]initWithContent:@"机票"],
-                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"火车票"],
-                      [[BIModuleModel alloc]initWithContent:@"车车"], nil],
-                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"特价机票"],
-                      [[BIModuleModel alloc]initWithContent:@"接送用车"], nil],
+                     [[BIModuleModel alloc]initWithContent:@"电影"],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"港台剧"],
+                      [[BIModuleModel alloc]initWithContent:@"大陆剧"], nil],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"欧美大片"],
+                      [[BIModuleModel alloc]initWithContent:@"Top250电影"], nil],
                      ],
                  @[
-                     [[BIModuleModel alloc]initWithContent:@"度假旅游"],
-                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"门票"],
-                      [[BIModuleModel alloc]initWithContent:@"签证"], nil],
-                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"攻略"],
-                      [[BIModuleModel alloc]initWithContent:@"骑行书"], nil],
+                     [[BIModuleModel alloc]initWithContent:@"同城活动"],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"戏剧"],
+                      [[BIModuleModel alloc]initWithContent:@"讲座"], nil],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"公益"],
+                      [[BIModuleModel alloc]initWithContent:@"展览"], nil],
                      ],
                  @[
                      [[BIModuleModel alloc]initWithContent:@"当地玩乐"],
-                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"电影票"],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"骑行游"],
                       [[BIModuleModel alloc]initWithContent:@"周末游"], nil],
-                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"导游"],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"周边游"],
                       [[BIModuleModel alloc]initWithContent:@"本地游"], nil],
                      ]
                  ];
@@ -177,9 +178,16 @@
         title = md.content;
     }
     
-    BIListViewController *vc = [[BIListViewController alloc]init];
-    vc.title = title;
-    [self.navigationController pushViewController:vc animated:YES];
+    if (row==1) {
+        BIMoiveViewController*vc  = [[BIMoiveViewController alloc]init];
+        vc.title = [NSString stringWithFormat:@"%@Top205",title];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else{
+        BIListViewController *vc = [[BIListViewController alloc]init];
+        vc.title = title;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 

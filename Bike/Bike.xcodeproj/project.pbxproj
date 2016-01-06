@@ -105,6 +105,13 @@
 		A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94641AD8CF6900B31F66 /* BIUtilColor.m */; };
 		A7CA946B1AD8F16A00B31F66 /* BIUtilString.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA946A1AD8F16A00B31F66 /* BIUtilString.m */; };
 		A7CA94721AD8F7E200B31F66 /* BIUtilDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */; };
+		A7DF89C91C3D35C40092E883 /* BIMoiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DF89C81C3D35C30092E883 /* BIMoiveViewController.m */; };
+		A7DF89D01C3D43970092E883 /* start2.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DF89CC1C3D43970092E883 /* start2.png */; };
+		A7DF89D11C3D43970092E883 /* start6.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DF89CD1C3D43970092E883 /* start6.png */; };
+		A7DF89D21C3D43970092E883 /* start9.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DF89CE1C3D43970092E883 /* start9.png */; };
+		A7DF89D31C3D43970092E883 /* start10.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DF89CF1C3D43970092E883 /* start10.png */; };
+		A7DF89D61C3D468E0092E883 /* BIMovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DF89D51C3D468E0092E883 /* BIMovieDetailViewController.m */; };
+		A7DF89D81C3D49620092E883 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DF89D71C3D49620092E883 /* share.png */; };
 		A7E612141B0251DD0056DE94 /* personalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E612131B0251DD0056DE94 /* personalViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -178,8 +185,8 @@
 		59A564111ADE4F54000B9536 /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		59A5642E1ADE5975000B9536 /* BIListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListCell.h; sourceTree = "<group>"; };
 		59A5642F1ADE5975000B9536 /* BIListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIListCell.m; sourceTree = "<group>"; };
-		59A564321ADE73B2000B9536 /* BIListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIListViewController.h; sourceTree = "<group>"; };
-		59A564331ADE73B2000B9536 /* BIListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIListViewController.m; sourceTree = "<group>"; };
+		59A564321ADE73B2000B9536 /* BIListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIListViewController.h; path = ../BIListViewController.h; sourceTree = "<group>"; };
+		59A564331ADE73B2000B9536 /* BIListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIListViewController.m; path = ../BIListViewController.m; sourceTree = "<group>"; };
 		59A978A11ADF8FDF00F5EABB /* BIModuleVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIModuleVIew.h; sourceTree = "<group>"; };
 		59A978A21ADF8FDF00F5EABB /* BIModuleVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIModuleVIew.m; sourceTree = "<group>"; };
 		59A978A41ADF907000F5EABB /* BIModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIModuleModel.h; sourceTree = "<group>"; };
@@ -290,6 +297,15 @@
 		A7CA946F1AD8F3A800B31F66 /* BILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILog.h; sourceTree = "<group>"; };
 		A7CA94701AD8F7E200B31F66 /* BIUtilDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIUtilDate.h; sourceTree = "<group>"; };
 		A7CA94711AD8F7E200B31F66 /* BIUtilDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIUtilDate.m; sourceTree = "<group>"; };
+		A7DF89C71C3D35C30092E883 /* BIMoiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIMoiveViewController.h; sourceTree = "<group>"; };
+		A7DF89C81C3D35C30092E883 /* BIMoiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIMoiveViewController.m; sourceTree = "<group>"; };
+		A7DF89CC1C3D43970092E883 /* start2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start2.png; sourceTree = "<group>"; };
+		A7DF89CD1C3D43970092E883 /* start6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start6.png; sourceTree = "<group>"; };
+		A7DF89CE1C3D43970092E883 /* start9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start9.png; sourceTree = "<group>"; };
+		A7DF89CF1C3D43970092E883 /* start10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start10.png; sourceTree = "<group>"; };
+		A7DF89D41C3D468E0092E883 /* BIMovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIMovieDetailViewController.h; sourceTree = "<group>"; };
+		A7DF89D51C3D468E0092E883 /* BIMovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIMovieDetailViewController.m; sourceTree = "<group>"; };
+		A7DF89D71C3D49620092E883 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		A7E612121B0251DD0056DE94 /* personalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalViewCell.h; sourceTree = "<group>"; };
 		A7E612131B0251DD0056DE94 /* personalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalViewCell.m; sourceTree = "<group>"; };
 		DF7202F3F892E5B9AD7FB20E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -480,6 +496,11 @@
 		599A366D1ADBCEA10052E642 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A7DF89D71C3D49620092E883 /* share.png */,
+				A7DF89CC1C3D43970092E883 /* start2.png */,
+				A7DF89CD1C3D43970092E883 /* start6.png */,
+				A7DF89CE1C3D43970092E883 /* start9.png */,
+				A7DF89CF1C3D43970092E883 /* start10.png */,
 				A7566DD61AF7B9BE00153186 /* LaunchImage.png */,
 				A7566DD71AF7B9BE00153186 /* LaunchImage@2x.png */,
 				A736BD6A1AF1331A00AF150E /* background.png */,
@@ -605,8 +626,14 @@
 		A7732F991C3A1C5400F374CB /* ListVC */ = {
 			isa = PBXGroup;
 			children = (
+				59A564321ADE73B2000B9536 /* BIListViewController.h */,
+				59A564331ADE73B2000B9536 /* BIListViewController.m */,
 				A7732F9A1C3A1D5D00F374CB /* BIListDetailViewController.h */,
 				A7732F9B1C3A1D5D00F374CB /* BIListDetailViewController.m */,
+				A7DF89C71C3D35C30092E883 /* BIMoiveViewController.h */,
+				A7DF89C81C3D35C30092E883 /* BIMoiveViewController.m */,
+				A7DF89D41C3D468E0092E883 /* BIMovieDetailViewController.h */,
+				A7DF89D51C3D468E0092E883 /* BIMovieDetailViewController.m */,
 			);
 			path = ListVC;
 			sourceTree = "<group>";
@@ -766,8 +793,6 @@
 			children = (
 				A7732F991C3A1C5400F374CB /* ListVC */,
 				A7566DDA1AF7BCA200153186 /* ActivityVC */,
-				59A564321ADE73B2000B9536 /* BIListViewController.h */,
-				59A564331ADE73B2000B9536 /* BIListViewController.m */,
 				59DEEC471ADFF1BD0072386E /* BIMyPersonViewController.h */,
 				59DEEC481ADFF1BD0072386E /* BIMyPersonViewController.m */,
 				A7AD99591AE2B0800078CBB6 /* BIHomeVCManager.h */,
@@ -958,6 +983,8 @@
 				A736BD6B1AF1331A00AF150E /* background.png in Resources */,
 				A77FD5411AECDBF300265BBF /* PayU_WechatSecure_Icon@3x.png in Resources */,
 				A79423E71AE3BD700098DF63 /* icon_collect.png in Resources */,
+				A7DF89D21C3D43970092E883 /* start9.png in Resources */,
+				A7DF89D81C3D49620092E883 /* share.png in Resources */,
 				A77FD52E1AECDBF300265BBF /* Action_MyFavAdd@2x.png in Resources */,
 				A77FD5321AECDBF300265BBF /* ff_IconLocationService@2x.png in Resources */,
 				A7566DD81AF7B9BE00153186 /* LaunchImage.png in Resources */,
@@ -969,13 +996,16 @@
 				A7566DD91AF7B9BE00153186 /* LaunchImage@2x.png in Resources */,
 				A77FD5401AECDBF300265BBF /* PayU_WechatSecure_Icon@2x.png in Resources */,
 				A79423E11AE3BD560098DF63 /* banner.png in Resources */,
+				A7DF89D31C3D43970092E883 /* start10.png in Resources */,
 				A79423E21AE3BD560098DF63 /* Home_select.png in Resources */,
 				A77FD5361AECDBF300265BBF /* ff_IconShake@2x.png in Resources */,
 				A77FD53A1AECDBF300265BBF /* MoreGame@2x.png in Resources */,
 				A794244C1AE552910098DF63 /* ShareSDKLocalizable.strings in Resources */,
+				A7DF89D01C3D43970092E883 /* start2.png in Resources */,
 				A79424501AE552910098DF63 /* WeiboSDK.bundle in Resources */,
 				A77FD5341AECDBF300265BBF /* ff_IconQRCode@2x.png in Resources */,
 				A77FD53B1AECDBF300265BBF /* MoreGame@3x.png in Resources */,
+				A7DF89D11C3D43970092E883 /* start6.png in Resources */,
 				A79423E51AE3BD560098DF63 /* Person.png in Resources */,
 				A77FD5381AECDBF300265BBF /* ff_IconShowAlbum@2x.png in Resources */,
 				A77FD52F1AECDBF300265BBF /* Action_MyFavAdd@3x.png in Resources */,
@@ -1075,6 +1105,7 @@
 				5936B7931AD654FC00227F7E /* AppDelegate.m in Sources */,
 				A7732FA31C3A263300F374CB /* CityFJView.m in Sources */,
 				A7CA94621AD8CD2100B31F66 /* BIRequestOperationManager.m in Sources */,
+				A7DF89C91C3D35C40092E883 /* BIMoiveViewController.m in Sources */,
 				A7732FA61C3A2BF900F374CB /* BIDetailListCell.m in Sources */,
 				59A564121ADE4F54000B9536 /* ImagePlayerView.m in Sources */,
 				59A978A31ADF8FDF00F5EABB /* BIModuleVIew.m in Sources */,
@@ -1083,6 +1114,7 @@
 				A7566DE11AF7C5D000153186 /* BIGroupCell.m in Sources */,
 				A7303CB31AE37CF3003CEC98 /* BIHomeViewController.m in Sources */,
 				A7CA94651AD8CF6900B31F66 /* BIUtilColor.m in Sources */,
+				A7DF89D61C3D468E0092E883 /* BIMovieDetailViewController.m in Sources */,
 				A7303CAF1AE374CC003CEC98 /* BIActivityViewController.m in Sources */,
 				591ECA921AD7B90E0007B117 /* BIAPIService.m in Sources */,
 				599A365F1ADBA4960052E642 /* NSJSONParsing.m in Sources */,
