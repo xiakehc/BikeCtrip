@@ -36,6 +36,7 @@
         return;
     }
     id superObj = [super initWithFrame:self.frame separateMode:UISeparatableViewSeparateModeNone];
+    superObj=nil;
     BILog(@"%@",superObj);
     [self createCellContentView];
     
@@ -50,14 +51,14 @@
         lbl.font = [UIFont systemFontOfSize:15.0];
         [lbl sizeToFit];
     }
-    else if([model objectForKey:@"score"]){//movie  score<int>类型
+    else if([model objectForKey:@"detailUrl"]){//movie
         lbl.text =  [model objectForKey:@"name"] ;
         lbl.font = [UIFont systemFontOfSize:18.0];
         pic =[model objectForKey:@"url"] ;
         id score = [model objectForKey:@"score"];
         timeLbl.hidden = YES;
         NSString *startImg = @"";
-        NSInteger size = ((NSNumber*)score).integerValue;
+        NSInteger size = ((NSNumber*)score).integerValue;//score<int>类型
         if (size ==10) {
             startImg = @"start10.png";
         }
@@ -82,18 +83,38 @@
         commentlbl.font = [UIFont systemFontOfSize:12.0];
         [self addSubview:commentlbl];
     }
+    else if([model objectForKey:@"activityUrl"]){//activity
+        lbl.numberOfLines = 1;
+        lbl.viewWidth = self.viewWidth-img.viewXRight-150;
+        lbl.text =  [model objectForKey:@"name"] ;
+        pic =[model objectForKey:@"url"] ;
+        NSString *price = [model objectForKey:@"price"];
+        if (price.length>3) {
+            price = [price substringToIndex:3];
+        }
+        recommandLbl.text = price;
+        timeLbl.text =  [model objectForKey:@"address"] ;
+        lbl.font = [UIFont systemFontOfSize:15.0];
+        [lbl sizeToFit];
+        //强插UILabel
+        NSString *dateStr = [model objectForKey:@"date"] ;
+        UILabel *commentlbl = [[UILabel alloc]initWithFrame:CGRectMake(timeLbl.viewX, timeLbl.viewY - 20, self.viewWidth-img.viewXRight-20, 12)];
+        commentlbl.text = dateStr;
+        commentlbl.font = [UIFont systemFontOfSize:12.0];
+        [self addSubview:commentlbl];
+    }
 
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",pic]];
     [img sd_setImageWithPreviousCachedImageWithURL:url andPlaceholderImage:[UIImage imageNamed:@"overlay.png"] options:SDWebImageDelayPlaceholder progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-        BILog(@"%ld",receivedSize/expectedSize);
+        //BILog(@"%ld",receivedSize/expectedSize);
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        BILog(@"loadSuccess %@",imageURL);
+        //BILog(@"loadSuccess %@",imageURL);
     }];
     
     recommandLbl.textAlignment = NSTextAlignmentRight;
     NSDictionary *attribute = @{NSFontAttributeName: recommandLbl.font};
-    CGSize size = [recommandLbl.text boundingRectWithSize:CGSizeMake(200, 15) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+    CGSize size = [recommandLbl.text boundingRectWithSize:CGSizeMake(300, 15) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
     recommandLbl.viewX = self.viewWidth - size.width - 10;
     recommandLbl.viewWidth = size.width;
     
@@ -131,7 +152,7 @@
     
     img.frame = CGRectMake(0, 0, self.viewHeight, self.viewHeight);
     lbl.frame = CGRectMake(img.viewXRight+15, 10, self.viewWidth-25-img.viewWidth, 30);
-    timeLbl.frame = CGRectMake(lbl.viewX, lbl.viewYBelow+20, lbl.viewWidth/2, 15);
+    timeLbl.frame = CGRectMake(lbl.viewX, lbl.viewYBelow+20, 200, 15);
     recommandLbl.frame = CGRectMake(timeLbl.viewXRight, timeLbl.viewY, lbl.viewWidth/2, 15);
     iconImg.frame = CGRectMake(0, timeLbl.viewY, 15, 15);
     

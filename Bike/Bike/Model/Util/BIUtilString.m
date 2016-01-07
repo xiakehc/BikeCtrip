@@ -1844,7 +1844,6 @@
     if(doubleValue < 0)
     {
         NSString *s = [NSString stringWithFormat:@"%f",doubleValue];
-//        BILog(s);
         BILog(@"%@", s);
     }else
     {

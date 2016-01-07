@@ -41,7 +41,7 @@
     NSString *url = [NSString stringWithFormat:@"%@", LISTDETAILURL];
     NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:self.year,@"year",self.month,@"month", nil];
     [[BIAPIService shareInstance] getRequest:url witParam:param withSuccessBlock:^(id response) {
-        BILog(@"%@",response);
+        //BILog(@"%@",response);
         NSData* data = response;
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
         _dataList = [dict objectForKey:@"list"];
@@ -50,7 +50,7 @@
         [self.tableView reloadData];
         [self hideLoading];
     } withFailBlock:^(NSString *erroeMsg) {
-        BILog(@"%@", erroeMsg);
+        //BILog(@"%@", erroeMsg);
          fj.hidden =YES;
         [self performSelector:@selector(hideLoading) withObject:nil afterDelay:1.5];
         [TAOverlay showOverlayWithLabel:erroeMsg Options:TAOverlayOptionOverlayTypeError];

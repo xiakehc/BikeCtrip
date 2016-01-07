@@ -9,8 +9,9 @@
 #ifndef BIURL_h
 #define BIURL_h
 
-#define LISTURL    @"fjAppList"
+#define LISTURL               @"fjAppList"
 #define LISTDETAILURL    @"fjApp"
-#define MovieURL    @"movie"
+#define MovieURL            @"movie"
+#define ActivityURL          @"activity"
 
 #endif /* BIURL_h */

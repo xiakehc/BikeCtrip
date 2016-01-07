@@ -8,7 +8,6 @@
 
 #import "BIMoiveViewController.h"
 #import "NSJSONParsing.h"
-#import "BIListCell.h"
 #import "TAOverlay.h"
 #import "BIListDetailViewController.h"
 #import "BIMovieDetailViewController.h"
@@ -41,7 +40,14 @@
     [self startLoading];
     self.page = 1;//第一次加载第一页，mysql有做分页处理
     NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@(self.page),@"page", nil];
-    [[BIAPIService shareInstance] getRequest:MovieURL witParam:param withSuccessBlock:^(id response) {
+    NSString *url = MovieURL;
+    if(self.vcType == VCType_Movie){
+        url = MovieURL;
+    }else if (self.vcType == VCType_Activity){
+        url = ActivityURL;
+    }
+    
+    [[BIAPIService shareInstance] getRequest:url witParam:param withSuccessBlock:^(id response) {
         BILog(@"%@",response);
         NSData*data = response;
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -87,7 +93,7 @@
     if(!cell){
         cell = (BIListCell*)[[BIListCell alloc]init];
     }
-    
+    cell.vcType = self.vcType;
     cell.viewHeight = 80;
     cell.viewWidth = tableView.viewWidth;
     [cell updateCell:[_dataList objectAtIndex:indexPath.row]];
@@ -100,6 +106,11 @@
     NSDictionary* dict = [_dataList objectAtIndex:row];
     
     NSString *url = [dict objectForKey:@"detailUrl"];
+    if(self.vcType == VCType_Movie){
+        url = [dict objectForKey:@"detailUrl"];
+    }else if (self.vcType == VCType_Activity){
+        url = [dict objectForKey:@"activityUrl"];
+    }
     NSString *name = [dict objectForKey:@"name"];
     BIMovieDetailViewController *detailVc = [BIMovieDetailViewController new];
     detailVc.url = url;

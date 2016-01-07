@@ -135,11 +135,11 @@
                       [[BIModuleModel alloc]initWithContent:@"展览"], nil],
                      ],
                  @[
-                     [[BIModuleModel alloc]initWithContent:@"当地玩乐"],
-                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"骑行游"],
-                      [[BIModuleModel alloc]initWithContent:@"周末游"], nil],
-                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"周边游"],
-                      [[BIModuleModel alloc]initWithContent:@"本地游"], nil],
+                     [[BIModuleModel alloc]initWithContent:@"商务合作"],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"在线旅游"],
+                      [[BIModuleModel alloc]initWithContent:@"O2O美食"], nil],
+                     [NSArray arrayWithObjects:[[BIModuleModel alloc]initWithContent:@"P2P金融"],
+                      [[BIModuleModel alloc]initWithContent:@"医疗健康"], nil],
                      ]
                  ];
 }
@@ -149,7 +149,7 @@
 - (void)imagePlayerView:(ImagePlayerView *)imagePlayerView loadImageForImageView:(UIImageView *)imageView index:(NSInteger)index
 {
     [imageView sd_setImageWithURL:[self.imageURLs objectAtIndex:index] placeholderImage:[UIImage imageNamed:@"banner.png"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        BILog(@"download success : %@",imageURL);
+        //BILog(@"download success : %@",imageURL);
     }];
 }
 
@@ -162,7 +162,7 @@
 - (void)homeBIModuleVIewButtonClick:(NSInteger)index{
     NSInteger row = index/1000-1;
     NSInteger column = index%1000;
-    BILog(@"you select row is :%ld And column is :%ld",row, column);
+    //BILog(@"you select row is :%ld And column is :%ld",row, column);
     
     NSArray *list = [_dataList objectAtIndex:row];
     NSString * title = @"";
@@ -181,12 +181,23 @@
     if (row==1) {
         BIMoiveViewController*vc  = [[BIMoiveViewController alloc]init];
         vc.title = [NSString stringWithFormat:@"%@Top205",title];
+        vc.vcType = VCType_Movie;
         [self.navigationController pushViewController:vc animated:YES];
     }
-    else{
+    else if(row==2){
+        BIMoiveViewController*vc  = [[BIMoiveViewController alloc]init];
+        vc.title = [NSString stringWithFormat:@"%@Top100",title];
+        vc.vcType = VCType_Activity;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if(row == 0){
         BIListViewController *vc = [[BIListViewController alloc]init];
         vc.title = title;
         [self.navigationController pushViewController:vc animated:YES];
+    }
+    else{
+        UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"提示" message:@"商务合作模块，请联系QQ:1062120982" delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+        [view show];
     }
 }
 

@@ -38,7 +38,7 @@
     [self startLoading];
 
     [[BIAPIService shareInstance] getRequest:LISTURL witParam:nil withSuccessBlock:^(id response) {
-        BILog(@"%@",response);
+        //BILog(@"%@",response);
         NSData*data = response;
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
         _dataList = [dict objectForKey:@"list"];

@@ -10,7 +10,12 @@
 #import "coupons.h"
 #import "UIImageView+WebCache.h"
 
+typedef enum{
+    VCType_Movie = 0,
+    VCType_Activity
+}VCType;
+
 @interface BIListCell : BIBaseTableViewCell
 
-
+@property (nonatomic,assign) VCType vcType;
 @end
