@@ -31,12 +31,12 @@
 		59A978DD1ADFBE3500F5EABB /* BIToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A978DC1ADFBE3500F5EABB /* BIToolBar.m */; };
 		59DEEC491ADFF1BD0072386E /* BIMyPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DEEC481ADFF1BD0072386E /* BIMyPersonViewController.m */; };
 		9DA2D7B71677C665EC7C31DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7202F3F892E5B9AD7FB20E /* libPods.a */; };
+		A72527ED1C3E8F2000BA964C /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A72527EC1C3E8F2000BA964C /* background.jpeg */; };
 		A7303CAF1AE374CC003CEC98 /* BIActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7303CAE1AE374CC003CEC98 /* BIActivityViewController.m */; };
 		A7303CB31AE37CF3003CEC98 /* BIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7303CB11AE37CF3003CEC98 /* BIHomeViewController.m */; };
 		A7303CB41AE37CF3003CEC98 /* BIHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7303CB21AE37CF3003CEC98 /* BIHomeViewController.xib */; };
 		A736BD641AF12A1500AF150E /* BITwitterScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = A736BD601AF12A1500AF150E /* BITwitterScroll.m */; };
 		A736BD651AF12A1500AF150E /* UIScrollView+TwitterCover.m in Sources */ = {isa = PBXBuildFile; fileRef = A736BD631AF12A1500AF150E /* UIScrollView+TwitterCover.m */; };
-		A736BD6B1AF1331A00AF150E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A736BD6A1AF1331A00AF150E /* background.png */; };
 		A7566DD81AF7B9BE00153186 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A7566DD61AF7B9BE00153186 /* LaunchImage.png */; };
 		A7566DD91AF7B9BE00153186 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7566DD71AF7B9BE00153186 /* LaunchImage@2x.png */; };
 		A7566DDD1AF7BD1400153186 /* BIGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7566DDC1AF7BD1400153186 /* BIGroupTableViewController.m */; };
@@ -197,6 +197,7 @@
 		59DEEC481ADFF1BD0072386E /* BIMyPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIMyPersonViewController.m; sourceTree = "<group>"; };
 		5B8BE687AD8342015F9AAB34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A30DE28F06F3C06561CE1C23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A72527EC1C3E8F2000BA964C /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
 		A7303CAD1AE374CC003CEC98 /* BIActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIActivityViewController.h; sourceTree = "<group>"; };
 		A7303CAE1AE374CC003CEC98 /* BIActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIActivityViewController.m; sourceTree = "<group>"; };
 		A7303CB01AE37CF3003CEC98 /* BIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIHomeViewController.h; sourceTree = "<group>"; };
@@ -207,7 +208,6 @@
 		A736BD601AF12A1500AF150E /* BITwitterScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BITwitterScroll.m; sourceTree = "<group>"; };
 		A736BD621AF12A1500AF150E /* UIScrollView+TwitterCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TwitterCover.h"; sourceTree = "<group>"; };
 		A736BD631AF12A1500AF150E /* UIScrollView+TwitterCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TwitterCover.m"; sourceTree = "<group>"; };
-		A736BD6A1AF1331A00AF150E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		A7566DD61AF7B9BE00153186 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		A7566DD71AF7B9BE00153186 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		A7566DDB1AF7BD1400153186 /* BIGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIGroupTableViewController.h; sourceTree = "<group>"; };
@@ -496,6 +496,7 @@
 		599A366D1ADBCEA10052E642 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A72527EC1C3E8F2000BA964C /* background.jpeg */,
 				A7DF89D71C3D49620092E883 /* share.png */,
 				A7DF89CC1C3D43970092E883 /* start2.png */,
 				A7DF89CD1C3D43970092E883 /* start6.png */,
@@ -503,7 +504,6 @@
 				A7DF89CF1C3D43970092E883 /* start10.png */,
 				A7566DD61AF7B9BE00153186 /* LaunchImage.png */,
 				A7566DD71AF7B9BE00153186 /* LaunchImage@2x.png */,
-				A736BD6A1AF1331A00AF150E /* background.png */,
 				A77FD5191AECDBF300265BBF /* discovery */,
 				A79423E61AE3BD700098DF63 /* icon_collect.png */,
 				A7AD995D1AE2B4460078CBB6 /* home */,
@@ -912,6 +912,7 @@
 				TargetAttributes = {
 					5936B7891AD654FC00227F7E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = WY28H4GE9P;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -980,7 +981,6 @@
 				5936B7991AD654FC00227F7E /* Main.storyboard in Resources */,
 				A79424531AE552910098DF63 /* ShareSDKFlatShareViewUI.bundle in Resources */,
 				5936B79E1AD654FC00227F7E /* LaunchScreen.xib in Resources */,
-				A736BD6B1AF1331A00AF150E /* background.png in Resources */,
 				A77FD5411AECDBF300265BBF /* PayU_WechatSecure_Icon@3x.png in Resources */,
 				A79423E71AE3BD700098DF63 /* icon_collect.png in Resources */,
 				A7DF89D21C3D43970092E883 /* start9.png in Resources */,
@@ -993,6 +993,7 @@
 				A77FD5311AECDBF300265BBF /* ff_IconBottle@3x.png in Resources */,
 				A77FD5301AECDBF300265BBF /* ff_IconBottle@2x.png in Resources */,
 				A7303CB41AE37CF3003CEC98 /* BIHomeViewController.xib in Resources */,
+				A72527ED1C3E8F2000BA964C /* background.jpeg in Resources */,
 				A7566DD91AF7B9BE00153186 /* LaunchImage@2x.png in Resources */,
 				A77FD5401AECDBF300265BBF /* PayU_WechatSecure_Icon@2x.png in Resources */,
 				A79423E11AE3BD560098DF63 /* banner.png in Resources */,
@@ -1282,7 +1283,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CTLib/ShareSDK/Connection",
@@ -1334,6 +1337,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_NAME:rfc1034identifier).com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1343,7 +1347,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CTLib/ShareSDK/Connection",
@@ -1395,6 +1401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_NAME:rfc1034identifier).com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

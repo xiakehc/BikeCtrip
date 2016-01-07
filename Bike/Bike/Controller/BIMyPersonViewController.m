@@ -37,7 +37,7 @@
     
     dataList = [NSArray arrayWithObjects:@"我的信息",@"我的好友",@"我的车队",@"待参加的活动",@"已参加的活动",@"个性设置",@"推荐App",@"清理缓存",@"",nil];
     BITwitterScroll *myTableView = [[BITwitterScroll alloc]
-                                    initTableViewWithBackgound:[UIImage imageNamed:@"background.png"]
+                                    initTableViewWithBackgound:[UIImage imageNamed:@"background.jpeg"]
                                     avatarImage:[UIImage imageNamed:@"icon_collect"]
                                     titleString:@"余康"
                                     subtitleString:@"初级骑行者"
